@@ -1,7 +1,14 @@
 .news-container {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #140c64;
   color: #ffffff;
+}
+
+.cards-container {
+  position: absolute;
+  width: 100%;
+  top: 30%;
 }
