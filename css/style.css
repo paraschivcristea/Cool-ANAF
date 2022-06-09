@@ -42,17 +42,18 @@ nav {
 
 .menu-item {
   margin: 0 0.5rem;
-  padding: 0.6rem;
-  transition: 0.25s;
-}
-
-.menu-item:hover, .menu-item:focus {
-  box-shadow: inset 6.5em 0 0 0 adjust-hue(red, 45deg);
 }
 
 .menu-link {
   text-decoration: none;
   color: black;
+  padding: 0.6rem;
+  transition: 0.25s;
+}
+
+.menu-link:hover {
+  color: white;
+  box-shadow: inset 12.5em 0 0 0 #363795
 }
 
 .right {
