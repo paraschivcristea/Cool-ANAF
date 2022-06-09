@@ -23,11 +23,27 @@ header {
 }
 
 nav {
-  max-width: 100%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 1rem 0;
+}
+
+.left, .middle, .right {
+  display: flex;
+  align-items: center;
+}
+
+.left {
+  margin: 0;
+  padding: 0;
+}
+
+.left img {
+  height: 70%;
+  width: 70%;
+  margin: 0;
+  padding: 0;
 }
 
 .menu {
@@ -54,10 +70,12 @@ nav {
   color: black;
   background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);
   background-blend-mode: screen;
+  border: 2px solid #ECE2DF;
 }
 
 .active {
   color: white;
+  border: 2px solid white;
 }
 
 .right {
@@ -98,7 +116,6 @@ nav {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  margin: auto;
   height: 80vh;
   width: 100%;
 }
