@@ -53,7 +53,7 @@ nav {
 
 .menu-link:hover {
   color: white;
-  box-shadow: inset 12.5em 0 0 0 #363795
+  box-shadow: inset 12.5em 0 0 0 #005C97;
 }
 
 .right {
@@ -118,7 +118,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 1.5rem 0;
+  margin: 1.5rem 0 0 0;
   height: 4rem;
   width: 9rem;
   background: #005C97;  /* fallback for old browsers */
@@ -208,8 +208,16 @@ nav {
   justify-content: center;
   align-items: flex-end;
   margin: auto;
-  height: 40vh;
+  height: 70vh;
   width: 100%;
+}
+
+.myspace-left h1, h2 {
+  background: #005C97;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .tutorials {
