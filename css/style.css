@@ -56,6 +56,10 @@ nav {
   background-blend-mode: screen;
 }
 
+.active {
+  color: white;
+}
+
 .right {
   display: flex;
   align-items: center;
@@ -81,14 +85,22 @@ nav {
   padding: 0;
 }
 
-.search:hover, .account:hover {
-  background: black;
-  color: white;
+.search-icon:hover {
+  background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
 }
 
 .search-input {
   height: 2.7rem;
   padding: 0 0 0 1rem;
+}
+
+.myspace {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: auto;
+  height: 80vh;
+  width: 100%;
 }
 
 .myspace-left {
@@ -99,7 +111,12 @@ nav {
 }
 
 .myspace-left h1, h2 {
+  color: #ffffff;
   max-width: 80%;
+}
+
+.myspace-left h1 {
+  color: #3498db;
 }
 
 .myspace-buttons {
@@ -137,6 +154,21 @@ nav {
   color: white;
   border: none;
 }
+
+.tutorials {
+  gap: 0.5rem;
+}
+
+.tutorials p {
+  margin: 0;
+  padding: 0;
+}
+
+.spv-button:hover, .tutorials:hover {
+  background: black;
+  color: white;
+}
+
 
 .wrapper {
   display: inline-flex;
@@ -211,31 +243,4 @@ nav {
 .wrapper .facebook:hover .tooltip::before {
   background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
   color: #ffffff;
-}
-
-.myspace {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  margin: auto;
-  height: 70vh;
-  width: 100%;
-}
-
-.myspace-left h1, h2 {
-color: #ffffff;
-}
-
-.tutorials {
-  gap: 0.5rem;
-}
-
-.tutorials p {
-  margin: 0;
-  padding: 0;
-}
-
-.spv-button:hover, .tutorials:hover {
-  background: black;
-  color: white;
 }
