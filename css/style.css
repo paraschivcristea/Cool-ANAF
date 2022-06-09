@@ -6,7 +6,6 @@ body {
   justify-content: center;
   align-items: center;
   font-family: "Poppins", sans-serif;
-  background:linear-gradient(45deg, #EEEEEE, #FAF8F9, #FFFFFF);
 }
 
 header {
@@ -14,7 +13,7 @@ header {
   width: 100vw;
   display: flex;
   justify-content: center;
-  background: #ffffff;      
+  background-color: #20222f;
 }
 
 .container {
@@ -46,28 +45,29 @@ nav {
 
 .menu-link {
   text-decoration: none;
-  color: black;
+  color: #757989;
   padding: 0.6rem;
-  transition: 0.25s;
+  transition: all 0.25s cubic-bezier(.17,.67,.83,.67)
 }
 
 .menu-link:hover {
-  color: white;
-  box-shadow: inset 12.5em 0 0 0 #005C97;
+  color: black;
+  background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);
+  background-blend-mode: screen;
 }
 
 .right {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
 }
 
-.search, .account {
+.search, .search-icon {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+  height: 2.7rem;
   padding: 0.5rem;
   border: none;
   background: #005C97;  /* fallback for old browsers */
@@ -76,9 +76,19 @@ nav {
   color: white;
 }
 
+.search {
+  background: white;
+  padding: 0;
+}
+
 .search:hover, .account:hover {
   background: black;
   color: white;
+}
+
+.search-input {
+  height: 2.7rem;
+  padding: 0 0 0 1rem;
 }
 
 .myspace-left {
@@ -199,7 +209,7 @@ nav {
 .wrapper .facebook:hover,
 .wrapper .facebook:hover .tooltip,
 .wrapper .facebook:hover .tooltip::before {
-  background: black;
+  background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
   color: #ffffff;
 }
 
@@ -213,11 +223,7 @@ nav {
 }
 
 .myspace-left h1, h2 {
-  background: #005C97;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+color: #ffffff;
 }
 
 .tutorials {
