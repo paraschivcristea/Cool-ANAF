@@ -1,14 +1,6 @@
-.news-container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #140c64;
-  color: #ffffff;
-}
-
-.cards-container {
-  position: absolute;
-  width: 100%;
-  top: 30%;
+header {
+  height: 100vh;
+  background: #8360c3;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2ebf91, #8360c3);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
