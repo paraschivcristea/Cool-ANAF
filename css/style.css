@@ -11,10 +11,11 @@ body {
 
 header {
   height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+  background-image: linear-gradient(45deg, #cbd6e3 0%, #f8fbfc 100%);
 }
 
 .nav-container {
@@ -129,21 +130,23 @@ nav {
   width: 100%;
 }
 
-.myspace-left {
+.myspace-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-end;
   width: 50%;
 }
 
-.myspace-left h1, h2 {
-  color: #365dab;
+.myspace-text h1, h2 {
   max-width: 80%;
+  color: #365dab;
+  text-align: right;
 }
 
-.myspace-left h1 {
+.myspace-text h1 {
   color: #365dab;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .myspace-btn {
@@ -152,7 +155,7 @@ nav {
   gap: 2rem;
 }
 
-.myspace-right {
+.myspace-img {
   height: 100%;
   width: 50%;
 }
@@ -298,67 +301,4 @@ main {
 
 .main-container h1 {
   color: #333b4b;
-}
-
-.row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 2rem;
-  width: 100%;
-}
-
-.box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 75vh;
-  width: 28%;
-  padding: 1rem;
-  background-color: #ffffff;
-}
-
-.box-img {
-  display: flex;
-  flex-shrink: 1;
-  height: auto;
-  width: 100%;
-  overflow: hidden;
-}
-
-.box-title, .box-desc {
-  display: flex;
-  align-items: center;
-  flex-shrink: 1;
-  width: 100%;
-}
-
-.box-title h2, .box-desc p {
-  flex-shrink: 1;
-  width: 100%;
-  color: black;
-}
-
-.box-desc p {
-  font-size: 14px;
-}
-
-.date p {
-  font-size: 14px;
-  margin: 0;
-  font-weight: 600;
-}
-
-.news-button {
-  align-self: flex-start;
-  background: #005C97;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  border: none;
-  color: white;
-  padding: 0.5rem 1rem;
-}
-
-.news-button:hover {
-  background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
 }
