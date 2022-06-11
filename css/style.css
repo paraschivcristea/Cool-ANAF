@@ -12,38 +12,41 @@ body {
 header {
   height: 100vh;
   display: flex;
-  justify-content: center;
-  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
 }
 
-.container {
+.nav-container {
   width: 80%;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 nav {
   width: 100%;
+  height: 8vh;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 1rem 0;
 }
 
-.left, .middle, .right {
+.logo, .navbar, .searchbar {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
-.left {
-  margin: 0;
-  padding: 0;
+.logo {
+  justify-content: flex-start;
 }
 
-.left img {
-  height: 70%;
-  width: 70%;
-  margin: 0;
-  padding: 0;
+.logo h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #365dab;
 }
 
 .menu {
@@ -63,28 +66,25 @@ nav {
   text-decoration: none;
   color: #5f6774;
   padding: 0.6rem;
-  transition: all 0.25s cubic-bezier(.17,.67,.83,.67)
+  transition: 0.25s;
 }
 
-.menu-link:hover {
-  color: black;
-  background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);
-  background-blend-mode: screen;
-  border: 2px solid #ECE2DF;
+.menu-link:hover, .menu-link:focus {
+  box-shadow: inset 15em 0 0 0 #365dab;
+  color: white;
 }
 
 .active {
   color: #365dab;
-  border: 2px solid #365dab;
 }
 
-.right {
+.searchbar {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
-.search, .search-icon {
+.search-btn, .search-icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -98,7 +98,7 @@ nav {
   color: white;
 }
 
-.search {
+.search-btn {
   background: white;
   padding: 0;
 }
@@ -111,6 +111,14 @@ nav {
   height: 2.7rem;
   padding: 0 0 0 1rem;
   border: none;
+}
+
+.myspace-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
 }
 
 .myspace {
@@ -138,7 +146,7 @@ nav {
   margin-bottom: 0;
 }
 
-.myspace-buttons {
+.myspace-btn {
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -160,7 +168,7 @@ nav {
   max-width: 100%;
 }
 
-.spv-button, .tutorials {
+.spv-btn, .tutorials {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -269,7 +277,7 @@ main {
   justify-content: center;
   width: 100%;
   height: 100vh;
-  background-color: #f5f6fa;
+  background-color: #f4f8fd;
 }
 
 .main-container {
@@ -280,8 +288,16 @@ main {
   align-items: center;
 }
 
+.border {
+  width: 5rem;
+  margin: 0;
+  padding: 0;
+  border-bottom: 0.5rem solid #361ebe;
+  border-radius: 1rem;
+}
+
 .main-container h1 {
-  padding: 1rem;
+  color: #333b4b;
 }
 
 .row {
