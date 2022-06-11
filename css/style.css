@@ -13,7 +13,7 @@ header {
   height: 100vh;
   display: flex;
   justify-content: center;
-  background-color: #20222f;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 
 .container {
@@ -61,7 +61,7 @@ nav {
 
 .menu-link {
   text-decoration: none;
-  color: #757989;
+  color: #5f6774;
   padding: 0.6rem;
   transition: all 0.25s cubic-bezier(.17,.67,.83,.67)
 }
@@ -74,8 +74,8 @@ nav {
 }
 
 .active {
-  color: white;
-  border: 2px solid white;
+  color: #365dab;
+  border: 2px solid #365dab;
 }
 
 .right {
@@ -110,12 +110,13 @@ nav {
 .search-input {
   height: 2.7rem;
   padding: 0 0 0 1rem;
+  border: none;
 }
 
 .myspace {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   height: 80vh;
   width: 100%;
 }
@@ -128,12 +129,12 @@ nav {
 }
 
 .myspace-left h1, h2 {
-  color: #ffffff;
+  color: #365dab;
   max-width: 80%;
 }
 
 .myspace-left h1 {
-  color: #3498db;
+  color: #365dab;
   margin-bottom: 0;
 }
 
