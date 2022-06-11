@@ -67,7 +67,7 @@ nav {
   text-decoration: none;
   color: #5f6774;
   padding: 0.6rem;
-  transition: 0.25s;
+  transition: 0.5s;
 }
 
 .menu-link:hover, .menu-link:focus {
