@@ -114,12 +114,137 @@ nav {
   border: none;
 }
 
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background: #005C97;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 80px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  display: flex;
+  justify-content: center;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: white;
+  background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.7rem;
+  padding: 0.5rem;
+  border: none;
+  background: #005C97;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+}
+
+.openbtn:hover, .openbtn:focus {
+  background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+}
+
+.closebtn {
+  color: white;
+  background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+  border: none;
+}
+
+.mobile {
+  display: none;
+}
+
+.mobile-menu {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-menu-item {
+  list-style: none;
+  text-align: center;
+}
+
 .myspace-container {
   width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: space-between;
+}
+
+.mobilesearchbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+.mobilesearch-form {
+  width: 80vw;
+  display: flex;
+}
+
+.mobilesearch-btn, .search-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  height: 2.7rem;
+  padding: 0.5rem;
+  border: none;
+  background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+  color: white;
+}
+
+.mobilesearch-input {
+  width: 80vw;
+}
+
+.mobilesearch-btn {
+  background: white;
+  padding: 0;
+}
+
+.mobilesearch-icon:hover {
+  background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+}
+
+.mobilesearch-input {
+  height: 2.7rem;
+  padding: 0 0 0 1rem;
+  border: none;
 }
 
 .myspace {
@@ -362,4 +487,104 @@ main {
 
 .box-title a {
   text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  header {
+    height: auto;
+  }
+
+  nav {
+    padding: 0.5rem 1rem;
+  }
+
+  .nav-container {
+    width: 100vw;
+    max-width: 100%;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .searchbar {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+  }
+
+  .myspace-container {
+    width: 100vw;
+    max-width: 100%;
+    padding-bottom: 2rem;
+    
+  }
+
+  .myspace {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .myspace-img {
+    width: 100vw;
+  }
+
+  .myspace-text {
+    width: 100vw;
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .myspace-text h1, .myspace-text h2 {
+    width: 100vw;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  main {
+    height: auto;
+  }
+
+  .main-container {
+    width: 100vw;
+    max-width: 100%;
+    padding-top: 2rem;
+  }
+
+  .helper {
+    display: none;
+  }
+
+  .border {
+    margin: 0;
+  }
+
+  .main-container h1 {
+    margin: 1rem 0;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .box {
+    height: auto;
+    width: 100vw;
+    max-width: 100%;
+  }
+
+  .box-img {
+    height: 30vh;
+    width: 100vw;
+    max-width: 100%;
+    border-radius: 0;
+  }
 }
