@@ -218,7 +218,7 @@ nav {
   display: flex;
 }
 
-.mobilesearch-btn, .search-icon {
+.mobilesearch-btn, .mobilesearch-icon {
   display: flex;
   justify-content: center;
   align-items: center;
