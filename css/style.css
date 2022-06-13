@@ -119,11 +119,11 @@ nav {
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
   top: 0;
-  left: 0;
+  right: 0;
   background-image: linear-gradient(45deg, #cbd6e3 0%, #f8fbfc 100%);
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 80px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  transition: 0.5s ease-in-out;
   display: flex;
   justify-content: center;
 }
@@ -140,8 +140,7 @@ nav {
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-  color: white;
-  background-color: #ff9027;
+  color: #ff9027;
 }
 
 /* Position and style the close button (top right corner) */
@@ -165,19 +164,19 @@ nav {
 }
 
 .openbtn:hover, .mobilebtn:focus {
-  color: #365dab;
+  color: #5f6774;
 }
 
 .closebtn {
-  color: #5f6774;
+  color: #333b4b;
   background-color: transparent;
   border: 2px solid #5f6774;
 }
 
 .closebtn:hover, .closebtn:focus {
-  background-color: #ff9027;
+  background-color: #333b4b;
   color: white;
-  border: 2px solid #ff9027;
+  border: 2px solid #333b4b;
 }
 
 .mobile {
@@ -225,7 +224,7 @@ nav {
   height: 8vh;
   padding: 0.5rem;
   border: none;
-  background-color: #ff9027;
+  background-color: #333b4b;
   color: white;
 }
 
@@ -274,6 +273,7 @@ nav {
 
 .myspace-btn {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 2rem;
 }
@@ -294,7 +294,7 @@ nav {
   max-width: 100%;
 }
 
-.spv-btn, .tutorials {
+.login-btn, .guide-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -305,91 +305,21 @@ nav {
   background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
+  font-weight: 600;
   border: none;
 }
 
-.tutorials {
+.login-btn:hover, .login-btn:focus, .guide-btn:hover, .guide-btn:focus {
+  background: #ff9027;
+}
+
+.guide-btn {
   gap: 0.5rem;
 }
 
-.tutorials p {
+.login-btn, .guide-btn {
   margin: 0;
   padding: 0;
-}
-
-.wrapper {
-  display: inline-flex;
-  list-style: none;
-}
-
-.wrapper .icon {
-  position: relative;
-  background: #005C97;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  padding: 0;
-  margin: 10px 0;
-  width: 9rem;
-  height: 4rem;
-  font-size: 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  gap: 0.5rem;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.wrapper {
-  padding: 0;
-  color: white;
-}
-
-.wrapper .tooltip {
-  position: absolute;
-  top: 0;
-  font-size: 14px;
-  background: #ffffff;
-  color: #ffffff;
-  padding: 5px 8px;
-  border-radius: 5px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.wrapper .tooltip::before {
-  position: absolute;
-  content: "";
-  height: 8px;
-  width: 8px;
-  background: #ffffff;
-  bottom: -3px;
-  left: 50%;
-  transform: translate(-50%) rotate(45deg);
-  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.wrapper .icon:hover .tooltip {
-  top: -45px;
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
-
-.wrapper .icon:hover span,
-.wrapper .icon:hover .tooltip {
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
-}
-
-.wrapper .icon:hover,
-.wrapper .icon:hover .tooltip,
-.wrapper .icon:hover .tooltip::before {
-  background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
-  color: #ffffff;
 }
 
 main {
@@ -492,12 +422,16 @@ main {
   }
 
   nav {
-    padding: 1rem 1rem;
+    padding: 0.5rem 1rem;
   }
 
   .nav-container {
     width: 100vw;
     max-width: 100%;
+  }
+
+  .logo h1 {
+    font-size: 2rem;
   }
 
   .menu {
@@ -526,6 +460,7 @@ main {
 
   .myspace-img {
     width: 100vw;
+    max-width: 100%;
   }
 
   .myspace-text {
