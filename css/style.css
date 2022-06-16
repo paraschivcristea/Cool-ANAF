@@ -423,8 +423,8 @@ main {
   width: 80vw;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  padding-top: 2rem;
 }
 
 .box2 {
@@ -438,6 +438,7 @@ main {
   background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
   border-radius: 0.5rem;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 }
 
 .box2title {
@@ -447,6 +448,11 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.box2title h2 {
+  width: 80%;
+  text-align: left;
 }
 
 .box2content {
