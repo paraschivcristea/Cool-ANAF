@@ -9,94 +9,94 @@
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body class="flex-column-center">
-  <header class="flex-column-start height-100vh width-80 background-white">
-    <div class="nav-container width-100 flex-column-center box-sizing">
-      <nav class="flex-row-between width-100">
-        <div class="logo flex-row-center height-100">
-          <div class="logo-img flex-row-center height-100 text-primary">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-slack" viewBox="0 0 16 16">
-              <path d="M3.362 10.11c0 .926-.756 1.681-1.681 1.681S0 11.036 0 10.111C0 9.186.756 8.43 1.68 8.43h1.682v1.68zm.846 0c0-.924.756-1.68 1.681-1.68s1.681.756 1.681 1.68v4.21c0 .924-.756 1.68-1.68 1.68a1.685 1.685 0 0 1-1.682-1.68v-4.21zM5.89 3.362c-.926 0-1.682-.756-1.682-1.681S4.964 0 5.89 0s1.68.756 1.68 1.68v1.682H5.89zm0 .846c.924 0 1.68.756 1.68 1.681S6.814 7.57 5.89 7.57H1.68C.757 7.57 0 6.814 0 5.89c0-.926.756-1.682 1.68-1.682h4.21zm6.749 1.682c0-.926.755-1.682 1.68-1.682.925 0 1.681.756 1.681 1.681s-.756 1.681-1.68 1.681h-1.681V5.89zm-.848 0c0 .924-.755 1.68-1.68 1.68A1.685 1.685 0 0 1 8.43 5.89V1.68C8.43.757 9.186 0 10.11 0c.926 0 1.681.756 1.681 1.68v4.21zm-1.681 6.748c.926 0 1.682.756 1.682 1.681S11.036 16 10.11 16s-1.681-.756-1.681-1.68v-1.682h1.68zm0-.847c-.924 0-1.68-.755-1.68-1.68 0-.925.756-1.681 1.68-1.681h4.21c.924 0 1.68.756 1.68 1.68 0 .926-.756 1.681-1.68 1.681h-4.21z"/>
-            </svg>
+  <main class="flex-column-center width-80 background-white">
+    <section class="flex-column-start height-100vh width-100 background-white">
+      <div class="nav-container width-100 flex-column-center box-sizing">
+        <nav class="flex-row-between width-100">
+          <div class="logo flex-row-center height-100">
+            <div class="logo-img flex-row-center height-100 text-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-slack" viewBox="0 0 16 16">
+                <path d="M3.362 10.11c0 .926-.756 1.681-1.681 1.681S0 11.036 0 10.111C0 9.186.756 8.43 1.68 8.43h1.682v1.68zm.846 0c0-.924.756-1.68 1.681-1.68s1.681.756 1.681 1.68v4.21c0 .924-.756 1.68-1.68 1.68a1.685 1.685 0 0 1-1.682-1.68v-4.21zM5.89 3.362c-.926 0-1.682-.756-1.682-1.681S4.964 0 5.89 0s1.68.756 1.68 1.68v1.682H5.89zm0 .846c.924 0 1.68.756 1.68 1.681S6.814 7.57 5.89 7.57H1.68C.757 7.57 0 6.814 0 5.89c0-.926.756-1.682 1.68-1.682h4.21zm6.749 1.682c0-.926.755-1.682 1.68-1.682.925 0 1.681.756 1.681 1.681s-.756 1.681-1.68 1.681h-1.681V5.89zm-.848 0c0 .924-.755 1.68-1.68 1.68A1.685 1.685 0 0 1 8.43 5.89V1.68C8.43.757 9.186 0 10.11 0c.926 0 1.681.756 1.681 1.68v4.21zm-1.681 6.748c.926 0 1.682.756 1.682 1.681S11.036 16 10.11 16s-1.681-.756-1.681-1.68v-1.682h1.68zm0-.847c-.924 0-1.68-.755-1.68-1.68 0-.925.756-1.681 1.68-1.681h4.21c.924 0 1.68.756 1.68 1.68 0 .926-.756 1.681-1.68 1.681h-4.21z"/>
+              </svg>
+            </div>
+            <div class="logo-p flex-row-center height-100 text-primary">ANAF</div>
           </div>
-          <div class="logo-p flex-row-center height-100 text-primary">ANAF</div>
-        </div>
-        <div class="navbar flex-row-center">
-          <ul class="menu flex-row-center">
-            <li class="menu-item"><a class="menu-link text-contrast-high active" href="#">Prima pagina</a></li>
-            <li class="menu-item"><a class="menu-link text-contrast-high" href="#">Despre ANAF</a></li>
-            <li class="menu-item"><a class="menu-link text-contrast-high" href="#">Asistenta contribuabili</a></li>
-            <li class="menu-item"><a class="menu-link text-contrast-high" href="#">Servicii online</a></li>
-            <li class="menu-item"><a class="menu-link text-contrast-high" href="#">Info publice</a></li>
-          </ul>
-        </div>
-        <div class="searchbar flex-row-center">
-          <input class="flex-row-center" id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Cautare..." aria-label="Search" input="">
-          <button class="flex-row-center" id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search text-contrast-medium" viewBox="0 0 16 16">
-              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-            </svg>
-          </button>
-        </div>
-        <div class="mobile">
-          <div id="mySidenav" class="sidenav background-white">
-            <ul class="mobile-menu width-100">
-              <div class="mobilesearchbar width-100 flex-row-center">
-                <input class="flex-row-center" id="mobilesearchQueryInput" type="text" name="searchQueryInput" placeholder="Cautare..." aria-label="Search" input="">
-                <button class="flex-row-center text-contrast-medium" id="mobilesearchQuerySubmit" type="submit" name="searchQuerySubmit">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search text-contrast-medium" viewBox="0 0 16 16">
-                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                  </svg>
-                </button>
-                <button class="closebtn flex-row-center text-contrast-high">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
-                    <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
-                  </svg>
-                </button>
-              </div>
-              <li class="mobile-menu-item"><a class="mobile-menu-link" href="#">Prima pagina</a></li>
-              <li class="mobile-menu-item"><a class="mobile-menu-link" href="#">Despre ANAF</a></li>
-              <li class="mobile-menu-item"><a class="mobile-menu-link" href="#">Asistenta contribuabili</a></li>
-              <li class="mobile-menu-item"><a class="mobile-menu-link" href="#">Servicii online</a></li>
-              <li class="mobile-menu-item"><a class="mobile-menu-link" href="#">Info publice</a></li>
+          <div class="navbar flex-row-center">
+            <ul class="menu flex-row-center">
+              <li class="menu-item"><a class="menu-link text-contrast-high active" href="#">Prima pagina</a></li>
+              <li class="menu-item"><a class="menu-link text-contrast-high" href="#">Despre ANAF</a></li>
+              <li class="menu-item"><a class="menu-link text-contrast-high" href="#">Asistenta contribuabili</a></li>
+              <li class="menu-item"><a class="menu-link text-contrast-high" href="#">Servicii online</a></li>
+              <li class="menu-item"><a class="menu-link text-contrast-high" href="#">Info publice</a></li>
             </ul>
           </div>
-          <!-- Use any element to open the sidenav -->
-          <button class="openbtn flex-row-center text-primary">
-            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-            </svg>
-          </button>
-        </div>
-      </nav>
-    </div>
-    <div class="myspace-container height-100 width-100 flex-column-center">
-      <div class="myspace height-100 width-100 flex-row-center">
-        <div class="myspace-img">
-          <div class="spv-img height-100 width-100">
-            <img class="height-100 width-100" src="./img/spv.png">
+          <div class="searchbar flex-row-center">
+            <input class="flex-row-center" id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Cautare..." aria-label="Search" input="">
+            <button class="flex-row-center" id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search text-contrast-medium" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg>
+            </button>
           </div>
-        </div>
-        <div class="myspace-text flex-column-center">
-          <h1 class="text-contrast-high width-80">Spatiul Privat Virtual</h2>
-          <h2 class="text-contrast-medium width-80">Lorem Ipsum is simply dummy text of the printing and typesetting industry</h2>
-          <div class="myspace-buttons-container flex-row-between">
-            <button class="btn-primary color-primary text-white shadow-md">
-              <p>Logare</p>
+          <div class="mobile">
+            <div id="mySidenav" class="sidenav background-white">
+              <ul class="mobile-menu width-100">
+                <div class="mobilesearchbar width-100 flex-row-center">
+                  <input class="flex-row-center" id="mobilesearchQueryInput" type="text" name="searchQueryInput" placeholder="Cautare..." aria-label="Search" input="">
+                  <button class="flex-row-center text-contrast-medium" id="mobilesearchQuerySubmit" type="submit" name="searchQuerySubmit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search text-contrast-medium" viewBox="0 0 16 16">
+                      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                  </button>
+                  <button class="closebtn flex-row-center text-contrast-high">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                      <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                    </svg>
+                  </button>
+                </div>
+                <li class="mobile-menu-item"><a class="mobile-menu-link" href="#">Prima pagina</a></li>
+                <li class="mobile-menu-item"><a class="mobile-menu-link" href="#">Despre ANAF</a></li>
+                <li class="mobile-menu-item"><a class="mobile-menu-link" href="#">Asistenta contribuabili</a></li>
+                <li class="mobile-menu-item"><a class="mobile-menu-link" href="#">Servicii online</a></li>
+                <li class="mobile-menu-item"><a class="mobile-menu-link" href="#">Info publice</a></li>
+              </ul>
+            </div>
+            <!-- Use any element to open the sidenav -->
+            <button class="openbtn flex-row-center text-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg>
             </button>
-            <button class="btn-primary color-primary text-white shadow-md">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
-                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                    <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
-                  </svg>
-                  <p>Ghid</p>
-            </button>
+          </div>
+        </nav>
+      </div>
+      <div class="myspace-container height-100 width-100 flex-column-center">
+        <div class="myspace height-100 width-100 flex-row-center">
+          <div class="myspace-img">
+            <div class="spv-img height-100 width-100">
+              <img class="height-100 width-100" src="./img/spv.png">
+            </div>
+          </div>
+          <div class="myspace-text flex-column-center">
+            <h1 class="text-contrast-high width-80">Spatiul Privat Virtual</h2>
+            <h2 class="text-contrast-medium width-80">Lorem Ipsum is simply dummy text of the printing and typesetting industry</h2>
+            <div class="myspace-buttons-container flex-row-between">
+              <button class="btn-primary color-primary text-white shadow-md">
+                <p>Logare</p>
+              </button>
+              <button class="btn-primary color-primary text-white shadow-md">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                      <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+                    </svg>
+                    <p>Ghid</p>
+              </button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </header>
-  <main class="flex-column-center width-80 background-white">
-    <div class="first flex-column-center width-100">
+    </section>
+    <section class="first flex-column-center width-100">
       <div class="border"></div>
       <h1 class="title text-contrast-high">Comunicate de presa</h1>
       <div class="row flex-row-between width-100">
@@ -125,8 +125,8 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="second flex-column-center width-100">
+    </section>
+    <section class="second flex-column-center width-100">
       <div class="border"></div>
       <div class="second-title width-100">
         <h1 class="title">Transparenta decizionala</h1>
@@ -163,7 +163,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </main>
 <script src="./js/myscripts.js"></script>
 </body>
