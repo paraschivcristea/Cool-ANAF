@@ -138,7 +138,6 @@ nav {
 
 .menu-link {
   text-decoration: none;
-  color: #5f6774;
   padding: 0.6rem;
   transition: 0.5s;
   border-radius: 0.25em;
@@ -300,11 +299,12 @@ main {
 
 .title {
   text-align: center;
+  margin: 0 0 4rem 0;
 }
 
 .border {
   width: 5rem;
-  margin: 1rem;
+  margin: 4rem 0;
   padding: 0;
   border-bottom: 0.5rem solid #361ebe;
   border-radius: 1rem;
@@ -424,7 +424,7 @@ main {
 
   .title {
     width: 100%;
-    margin: 1rem 0;
+    margin: 0 0 1rem 0;
     font-size: 1.8rem;
   }
 
@@ -455,7 +455,7 @@ main {
     border-radius: 0;
   }
 
-  .second .title {
+  .second{
     margin: 1rem 0;
   }
 
