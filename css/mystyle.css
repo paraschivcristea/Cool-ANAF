@@ -32,7 +32,7 @@ html {
 }
 
 .font-size-md {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .shadow-md {
@@ -425,7 +425,7 @@ main {
 
   .myspace {
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
 
   .myspace-img {
@@ -459,6 +459,9 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #f0f2f5;
+    padding-top: 1.5rem;
+    box-shadow: inset 0 0 0.5px 1px rgba(255, 255, 255, 0.075), 0 0.3px 0.4px rgba(0, 0, 0, 0.025), 0 0.9px 1.5px rgba(0, 0, 0, 0.05), 0 3.5px 6px rgba(0, 0, 0, 0.1);
   }
 
   .box {
