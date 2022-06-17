@@ -115,10 +115,6 @@ header, main {
   padding: 1rem 2rem;
 }
 
-section {
-  scroll-snap-type: start;
-}
-
 nav {
   justify-content: space-between;
   height: 5vh;
@@ -352,7 +348,7 @@ main {
 }
 
 .box2title {
-  height: 10vh;
+  height: 3rem;
 }
 
 .box2title h2 {
@@ -436,7 +432,6 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
   }
 
   .box {
