@@ -68,7 +68,7 @@ html {
 }
 
 .height-100vh {
-  height: 100vh;
+  max-height: 100vh;
 }
 
 .height-100 {
@@ -115,7 +115,7 @@ html {
 .flex-column-start {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
 }
 
@@ -128,7 +128,7 @@ body {
   margin: 0;
 }
 
-header, main {
+ main {
   padding: 1rem 2rem;
 }
 
@@ -415,6 +415,7 @@ nav {
 
   .myspace-container {
     padding-bottom: 0;
+    margin-top: 3rem;
   }
 
   .myspace {
