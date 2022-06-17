@@ -19,16 +19,24 @@ html {
   color: hsl(0, 0%, 100%);
 }
 
-.text-contrast-medium {
+.text-contrast-low {
   color: hsl(204, 2%, 46%)
+}
+
+.text-contrast-medium {
+  color: #323639;
 }
 
 .text-contrast-high {
   color: hsl(204, 28%, 7%);
 }
 
+.font-size-md {
+  font-size: 1rem;
+}
+
 .shadow-md {
-  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+  box-shadow: inset 0 0 0.5px 1px rgba(255, 255, 255, 0.075), 0 0.3px 0.4px rgba(0, 0, 0, 0.025), 0 0.9px 1.5px rgba(0, 0, 0, 0.05), 0 3.5px 6px rgba(0, 0, 0, 0.1);
 }
 
 .box-sizing {
@@ -37,6 +45,10 @@ html {
 
 .background-white {
   background-color: hsl(0, 0%, 100%);
+}
+
+.background-gray {
+  background-color: #f0f2f5;
 }
 
 .btn-primary {
@@ -87,6 +99,12 @@ html {
   align-items: center;
 }
 
+.flex-row-start {
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 .flex-column-center {
   display: flex;
   flex-direction: column;
@@ -97,8 +115,8 @@ html {
 .flex-column-start {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .self-align-end {
@@ -297,6 +315,11 @@ main {
   gap: 1rem;
 }
 
+.row {
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
 .title {
   text-align: center;
   margin: 0 0 4rem 0;
@@ -306,7 +329,7 @@ main {
   width: 5rem;
   margin: 4rem 0;
   padding: 0;
-  border-bottom: 0.5rem solid #361ebe;
+  border-bottom: 0.5rem solid hsl(250, 84%, 54%);
   border-radius: 1rem;
 }
 
@@ -341,13 +364,18 @@ main {
 }
 
 .box2 {
-  width: 25%;
-  padding: 0;
+  height: auto;
+  width: 30%;
+  padding: 1rem;
   border: none;
-  margin-bottom: 1rem;
+  transform: 0.3s;
 }
 
+.box2:hover {
+  box-shadow: inset 0 0 0.5px 1px rgba(255, 255, 255, 0.075), 0 0.9px 1.5px rgba(0, 0, 0, 0.03), 0 3.1px 5.5px rgba(0, 0, 0, 0.08), 0 14px 25px rgba(0, 0, 0, 0.12);}
+
 .box2title {
+  justify-content: flex-start;
   height: 3rem;
 }
 
@@ -398,7 +426,7 @@ main {
 
   .myspace {
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-around;
   }
 
   .myspace-img {
@@ -415,7 +443,7 @@ main {
   }
 
   main {
-    padding: 0;
+    padding: 1rem 0;
   }
 
   .border {
@@ -454,8 +482,9 @@ main {
     border-radius: 0;
   }
 
-  .second{
+  .second {
     margin: 1rem 0;
+    background-color: #f0f2f5;
   }
 
   .box2, .box2title, .box2content {
