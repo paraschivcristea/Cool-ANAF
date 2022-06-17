@@ -119,8 +119,8 @@ html {
   align-items: flex-start;
 }
 
-.self-align-end {
-  align-self: flex-end;
+.flex-start {
+  align-items: start;
 }
 /*Variables end here*/
 
@@ -198,8 +198,6 @@ nav {
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 0.5rem;
   transition: 0.5s ease-in-out;
-  display: flex;
-  justify-content: center;
 }
 
 /* The navigation menu links */
@@ -308,10 +306,6 @@ nav {
 
 .myspace-buttons-container {
   gap: 2rem;
-}
-
-main {
-  gap: 1rem;
 }
 
 .row {
@@ -442,7 +436,11 @@ main {
   }
 
   main {
-    padding: 1rem 0;
+    padding: 1rem 0 0 0;
+  }
+
+  .first {
+    background-color: #f0f2f5;
   }
 
   .border {
@@ -451,8 +449,9 @@ main {
 
   .title {
     width: 100%;
-    margin: 0 0 1rem 0;
+    margin: 0;
     font-size: 1.8rem;
+    background-color: #f0f2f5;
   }
 
   .row {
@@ -485,7 +484,6 @@ main {
   }
 
   .second {
-    margin: 1rem 0;
     background-color: #f0f2f5;
   }
 
