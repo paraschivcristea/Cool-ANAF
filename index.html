@@ -9,11 +9,16 @@
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body class="flex-column-center">
-  <header class="flex-column-start height-100 width-100 background-white">
-    <div class="nav-container width-80 flex-column-center">
+  <header class="flex-column-start height-100vh width-80 background-white">
+    <div class="nav-container width-100 flex-column-center box-sizing">
       <nav class="flex-row-between width-100">
-        <div class="logo flex-row-center">
-          <h1>ANAF</h1>
+        <div class="logo flex-row-center height-100">
+          <div class="logo-img flex-row-center height-100 text-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-slack" viewBox="0 0 16 16">
+              <path d="M3.362 10.11c0 .926-.756 1.681-1.681 1.681S0 11.036 0 10.111C0 9.186.756 8.43 1.68 8.43h1.682v1.68zm.846 0c0-.924.756-1.68 1.681-1.68s1.681.756 1.681 1.68v4.21c0 .924-.756 1.68-1.68 1.68a1.685 1.685 0 0 1-1.682-1.68v-4.21zM5.89 3.362c-.926 0-1.682-.756-1.682-1.681S4.964 0 5.89 0s1.68.756 1.68 1.68v1.682H5.89zm0 .846c.924 0 1.68.756 1.68 1.681S6.814 7.57 5.89 7.57H1.68C.757 7.57 0 6.814 0 5.89c0-.926.756-1.682 1.68-1.682h4.21zm6.749 1.682c0-.926.755-1.682 1.68-1.682.925 0 1.681.756 1.681 1.681s-.756 1.681-1.68 1.681h-1.681V5.89zm-.848 0c0 .924-.755 1.68-1.68 1.68A1.685 1.685 0 0 1 8.43 5.89V1.68C8.43.757 9.186 0 10.11 0c.926 0 1.681.756 1.681 1.68v4.21zm-1.681 6.748c.926 0 1.682.756 1.682 1.681S11.036 16 10.11 16s-1.681-.756-1.681-1.68v-1.682h1.68zm0-.847c-.924 0-1.68-.755-1.68-1.68 0-.925.756-1.681 1.68-1.681h4.21c.924 0 1.68.756 1.68 1.68 0 .926-.756 1.681-1.68 1.681h-4.21z"/>
+            </svg>
+          </div>
+          <div class="logo-p flex-row-center height-100 text-primary">ANAF</div>
         </div>
         <div class="navbar flex-row-center">
           <ul class="menu flex-row-center">
@@ -25,43 +30,38 @@
           </ul>
         </div>
         <div class="searchbar flex-row-center">
-          <button class="search-btn background-white">
-            <form class="search-form">
-              <input class="search-input" type="search" placeholder="Cautare..." aria-label="Search">
-            </form>
-          </button>
-          <button class="search-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+          <input class="flex-row-center" id="searchQueryInput" type="search" name="searchQueryInput" placeholder="Cautare..." aria-label="Search" input="">
+          <button class="flex-row-center" id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search text-contrast-medium" viewBox="0 0 16 16">
               <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
             </svg>
           </button>
         </div>
         <div class="mobile">
-          <div id="mySidenav" class="sidenav">
-            <button class="closebtn">&times;</button>
+          <div id="mySidenav" class="sidenav background-white">
             <ul class="mobile-menu width-100">
               <div class="mobilesearchbar width-100 flex-row-center">
-                <button class="mobilesearch-btn flex-row-center">
-                  <form class="mobilesearch-form">
-                    <input class="mobilesearch-input" type="search" placeholder="Cautare..." aria-label="Search">
-                  </form>
-                </button>
-                <button class="mobilesearch-icon flex-row-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <input class="flex-row-center" id="mobilesearchQueryInput" type="search" name="searchQueryInput" placeholder="Cautare..." aria-label="Search" input="">
+                <button class="flex-row-center text-contrast-medium" id="mobilesearchQuerySubmit" type="submit" name="searchQuerySubmit">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search text-contrast-medium" viewBox="0 0 16 16">
                     <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                   </svg>
                 </button>
+                <button class="closebtn flex-row-center text-contrast-high">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                    <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                  </svg>
+                </button>
               </div>
-              <li class="mobile-menu-item"><a class="mobile-menu-link active" href="#">Prima pagina</a></li>
+              <li class="mobile-menu-item"><a class="mobile-menu-link" href="#">Prima pagina</a></li>
               <li class="mobile-menu-item"><a class="mobile-menu-link" href="#">Despre ANAF</a></li>
               <li class="mobile-menu-item"><a class="mobile-menu-link" href="#">Asistenta contribuabili</a></li>
               <li class="mobile-menu-item"><a class="mobile-menu-link" href="#">Servicii online</a></li>
               <li class="mobile-menu-item"><a class="mobile-menu-link" href="#">Info publice</a></li>
             </ul>
           </div>
-          
           <!-- Use any element to open the sidenav -->
-          <button class="openbtn">
+          <button class="openbtn flex-row-center text-primary">
             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
             </svg>
@@ -69,8 +69,8 @@
         </div>
       </nav>
     </div>
-    <div class="myspace-container width-80 flex-column-center">
-      <div class="myspace width-100 flex-row-center">
+    <div class="myspace-container height-100 width-100 flex-column-center">
+      <div class="myspace height-100 width-100 flex-row-center">
         <div class="myspace-img">
           <div class="spv-img height-100 width-100">
             <img class="height-100 width-100" src="./img/spv.png">
@@ -80,10 +80,10 @@
           <h1 class="text-contrast-high width-80">Spatiul Privat Virtual</h2>
           <h2 class="text-contrast-medium width-80">Lorem Ipsum is simply dummy text of the printing and typesetting industry</h2>
           <div class="myspace-buttons-container flex-row-between">
-            <button class="btn-primary color-primary text-white">
+            <button class="btn-primary color-primary text-white shadow-md">
               <p>Logare</p>
             </button>
-            <button class="btn-primary color-primary text-white">
+            <button class="btn-primary color-primary text-white shadow-md">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
                     <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                     <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
@@ -95,52 +95,8 @@
       </div>
     </div>
   </header>
-  <main class="flex-column-center width-100 background-white">
-    <div class="first flex-column-center width-80">
-      <div class="locations flex-row-between width-80">
-        <div class="locations-box">
-          <div class="locations-box-icon">
-            <h1>DGAF</h1>
-          </div>
-          <p class="locations-box-p">Directia Generala Antifrauda Fiscala</p>
-        </div>
-        <div class="locations-box">
-          <div class="locations-box-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-bootstrap-fill" viewBox="0 0 16 16">
-              <path d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375v2.725z"/>
-              <path d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4h-8zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396H5.062z"/>
-            </svg>
-          </div>
-          <p class="locations-box-p">DGAF</p>
-        </div>
-        <div class="locations-box">
-          <div class="locations-box-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-coin" viewBox="0 0 16 16">
-              <path d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9H5.5zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518l.087.02z"/>
-              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-              <path d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/>
-            </svg>
-          </div>
-          <p class="locations-box-p">DGAF</p>
-        </div>
-        <div class="locations-box">
-          <div class="locations-box-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
-              <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z"/>
-              <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z"/>
-            </svg>
-          </div>
-          <p class="locations-box-p">DGAF</p>
-        </div>
-        <div class="locations-box">
-          <div class="locations-box-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-explicit-fill" viewBox="0 0 16 16">
-              <path d="M2.5 0A2.5 2.5 0 0 0 0 2.5v11A2.5 2.5 0 0 0 2.5 16h11a2.5 2.5 0 0 0 2.5-2.5v-11A2.5 2.5 0 0 0 13.5 0h-11Zm4.326 10.88H10.5V12h-5V4.002h5v1.12H6.826V7.4h3.457v1.073H6.826v2.408Z"/>
-            </svg>
-          </div>
-          <p class="locations-box-p">DGAF</p>
-        </div>
-      </div>
+  <main class="flex-column-center width-80 background-white">
+    <div class="first flex-column-center width-100">
       <div class="border"></div>
       <h1 class="title text-contrast-high">Comunicate de presa</h1>
       <div class="row flex-row-between width-100">
@@ -172,7 +128,7 @@
     </div>
     <div class="second flex-column-center width-80">
       <div class="border"></div>
-      <div class="second-title">
+      <div class="second-title width-100">
         <h1 class="title">Transparenta decizionala</h1>
         <div class="row flex-row-between width-100">
           <div class="box2 flex-column-center background-white shadow-md">

@@ -11,6 +11,10 @@ html {
   background-color: hsl(250, 84%, 54%);
 }
 
+.text-primary {
+  color: hsl(250, 84%, 54%);
+}
+
 .text-white {
   color: hsl(0, 0%, 100%);
 }
@@ -24,7 +28,11 @@ html {
 }
 
 .shadow-md {
-  box-shadow: 0 0.3px 0.4px rgba(0, 0, 0, 0.025),0 0.9px 1.5px rgba(0, 0, 0, 0.05),0 3.5px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+
+.box-sizing {
+  box-sizing: border-box;
 }
 
 .background-white {
@@ -35,7 +43,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.4rem 1rem;
+  padding: 0.3rem 2rem;
   gap: 1rem;
   color: white;
   border: none;
@@ -45,6 +53,10 @@ html {
 
 .btn-primary:hover {
   background-color: hsl(250, 84%, 60%)
+}
+
+.height-100vh {
+  height: 100vh;
 }
 
 .height-100 {
@@ -57,6 +69,10 @@ html {
 
 .width-80 {
   width: 80%;
+}
+
+.width-90 {
+  width: 90%;
 }
 
 .flex-row-between {
@@ -88,23 +104,26 @@ html {
 .self-align-end {
   align-self: flex-end;
 }
-
 /*Variables end here*/
 
 body {
   margin: 0;
+  background-color: #f0f2f5;
+}
+
+header, main {
+  padding: 1rem 2rem;
 }
 
 nav {
   justify-content: space-between;
-  height: 8vh;
-  padding: 1rem 0;
+  height: 5vh;
 }
 
-.logo h1 {
-  font-size: 3rem;
-  font-weight: 900;
-  color: #333b4b;
+.logo-p {
+  padding-right: 0.6rem;
+  font-size: 1.6rem;
+  font-weight: 600;
 }
 
 .menu {
@@ -130,30 +149,26 @@ nav {
   color: white;
 }
 
-.search-btn, .search-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-  height: 2.7rem;
-  padding: 0.5rem;
-  color: white;
-  background-color: #333b4b;
+#searchQueryInput {
+  height: 5vh;
+  background-color: #f5f5f5;
+  padding: 0 3.5rem 0 1.5rem;
+  border-radius: 1.625rem;
+  outline: none;
   border: none;
 }
 
-.search-btn {
-  padding: 0;
-}
-
-.search-icon:hover {
-  background-color: #ff9027;
-}
-
-.search-input {
-  height: 2.7rem;
-  padding: 0 0 0 1rem;
+#searchQuerySubmit {
+  height: 5vh;
+  width: 3.5rem;
+  margin-left: -3.5rem;
+  background: none;
   border: none;
+  outline: none;
+}
+
+#searchQuerySubmit:hover {
+  cursor: pointer;
 }
 
 /* The side navigation menu */
@@ -164,9 +179,8 @@ nav {
   z-index: 1; /* Stay on top */
   top: 0;
   right: 0;
-  background-image: linear-gradient(45deg, #cbd6e3 0%, #f8fbfc 100%);
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 80px; /* Place content 60px from the top */
+  padding-top: 0.5rem;
   transition: 0.5s ease-in-out;
   display: flex;
   justify-content: center;
@@ -188,39 +202,24 @@ nav {
 }
 
 /* Position and style the close button (top right corner) */
-.sidenav .closebtn {
+.sidenav {
   position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
-  font-size: 36px;
-  margin-left: 50px;
 }
 
 .openbtn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 2.7rem;
-  padding: 0.5rem;
+  padding: 0;
   border: none;
   background-color: transparent;
-  color: #ff9027;
-}
-
-.openbtn:hover, .mobilebtn:focus {
-  color: #5f6774;
 }
 
 .closebtn {
-  color: #333b4b;
+  height: 5vh;
+  width: 3.5rem;
+  margin-left: -3.5rem;
   background-color: transparent;
-  border: 2px solid #5f6774;
-}
-
-.closebtn:hover, .closebtn:focus {
-  background-color: #333b4b;
-  color: white;
-  border: 2px solid #333b4b;
+  border: none;
+  outline: none;
 }
 
 .mobile {
@@ -228,48 +227,46 @@ nav {
 }
 
 .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0;
   padding: 0;
 }
 
 .mobile-menu-item {
   list-style: none;
-  text-align: center;
 }
 
 .mobilesearchbar {
-  padding-bottom: 1rem;
-}
-
-.mobilesearch-form {
-  height: 8vh;
-  width: 87vw;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.mobilesearch-btn, .mobilesearch-icon {
-  gap: 0.5rem;
-  height: 8vh;
-  padding: 0.5rem;
-  border: none;
-  background-color: #333b4b;
-  color: white;
-}
-
-.mobilesearch-input {
-  height: 8vh;
-  width: 87vw;
-  padding: 0 0 0 1rem;
+#mobilesearchQueryInput {
+  width: 93%;
+  height: 5vh;
+  background-color: #f5f5f5;
+  padding: 0 3.5rem 0 1.5rem;
+  margin-left: 0.5rem;
+  border-radius: 1.625rem;
+  outline: none;
   border: none;
 }
 
-.mobilesearch-btn {
-  background: white;
-  padding: 0;
+#mobilesearchQuerySubmit {
+  height: 5vh;
+  width: 3.5rem;
+  margin-left: -3.5rem;
+  margin-right: 3.5rem;
+  background: none;
+  border: none;
+  outline: none;
 }
 
-.mobilesearch-icon:hover {
-  background-color: #ff9027;
+#mobilesearchQuerySubmit:hover {
+  cursor: pointer;
 }
 
 .myspace-text {
@@ -301,34 +298,6 @@ main {
   gap: 1rem;
 }
 
-.locations {
-  padding: 4rem 0;
-}
-
-.locations-box {
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #bbbfc3;
-  text-align: center;
-}
-
-.locations-box-icon {
-  padding: 3rem;
-  border: 2px solid #bbbfc3;
-}
-
-.locations-box:hover {
-  color: #333b4b;
-}
-
-.locations-box-p {
-  font-size: 1.5rem;
-  margin: 0;
-}
-
 .title {
   text-align: center;
 }
@@ -344,7 +313,6 @@ main {
 .box {
   width: 23vw;
 }
-
 
 .box-img {
   width: 20vw;
@@ -374,7 +342,7 @@ main {
 
 .box2 {
   width: 25%;
-  padding: 1rem;
+  padding: 0;
   border: none;
   margin-bottom: 1rem;
 }
@@ -392,22 +360,20 @@ main {
   margin: 0.5rem 0;
 }
 @media only screen and (max-width: 600px) {
-  body {
-    min-width: 100%;
-    max-width: 100%;
+  .width-80 {
+    width: 100%;
+  }
+
+  .width-90 {
+    width: 100%;
   }
 
   header {
-    height: auto;
-  }
-
-  nav {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0;
   }
 
   .nav-container {
-    width: 100vw;
-    max-width: 100%;
+    padding: 0 1rem;
   }
 
   .logo h1 {
@@ -427,45 +393,33 @@ main {
   }
 
   .myspace-container {
-    width: 100vw;
-    max-width: 100%;
-    padding-bottom: 2rem;
+    padding-bottom: 0;
   }
 
   .myspace {
     flex-direction: column;
-    height: auto;
+    justify-content: flex-start;
   }
 
   .myspace-img {
-    width: 100vw;
-    max-width: 100%;
+    width: 100%;
   }
 
   .myspace-text {
-    width: 100vw;
-    max-width: 100%;
+    width: 100%;
     align-items: center;
   }
 
   .myspace-text h1, .myspace-text h2 {
-    width: 100vw;
-    max-width: 100%;
     text-align: center;
   }
 
-  .first {
-    width: 90vw;
+  main {
+    padding: 0;
   }
 
-  .locations {
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-
-  .locations-box {
-    width: 30%;
-    margin-top: 1rem;
+  .border {
+    margin: 1rem;
   }
 
   .title {
@@ -499,10 +453,6 @@ main {
     height: 100%;
     width: 100%;
     border-radius: 0;
-  }
-
-  .second {
-    width: 90vw;
   }
 
   .second .title {
