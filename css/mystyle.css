@@ -11,8 +11,24 @@ html {
   background-color: hsl(250, 84%, 54%);
 }
 
+.color-secondary {
+  background-color: hsl(250, 84%, 60%)
+}
+
+.color-white {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.color-gray {
+  background-color: #f0f2f5;
+}
+
 .text-primary {
   color: hsl(250, 84%, 54%);
+}
+
+.text-secondary {
+  color: hsl(250, 84%, 60%)
 }
 
 .text-white {
@@ -41,14 +57,6 @@ html {
 
 .box-sizing {
   box-sizing: border-box;
-}
-
-.background-white {
-  background-color: hsl(0, 0%, 100%);
-}
-
-.background-gray {
-  background-color: #f0f2f5;
 }
 
 .btn-primary {
@@ -196,8 +204,8 @@ nav {
   top: 0;
   right: 0;
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 0.5em;
-  transition: 0.5s ease-in-out;
+  padding-top: 1em;
+  transition: 0.2s ease;
 }
 
 /* The navigation menu links */
@@ -205,14 +213,8 @@ nav {
   padding: 8px;
   text-decoration: none;
   font-size: 25px;
-  color: #5f6774;
   display: block;
   transition: 0.3s;
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-  color: #ff9027;
 }
 
 /* Position and style the close button (top right corner) */
@@ -231,7 +233,10 @@ nav {
   height: 3em;
   width: 3.5em;
   margin-left: -2em;
+  margin-right: 0.5em;
+  padding: 0;
   background-color: transparent;
+  color: white;
   border: none;
   outline: none;
 }
@@ -240,11 +245,18 @@ nav {
   display: none;
 }
 
+.mobile-logo-p {
+  font-size: 3em;
+  font-weight: 600;
+}
+
 .mobile-menu {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin: 0;
+  gap: 1em;
+  margin: 2em 0;
   padding: 0;
 }
 
@@ -261,10 +273,11 @@ nav {
 #mobilesearchQueryInput {
   width: 93%;
   height: 3em;
-  background-color: #f5f5f5;
+  font-size: 1em;
+  background-color: white;
   padding: 0 3.5em 0 1.5em;
   margin-left: 0.5em;
-  border-radius: 1.625em;
+  border-radius: 1.9em;
   outline: none;
   border: none;
 }
