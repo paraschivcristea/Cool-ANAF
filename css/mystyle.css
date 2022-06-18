@@ -334,7 +334,7 @@ nav {
 
 .row {
   flex-wrap: wrap;
-  gap: 1.5em;
+  gap: 1em;
 }
 
 .title {
