@@ -75,6 +75,15 @@ html {
   background-color: hsl(250, 84%, 60%)
 }
 
+.title-primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em 2em;
+  color: white;
+  border: none;
+}
+
 .height-100vh {
   height: 100vh;
 }
@@ -330,7 +339,7 @@ nav {
 
 .title {
   text-align: center;
-  margin: 0 0 4em 0;
+  margin: 4em 0;
 }
 
 .border {
@@ -465,9 +474,9 @@ nav {
 
   .title {
     width: 100%;
-    margin: 0;
-    font-size: 1.8em;
-    background-color: #f0f2f5;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 1em 0 0 0;
   }
 
   .row {
@@ -475,7 +484,6 @@ nav {
     justify-content: center;
     align-items: center;
     background-color: #f0f2f5;
-    padding-top: 1.5em;
     box-shadow: inset 0 0 0.5px 1px rgba(255, 255, 255, 0.075), 0 0.3px 0.4px rgba(0, 0, 0, 0.025), 0 0.9px 1.5px rgba(0, 0, 0, 0.05), 0 3.5px 6px rgba(0, 0, 0, 0.1);
   }
 
