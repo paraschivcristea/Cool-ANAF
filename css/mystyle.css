@@ -153,6 +153,7 @@ nav {
 
 .menu {
   list-style: none;
+  gap: 2em;
   margin: 0;
   padding: 0;
 }
@@ -163,14 +164,15 @@ nav {
 
 .menu-link {
   text-decoration: none;
-  padding: 0.6em;
-  transition: 0.5s;
-  border-radius: 0.25em;
+  padding: 0.6em 0;
+}
+
+.active {
+  border-bottom: 2px solid #323639;
 }
 
 .menu-link:hover, .menu-link:focus {
-  box-shadow: inset 15em 0 0 0 #333b4b;
-  color: white;
+  border-bottom: 2px solid #323639;
 }
 
 #searchQueryInput {
