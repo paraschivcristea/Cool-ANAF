@@ -437,11 +437,6 @@ nav {
     display: flex;
   }
 
-  .myspace-container {
-    padding-bottom: 0;
-    margin-top: 3em;
-  }
-
   .myspace {
     flex-direction: column;
     justify-content: space-evenly;
