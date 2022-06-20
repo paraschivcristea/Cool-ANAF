@@ -69,11 +69,29 @@ html {
   color: white;
   border: none;
   border-radius: 0.25em;
-  transition: all 0.2s ease;
+  transition: all 0.2s;
 }
 
 .btn-primary:hover {
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:hover::after {
+  -webkit-transform: scaleX(1.4) scaleY(1.6);
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
   background-color: hsl(250, 84%, 60%)
+}
+
+.btn-primary:active, .btn-primary:focus {
+  outline: none;
+  -webkit-transform: translateY(-1px);
+  transform: translateY(-1px);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 .title-primary {
@@ -149,6 +167,87 @@ html {
   margin: 0;
 }
 /*Variables end here*/
+
+/*Expandable primary button*/
+.exp-btn {
+  width: 12rem;
+  height: auto;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+.exp-btn .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: hsl(250, 84%, 54%);;
+  border-radius: 1.625rem;
+}
+.exp-btn .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+.exp-btn .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+.exp-btn .circle .icon.arrow::before {
+  position: absolute;
+  content: '';
+  top: -0.25rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.exp-btn .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: hsl(250, 84%, 54%);
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+.exp-btn:hover .circle {
+  width: 100%;
+}
+.exp-btn:hover .circle .icon.arrow {
+  background: #fff;
+  -webkit-transform: translate(1rem, 0);
+          transform: translate(1rem, 0);
+}
+.exp-btn:hover .button-text {
+  color: #fff;
+}
+/*Expandable primary button end here*/
 
 body {
   margin: 0;
@@ -227,7 +326,7 @@ nav {
   z-index: 1; /* Stay on top */
   top: 0;
   right: 0;
-  overflow-x: hidden; /* Disable horizontal scroll */
+  overflow: hidden; /* Disable horizontal scroll */
   padding-top: 1em;
   transition: 0.2s ease;
 }
@@ -352,14 +451,6 @@ nav {
   border-radius: 3em;
 }
 
-.border {
-  width: 5em;
-  margin: 4em 0;
-  padding: 0;
-  border-bottom: 0.5em solid hsl(250, 84%, 54%);
-  border-radius: 1em;
-}
-
 .box {
   width: 23vw;
   transition: all 0.2s;
@@ -421,19 +512,17 @@ nav {
   margin: 0.5em 0;
 }
 
-.structura {
-  background-color: hsl(204, 28%, 7%);
-  color: white;
-}
-
 .box3 {
-  width: 15%;
+  width: 18%;
 }
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   background-color: transparent;
-  height: 10em;
+  -webkit-perspective: 150rem;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  height: 12em;
 }
 
 /* This container is needed to position the front and back side */
@@ -442,8 +531,9 @@ nav {
   width: 100%;
   height: 100%;
   text-align: center;
-  transition: transform 0.3s;
+  transition: all 0.8s ease;
   transform-style: preserve-3d;
+  box-shadow: inset 0 0 0.5px 1px rgba(255, 255, 255, 0.075), 0 0.9px 1.5px rgba(0, 0, 0, 0.03), 0 3.1px 5.5px rgba(0, 0, 0, 0.08), 0 14px 25px rgba(0, 0, 0, 0.12);
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
@@ -455,7 +545,7 @@ nav {
 .flip-card-front, .flip-card-back {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   position: absolute;
   width: 100%;
@@ -468,20 +558,47 @@ nav {
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: hsl(204, 28%, 7%);
-  color: white;
-  border-radius: 0.3em;
+  background-color: white;
+  color: hsl(250, 84%, 60%);
 }
 
 .flip-card-front p {
+  font-size: 1.2em;
+  font-weight: 600;
   margin: 0;
 }
 
 /* Style the back side */
 .flip-card-back {
-  background-color: dodgerblue;
+  background-color: hsl(250, 84%, 60%);
   color: white;
   transform: rotateY(180deg);
+}
+
+.flip-card-back p {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin: 0;
+}
+
+.flip-card-back-detail {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+  gap: 0.5em;
+}
+
+.flip-card-back-detail a {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin: 0;
+  text-decoration: none;
+  color: white;
+}
+
+.flip-card-back-detail svg {
+  flex-shrink: 0;
 }
 
 @media only screen and (max-width: 600px) {
@@ -511,6 +628,10 @@ nav {
 
   .mobile {
     display: flex;
+  }
+
+  .desktop {
+    display: none;
   }
 
   .myspace {
@@ -566,6 +687,10 @@ nav {
     box-shadow: inset 0 0 0.5px 1px rgba(255, 255, 255, 0.075), 0 0.3px 0.4px rgba(0, 0, 0, 0.025), 0 0.9px 1.5px rgba(0, 0, 0, 0.05), 0 3.5px 6px rgba(0, 0, 0, 0.1);
   }
 
+  .box:hover {
+    transform: scale(1);
+  }
+
   .box-title h3 {
     margin: 0;
     font-weight: 600;
@@ -583,7 +708,19 @@ nav {
     width: 100%;
   }
 
+  .box2:hover {
+    transform: scale(1);
+  }
+
   .box2btn {
     border-radius: 0;
+  }
+
+  .box3 {
+    width: 100%;
+  }
+
+  .flip-card-back-detail {
+    justify-content: center;
   }
 }
