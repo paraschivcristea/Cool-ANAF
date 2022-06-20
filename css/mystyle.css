@@ -150,8 +150,12 @@ body {
   margin: 0;
 }
 
+header {
+  padding: 1em 0;
+}
+
  main {
-  padding: 1rem 2rem;
+  padding: 0 2rem;
 }
 
 nav {
@@ -421,10 +425,6 @@ nav {
     width: 100%;
   }
 
-  header {
-    padding: 0.5em 0;
-  }
-
   .nav-container {
     padding: 0 1em;
   }
@@ -464,7 +464,7 @@ nav {
   }
 
   main {
-    padding: 1em 0;
+    padding: 0;
   }
 
   .first {
