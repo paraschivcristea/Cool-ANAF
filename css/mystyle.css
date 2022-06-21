@@ -99,12 +99,9 @@ html {
 }
 
 .title-primary {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 0.5em 2em;
-  color: white;
   border: none;
+  margin: auto;
 }
 
 .height-100vh {
@@ -130,6 +127,12 @@ html {
 .flex-row-between {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.flex-row-around {
+  display: flex;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -667,6 +670,20 @@ nav {
 
 .flip-card-back-detail svg {
   flex-shrink: 0;
+}
+
+#collapsebtn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin-left: 3em;
+  margin-right: -6em;
+  color: white;
+}
+
+#collapse {
+  display: none;
 }
 
 @media only screen and (max-width: 600px) {
