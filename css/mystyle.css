@@ -682,9 +682,17 @@ nav {
   color: white;
 }
 
-#collapse {
+#collapsebtnclose {
   display: none;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin-left: 3em;
+  margin-right: -6em;
+  color: white;
 }
+
 
 @media only screen and (max-width: 600px) {
   .width-80 {
@@ -807,5 +815,9 @@ nav {
 
   .flip-card-back-detail {
     justify-content: center;
+  }
+
+  #collapse {
+    display: none;
   }
 }
