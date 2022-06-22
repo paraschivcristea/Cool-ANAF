@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cool ANAF</title>
     <link href="./css/mystyle.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 </head>
 <body class="flex-column-center width-100 color-gray">
   <main class="flex-column-center width-80 color-white box-sizing">
@@ -188,20 +189,18 @@
       </div>
     </section>
     <section class="first flex-column-center width-100">
-      <h1 class="title flex-row-center title-primary color-secondary text-white" id="collapsetitle">
+      <h1 class="title flex-row-center title-primary color-secondary text-white">
         Structura ANAF
         <button id="collapsebtn">
-          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-plus-circle-fill" id="openicon" viewBox="0 0 16 16">
             <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
           </svg>
-        </button>
-        <button id="collapsebtnclose">
-          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-dash-circle-fill" viewBox="0 0 16 16">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-dash-circle-fill hidden" id="closeicon" viewBox="0 0 16 16">
             <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z"/>
           </svg>
         </button>
       </h1>
-      <div class="row flex-row-between width-100" id="collapse">
+      <div class="hidden row flex-row-between width-100" id="collapse">
         <div class="box3 flex-column-center">
           <div class="flip-card width-100">
             <div class="flip-card-inner">

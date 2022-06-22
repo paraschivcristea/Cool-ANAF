@@ -8,20 +8,34 @@ closeButton.addEventListener("click", () => {
 document.getElementById("mySidenav").style.width = "0";
 })
 
+const collapse = document.getElementById("collapse");
 const collapseBtn = document.querySelector("#collapsebtn");
-const collapseBtnClose = document.querySelector("#collapsebtnclose");
+const openIcon = document.querySelector("#openicon");
+const closeIcon = document.querySelector("#closeicon");
 
-collapseBtn.addEventListener("click", () => {
-    document.getElementById("collapse").style.display = "flex";
-    document.getElementById("collapsebtn").scrollIntoView({behavior: "smooth", block: "center"});
-    document.getElementById("collapsebtn").style.display = "none";
-    document.getElementById("collapsebtnclose").style.display = "flex";
-})
-
-collapseBtnClose.addEventListener("click", () => {
-    fadeOut();
-    document.getElementById("collapse").style.display = "none";
-    document.getElementById("collapsetitle").scrollIntoView({behavior: "smooth", block: "end"});
-    document.getElementById("collapsebtnclose").style.display = "none";
-    document.getElementById("collapsebtn").style.display = "flex";
-})
+collapseBtn.addEventListener('click', function () {
+    if (collapse.classList.contains('hidden')) {
+      collapse.classList.remove('hidden');
+      openIcon.classList.add("hidden");
+      closeIcon.classList.remove("hidden");
+      document.getElementById("collapsebtn").scrollIntoView({behavior: "smooth", block: "center"});
+      setTimeout(function () {
+        collapse.classList.remove('visuallyhidden');
+        openIcon.classList.add("visuallyhidden");
+        closeIcon.classList.remove("visuallyhidden");
+      }, 20);
+    } else {
+      collapse.classList.add('visuallyhidden'); 
+      closeIcon.classList.add("visuallyhidden");  
+      openIcon.classList.remove("visuallyhidden"); 
+      collapse.addEventListener('transitionend', function(e) {
+        collapse.classList.add('hidden');
+        closeIcon.classList.add("hidden");
+        openIcon.classList.remove("hidden");
+      }, {
+        capture: false,
+        once: true,
+        passive: false
+      });
+    }
+  }, false);

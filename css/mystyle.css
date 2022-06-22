@@ -466,7 +466,6 @@ nav {
 
 .row {
   flex-wrap: wrap;
-  padding: 0 0 1em 0;
   gap: 1em;
 }
 
@@ -672,18 +671,11 @@ nav {
   flex-shrink: 0;
 }
 
+
 #collapsebtn {
-  background-color: transparent;
-  border: none;
-  outline: none;
-  padding: 0;
-  margin-left: 3em;
-  margin-right: -6em;
-  color: white;
-}
-
-#collapsebtnclose {
   display: none;
+  justify-content: center;
+  align-items: center;
   background-color: transparent;
   border: none;
   outline: none;
@@ -693,6 +685,9 @@ nav {
   color: white;
 }
 
+#closeicon, #openicon {
+  transition: all 0.8s linear;
+}
 
 @media only screen and (max-width: 600px) {
   .width-80 {
@@ -818,6 +813,18 @@ nav {
   }
 
   #collapse {
+    transition: all 0.8s ease-out;
+  }
+
+  #collapsebtn {
+    display: flex;
+  }
+
+  .hidden {
     display: none;
+  }
+  
+  .visuallyhidden {
+    opacity: 0;
   }
 }
