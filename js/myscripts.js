@@ -1,11 +1,20 @@
+function preventScroll(e){
+    e.preventDefault();
+    e.stopPropagation();
+
+    return false;
+}
+
 const openButton = document.querySelector(".openbtn");
 openButton.addEventListener("click", () => {
 document.getElementById("mySidenav").style.width = "100vw";
+document.querySelector(".sidenav").addEventListener("wheel", preventScroll);
 })
 
 const closeButton = document.querySelector(".closebtn");
 closeButton.addEventListener("click", () => {
 document.getElementById("mySidenav").style.width = "0";
+document.querySelector(".sidenav").removeEventListener("wheel", preventScroll);
 })
 
 const collapse = document.getElementById("collapse");

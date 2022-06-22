@@ -582,6 +582,10 @@ nav {
   margin: 0.5em 0;
 }
 
+.structura {
+  margin-bottom: 10em;
+}
+
 .box3 {
   width: 18%;
 }
@@ -629,7 +633,7 @@ nav {
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
   background-color: white;
-  color: hsl(250, 84%, 60%);
+  color: hsl(250, 84%, 54%);
 }
 
 .flip-card-front p {
@@ -680,13 +684,56 @@ nav {
   border: none;
   outline: none;
   padding: 0;
-  margin-left: 3em;
-  margin-right: -6em;
-  color: white;
+  margin: 1em;
+  color: hsl(250, 84%, 54%);
+  transition: all 0.2s linear;
 }
 
 #closeicon, #openicon {
-  transition: all 0.8s linear;
+  transition: all 0.2s linear;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+  padding: 1em;
+  background-color: hsl(250, 84%, 54%);
+  color: white;
+}
+
+footer > * {
+  width: 20%;
+}
+
+.footer-icons {
+  gap: 1em;
+}
+
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.5em;
+}
+
+.footer-menu-icon {
+  color: white;
+  transform: all 0.5s ease-out;
+}
+
+.footer-menu-icon:hover, .footer-menu-icon:focus {
+  transform: scale(1.1);
+}
+
+.footer-link {
+  color: white;
+  font-size: 1em;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 600px) {
@@ -826,5 +873,24 @@ nav {
   
   .visuallyhidden {
     opacity: 0;
+  }
+
+  .structura {
+    margin: 0;
+  }
+
+  footer {
+    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    justify-content: center;
+    padding: 0.5em;
+  }
+
+  .footer-menu, .footer-logo {
+    display: none;
+  }
+
+  .footer-menu-icon {
+    height: 1.5em;
+    width: 1.5em;
   }
 }
