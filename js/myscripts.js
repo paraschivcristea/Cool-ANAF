@@ -19,6 +19,7 @@ collapseBtn.addEventListener("click", () => {
 })
 
 collapseBtnClose.addEventListener("click", () => {
+    fadeOut();
     document.getElementById("collapse").style.display = "none";
     document.getElementById("collapsetitle").scrollIntoView({behavior: "smooth", block: "end"});
     document.getElementById("collapsebtnclose").style.display = "none";
