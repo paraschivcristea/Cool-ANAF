@@ -24,13 +24,10 @@ nav {
   height: 5vh;
 }
 
- main {
-  padding: 0 2rem;
-}
-
 footer > * {
   width: 20%;
 }
+
 /*Variables*/
 .color-primary {
   background-color: hsl(250, 84%, 54%);
@@ -161,7 +158,6 @@ footer > * {
   cursor: pointer;
 }
 /*Variables end here*/
-
 /*Expandable primary button*/
 .exp-btn {
   width: 12rem;
@@ -242,6 +238,10 @@ footer > * {
   color: #fff;
 }
 /*Expandable primary button end here*/
+
+.spv, .first, .structura {
+  padding: 0 2rem;
+}
 
 .logo-p {
   padding-right: 0.6em;
@@ -419,20 +419,20 @@ footer > * {
   cursor: pointer;
 }
 
-.myspace-text {
+.spv-text {
   align-items: flex-end;
   width: 50%;
 }
 
-.myspace-text h1, h2 {
+.spv-text h1, h2 {
   text-align: right;
 }
 
-.myspace-text h1 {
+.spv-text h1 {
   margin: 0;
 }
 
-.myspace-img {
+.spv-img-container {
   width: 50%;
 }
 
@@ -440,7 +440,7 @@ footer > * {
   overflow: hidden;
 }
 
-.myspace-buttons-container {
+.spv-buttons-container {
   gap: 2em;
 }
 
@@ -736,21 +736,22 @@ footer {
     display: none;
   }
 
-  .myspace {
+  .spv {
+    height: 92vh;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
   }
 
-  .myspace-img {
+  .spv-img, .spv-img-container {
     width: 100%;
   }
 
-  .myspace-text {
+  .spv-text {
     width: 100%;
     align-items: center;
   }
 
-  .myspace-text h1, .myspace-text h2 {
+  .spv-text h1, .spv-text h2 {
     text-align: center;
   }
 
@@ -758,12 +759,12 @@ footer {
     padding: 0;
   }
 
-  .first {
-    background-color: #f0f2f5;
+  .spv, .first, .structura {
+    padding: 0;
   }
 
-  .border {
-    margin: 1em;
+  .first {
+    background-color: #f0f2f5;
   }
 
   .title {

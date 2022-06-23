@@ -37,7 +37,7 @@
         </button>
       </div>
       <div class="mobile">
-        <div id="mySidenav" class="sidenav flex-column-start color-secondary">
+        <div id="sidenav" class="sidenav flex-column-start color-secondary">
           <div class="mobilesearchbar width-100 flex-row-center">
             <input class="flex-row-center" id="mobilesearchQueryInput" type="text" name="searchQueryInput" placeholder="Cautare..." aria-label="Search" input="">
             <button class="flex-row-center text-contrast-medium" id="mobilesearchQuerySubmit" type="submit" name="submit" aria-label="Submit the search request">
@@ -82,31 +82,29 @@
     </nav>
   </header>
   <main class="flex-column-center width-80 color-white">
-      <div class="myspace-container width-100 flex-column-center">
-        <div class="myspace width-100 flex-row-center">
-          <div class="myspace-img">
-            <div class="spv-img height-100 width-100">
-              <img class="width-100" src="./img/spv.png" alt="Poza Spatiul Privat Virtual">
-            </div>
-          </div>
-          <div class="myspace-text flex-column-center">
-            <h1 class="text-contrast-high width-80">Spatiul Privat Virtual</h2>
-            <h2 class="text-contrast-low width-80">Lorem Ipsum is simply dummy text of the printing and typesetting industry</h2>
-            <div class="myspace-buttons-container flex-row-between">
-              <button class="btn-primary color-primary text-white shadow-md pointer" name="login" aria-label="Login to your account">
-                <p class="font-size-md">Logare</p>
-              </button>
-              <button class="btn-primary color-primary text-white shadow-md pointer" name="tutorial" aria-label="Tutorial for how to use SPV">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
-                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                      <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
-                    </svg>
-                    <p class="font-size-md">Ghid</p>
-              </button>
-            </div>
-          </div>
+    <div class="spv width-100 flex-row-center">
+      <div class="spv-img-container">
+        <div class="spv-img height-100 width-100">
+          <img class="width-100" src="./img/spv.png" alt="Poza Spatiul Privat Virtual">
         </div>
       </div>
+      <div class="spv-text flex-column-center">
+        <h1 class="text-contrast-high width-80">Spatiul Privat Virtual</h2>
+        <h2 class="text-contrast-low width-80">Lorem Ipsum is simply dummy text of the printing and typesetting industry</h2>
+        <div class="spv-buttons-container flex-row-between">
+          <button class="btn-primary color-primary text-white shadow-md pointer" name="login" aria-label="Login to your account">
+            <p class="font-size-md">Logare</p>
+          </button>
+          <button class="btn-primary color-primary text-white shadow-md pointer" name="tutorial" aria-label="Tutorial for how to use SPV">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                  <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+                </svg>
+                <p class="font-size-md">Ghid</p>
+          </button>
+        </div>
+      </div>
+    </div>
     <section class="first flex-column-center width-100">
       <h1 class="title title-primary color-secondary text-white">Comunicate de presa</h1>
       <div class="row flex-row-between width-100">

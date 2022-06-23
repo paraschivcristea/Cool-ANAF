@@ -7,13 +7,13 @@ function preventScroll(e){
 
 const openButton = document.querySelector(".openbtn");
 openButton.addEventListener("click", () => {
-document.getElementById("mySidenav").style.width = "100vw";
+document.getElementById("sidenav").style.width = "100vw";
 document.querySelector(".sidenav").addEventListener("wheel", preventScroll);
 })
 
 const closeButton = document.querySelector(".closebtn");
 closeButton.addEventListener("click", () => {
-document.getElementById("mySidenav").style.width = "0";
+document.getElementById("sidenav").style.width = "0";
 document.querySelector(".sidenav").removeEventListener("wheel", preventScroll);
 })
 
