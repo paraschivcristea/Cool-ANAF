@@ -26,21 +26,21 @@ collapseBtn.addEventListener('click', function () {
     if (collapse.classList.contains('hidden')) {
       collapse.classList.remove('hidden');
       openIcon.classList.add("hidden");
+      openIcon.classList.add("visuallyhidden");
       closeIcon.classList.remove("hidden");
+      closeIcon.classList.remove("visuallyhidden");
       document.getElementById("collapsebtn").scrollIntoView({behavior: "smooth", block: "center"});
       setTimeout(function () {
         collapse.classList.remove('visuallyhidden');
-        openIcon.classList.add("visuallyhidden");
-        closeIcon.classList.remove("visuallyhidden");
       }, 20);
     } else {
       collapse.classList.add('visuallyhidden'); 
       closeIcon.classList.add("visuallyhidden");  
       openIcon.classList.remove("visuallyhidden"); 
+      closeIcon.classList.add("hidden");
+      openIcon.classList.remove("hidden");
       collapse.addEventListener('transitionend', function(e) {
         collapse.classList.add('hidden');
-        closeIcon.classList.add("hidden");
-        openIcon.classList.remove("hidden");
       }, {
         capture: false,
         once: true,
