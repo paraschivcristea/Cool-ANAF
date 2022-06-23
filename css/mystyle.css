@@ -360,8 +360,8 @@ nav {
 .sidenav a {
   padding: 8px;
   text-decoration: none;
-  font-size: 25px;
-  display: block;
+  font-size: 1.5em;
+  display: flex;
   transition: 0.3s;
 }
 
@@ -398,8 +398,6 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1em;
-  margin: 2em 0;
   padding: 0;
 }
 
