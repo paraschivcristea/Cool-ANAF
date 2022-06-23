@@ -31,7 +31,7 @@
           </div>
           <div class="searchbar flex-row-center">
             <input class="flex-row-center" id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Cautare..." aria-label="Search" input="">
-            <button class="flex-row-center" id="searchQuerySubmit" type="submit" name="searchQuerySubmit" aria-label="Submit the search request">
+            <button class="flex-row-center" id="searchQuerySubmit" type="submit" name="submit" aria-label="Submit the search request">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search submit-icon" viewBox="0 0 16 16">
                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
               </svg>
@@ -41,18 +41,18 @@
             <div id="mySidenav" class="sidenav flex-column-start color-secondary">
               <div class="mobilesearchbar width-100 flex-row-center">
                 <input class="flex-row-center" id="mobilesearchQueryInput" type="text" name="searchQueryInput" placeholder="Cautare..." aria-label="Search" input="">
-                <button class="flex-row-center text-contrast-medium" id="mobilesearchQuerySubmit" type="submit" name="searchQuerySubmit" aria-label="Submit the search request">
+                <button class="flex-row-center text-contrast-medium" id="mobilesearchQuerySubmit" type="submit" name="submit" aria-label="Submit the search request">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-search text-secondary" viewBox="0 0 16 16">
                     <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                   </svg>
                 </button>
-                <button class="closebtn flex-row-center text-contrast-high" name="closebtn" aria-label="Close the sidenav">
+                <button class="closebtn flex-row-center text-contrast-high" name="close" aria-label="Close the sidenav">
                   <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
                     <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
                   </svg>
                 </button>
               </div>
-              <ul class="mobile-menu width-100">
+              <div class="mobile-menu width-100">
                 <div class="mobile-logo flex-row-center">
                   <div class="mobile-logo-img flex-row-center text-white">
                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-slack" viewBox="0 0 16 16">
@@ -61,18 +61,20 @@
                   </div>
                   <div class="mobile-logo-p flex-row-center text-white">ANAF</div>
                 </div>
-                <li class="mobile-menu-item"><a class="mobile-menu-link text-white" href="#">Prima pagina</a></li>
-                <li class="mobile-menu-item"><a class="mobile-menu-link text-white" href="#">Despre ANAF</a></li>
-                <li class="mobile-menu-item"><a class="mobile-menu-link text-white" href="#">Asistenta contribuabili</a></li>
-                <li class="mobile-menu-item"><a class="mobile-menu-link text-white" href="#">Servicii online</a></li>
-                <li class="mobile-menu-item"><a class="mobile-menu-link text-white" href="#">Info publice</a></li>
-                <li class="mobile-menu-item"><a class="mobile-menu-link text-white" href="#">Info UE</a></li>
-                <li class="mobile-menu-item"><a class="mobile-menu-link text-white" href="#">Comunicate de presa</a></li>
-                <li class="mobile-menu-item"><a class="mobile-menu-link text-white" href="#">Transparenta decizionala</a></li>
-                <li class="mobile-menu-item"><a class="mobile-menu-link text-white" href="#">Contact</a></li>
-              </ul>
+                <ul class="mobile-menu-list">
+                  <li class="mobile-menu-item"><a class="mobile-menu-link text-white" href="#">Prima pagina</a></li>
+                  <li class="mobile-menu-item"><a class="mobile-menu-link text-white" href="#">Despre ANAF</a></li>
+                  <li class="mobile-menu-item"><a class="mobile-menu-link text-white" href="#">Asistenta contribuabili</a></li>
+                  <li class="mobile-menu-item"><a class="mobile-menu-link text-white" href="#">Servicii online</a></li>
+                  <li class="mobile-menu-item"><a class="mobile-menu-link text-white" href="#">Info publice</a></li>
+                  <li class="mobile-menu-item"><a class="mobile-menu-link text-white" href="#">Info UE</a></li>
+                  <li class="mobile-menu-item"><a class="mobile-menu-link text-white" href="#">Comunicate de presa</a></li>
+                  <li class="mobile-menu-item"><a class="mobile-menu-link text-white" href="#">Transparenta decizionala</a></li>
+                  <li class="mobile-menu-item"><a class="mobile-menu-link text-white" href="#">Contact</a></li>
+                </ul>
+              </div>
             </div>
-            <button class="openbtn flex-row-center text-primary" aria-label="Open the sidenav">
+            <button class="openbtn flex-row-center text-primary" name="open" aria-label="Open the sidenav">
               <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
               </svg>
@@ -84,17 +86,17 @@
         <div class="myspace width-100 flex-row-center">
           <div class="myspace-img">
             <div class="spv-img height-100 width-100">
-              <img class="width-100" src="./img/spv.png">
+              <img class="width-100" src="./img/spv.png" alt="Poza Spatiul Privat Virtual">
             </div>
           </div>
           <div class="myspace-text flex-column-center">
             <h1 class="text-contrast-high width-80">Spatiul Privat Virtual</h2>
             <h2 class="text-contrast-low width-80">Lorem Ipsum is simply dummy text of the printing and typesetting industry</h2>
             <div class="myspace-buttons-container flex-row-between">
-              <button class="btn-primary color-primary text-white shadow-md pointer" aria-label="Login in your account">
+              <button class="btn-primary color-primary text-white shadow-md pointer" name="login" aria-label="Login to your account">
                 <p class="font-size-md">Logare</p>
               </button>
-              <button class="btn-primary color-primary text-white shadow-md pointer" aria-label="Tutorial for how to use SPV">
+              <button class="btn-primary color-primary text-white shadow-md pointer" name="tutorial" aria-label="Tutorial for how to use SPV">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
                       <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                       <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
@@ -111,7 +113,7 @@
       <div class="row flex-row-between width-100">
         <div class="box flex-column-center">
           <div class="box-img">
-            <a href="#"><img src="./img/fabrica.jpg"></a>
+            <a href="#"><img src="./img/fabrica.jpg" alt="Imagine fabrica de tigari"></a>
           </div>
           <div class="box-title">
             <a href="#"><h3 class="text-contrast-high">Fabrica clandestina de tigari identificata in Buzau</h3></a>
@@ -119,7 +121,7 @@
         </div>
         <div class="box flex-column-center">
           <div class="box-img">
-            <a href="#"><img src="./img/fiscal.jpg"></a>
+            <a href="#"><img src="./img/fiscal.jpg" alt="Imagine rezultate control fiscal"></a>
           </div>
           <div class="box-title">
             <a href="#"><h3 class="text-contrast-high">Rezultatele acțiunilor de control fiscal din primele 5 luni ale anului</h3></a>
@@ -127,7 +129,7 @@
         </div>
         <div class="box flex-column-center">
           <div class="box-img">
-            <a href="#"><img src="./img/frauda.jpg"></a>
+            <a href="#"><img src="./img/frauda.jpg" alt="Imagine rezultate control antifrauda"></a>
           </div>
           <div class="box-title">
             <a href="#"><h3 class="text-contrast-high">Rezultatele acțiunilor de control antifraudă în primele 5 luni ale anului</h3></a>
@@ -145,8 +147,8 @@
           <div class="box2content flex-column-start height-100 width-80 box-sizing">
             <h4 class="text-contrast-high">20 Iunie 2022 10:33</h4>
             <p class="text-contrast-medium">Proiect de ordin privind modificarea și completarea Ordinului preşedintelui Agenţiei Naţionale de Administrare Fiscală nr. 587/2016 pentru aprobarea modelului şi conţinutului formularelor utilizate pentru declararea impozitelor şi taxelor cu regim de stabilire prin autoimpunere sau reţinere la sursă</p>
-            <button class="flex-row-start color-primary btn-primary mobile text-white pointer" aria-label="Read the complete article">Afla mai multe</button>
-            <button class="exp-btn desktop" aria-label="Read the complete article">
+            <button class="flex-row-start color-primary btn-primary mobile text-white pointer" name="more" aria-label="Read the complete article">Afla mai multe</button>
+            <button class="exp-btn desktop" name="more" aria-label="Read the complete article">
               <span class="circle">
                 <span class="icon arrow"></span>
               </span>
@@ -161,8 +163,8 @@
           <div class="box2content flex-column-start height-100 width-80 box-sizing">
             <h4 class="text-contrast-high">24 Mai 2022 08:35</h4>
             <p class="text-contrast-medium">Proiect de ordin al preşedintelui Agenţiei Naţionale de Administrare Fiscală pentru modificarea modelului, conținutului și instrucțiunilor de completare ale formularului 208 „Declarație informativă privind impozitul pe veniturile din transferul proprietăților imobiliare din patrimoniul personal”, aprobat prin Ordinul ministrului finanțelor publice și al ministrului justiției nr.1022/2562/2016 privind aprobarea procedurilor de stabilire, plată și rectificare a impozitului pe veniturile din transferul proprietăților imobiliare din patrimoniul personal și a modelului și conținutului unor formulare utilizate în administrarea impozitului pe venit.</p>
-            <button class="flex-row-start color-primary btn-primary mobile text-white pointer" aria-label="Read the complete article">Afla mai multe</button>
-            <button class="exp-btn desktop" aria-label="Read the complete article">
+            <button class="flex-row-start color-primary btn-primary mobile text-white pointer" name="more" aria-label="Read the complete article">Afla mai multe</button>
+            <button class="exp-btn desktop" name="more" aria-label="Read the complete article">
               <span class="circle">
                 <span class="icon arrow"></span>
               </span>
@@ -177,8 +179,8 @@
           <div class="box2content flex-column-start height-100 width-80 box-sizing">
             <h4 class="text-contrast-high">20 Mai 2022 11:53</h4>
             <p class="text-contrast-medium">Proiect de ordin privind aprobarea Procedurii de comunicare prin mijloace electronice de transmitere la distanţă între organul fiscal central şi persoanele fizice, persoanele juridice şi alte entităţi fără personalitate juridică.</p>
-            <button class="flex-row-start color-primary btn-primary mobile text-white pointer" aria-label="Read the complete article">Afla mai multe</button>
-            <button class="exp-btn desktop" aria-label="Read the complete article">
+            <button class="flex-row-start color-primary btn-primary mobile text-white pointer" name="more" aria-label="Read the complete article">Afla mai multe</button>
+            <button class="exp-btn desktop" name="more" aria-label="Read the complete article">
               <span class="circle">
                 <span class="icon arrow"></span>
               </span>
@@ -192,7 +194,7 @@
       <h1 class="title flex-row-center title-primary color-secondary text-white">
         Structura ANAF
       </h1>
-      <button id="collapsebtn" aria-label="Expand the section Structura Anaf">
+      <button id="collapsebtn" name="collapse" aria-label="Collapse the section Structura Anaf">
         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-down-circle-fill" id="openicon" viewBox="0 0 16 16">
           <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
         </svg>

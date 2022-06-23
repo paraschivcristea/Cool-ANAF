@@ -379,11 +379,12 @@ nav {
   font-weight: 600;
 }
 
-.mobile-menu {
+.mobile-menu, .mobile-menu-list {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
   padding: 0;
 }
 
