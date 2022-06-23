@@ -755,6 +755,10 @@ footer {
     text-align: center;
   }
 
+  header {
+    padding: 1em;
+  }
+
   main {
     padding: 0;
   }
