@@ -580,6 +580,16 @@ nav {
   margin: 0.5em 0;
 }
 
+.box2content p {
+  line-height: 1.5em;
+  max-height: 25em;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 7;
+}
+
 .structura {
   margin-bottom: 10em;
 }
@@ -824,7 +834,15 @@ footer > * {
     transform: scale(1);
   }
 
+  .box-title {
+    width: 60%;
+  }
+
   .box-title h3 {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
     margin: 0;
     font-weight: 600;
     text-align: left;
@@ -833,7 +851,7 @@ footer > * {
 
   .box-img {
     height: 100%;
-    width: 100%;
+    width: 40%;
     border-radius: 0;
   }
 
