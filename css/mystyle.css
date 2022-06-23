@@ -302,7 +302,7 @@ nav {
 }
 
 .menu-link:hover {
-  color: hsl(204, 28%, 7%);
+  color: hsl(250, 84%, 54%);
 }
 
 .menu-link::before {
@@ -312,7 +312,7 @@ nav {
   height: 0.1em;
   bottom: 0;
   left: 0;
-  background-color: hsl(204, 28%, 7%);
+  background-color: hsl(250, 84%, 54%);
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
@@ -341,6 +341,14 @@ nav {
 
 #searchQuerySubmit:hover {
   cursor: pointer;
+}
+
+.submit-icon {
+  color: hsl(204, 28%, 7%);
+}
+
+.submit-icon:hover {
+  color: hsl(250, 84%, 54%);
 }
 
 /* The side navigation menu */
@@ -530,6 +538,10 @@ nav {
 
 .box-title a {
   text-decoration: none;
+}
+
+.box-title h3:hover {
+  color: hsl(250, 84%, 54%);
 }
 
 .box2 {
