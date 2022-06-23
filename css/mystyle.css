@@ -568,12 +568,13 @@ nav {
 }
 .box2title {
   justify-content: flex-start;
-  height: 3em;
+  height: 5em;
+  box-sizing: border-box;
 }
 
 .box2title h2 {
   margin: 0;
-  text-align: center;
+  text-align: left;
 }
 
 .box2content h4, .box2content p {
