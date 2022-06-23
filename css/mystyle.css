@@ -169,10 +169,6 @@ html {
 .pointer {
   cursor: pointer;
 }
-
-.margin-zero {
-  margin: 0;
-}
 /*Variables end here*/
 
 /*Expandable primary button*/
@@ -695,7 +691,6 @@ nav {
 .flip-card-back-detail svg {
   flex-shrink: 0;
 }
-
 
 #collapsebtn {
   display: none;
