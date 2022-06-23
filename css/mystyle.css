@@ -16,11 +16,7 @@ body {
 }
 
 header {
-  padding: 1em 0;
-}
-
- main {
-  padding: 0 2rem;
+  padding: 1em 2rem;
 }
 
 nav {
@@ -28,6 +24,13 @@ nav {
   height: 5vh;
 }
 
+ main {
+  padding: 0 2rem;
+}
+
+footer > * {
+  width: 20%;
+}
 /*Variables*/
 .color-primary {
   background-color: hsl(250, 84%, 54%);
@@ -674,10 +677,6 @@ footer {
   padding: 1em;
   background-color: hsl(250, 84%, 54%);
   color: white;
-}
-
-footer > * {
-  width: 20%;
 }
 
 .footer-icons {
