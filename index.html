@@ -37,39 +37,39 @@
         </button>
       </div>
       <div class="mobile">
-        <div id="sidenav" class="sidenav flex-column-start color-secondary">
-          <div class="mobilesearchbar width-100 flex-row-center">
-            <input class="flex-row-center" id="mobilesearchQueryInput" type="text" name="searchQueryInput" placeholder="Cautare..." aria-label="Search" input="">
-            <button class="flex-row-center color-white text-contrast-medium pointer" id="mobilesearchQuerySubmit" type="submit" name="submit" aria-label="Submit the search request">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-search text-secondary" viewBox="0 0 16 16">
-                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+        <div id="sidenav" class="sidenav flex-column-start color-white">
+          <div class="mobile-logo width-100 flex-row-between">
+            <div class="logo-brand flex-row-center text-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-slack" viewBox="0 0 16 16">
+                <path d="M3.362 10.11c0 .926-.756 1.681-1.681 1.681S0 11.036 0 10.111C0 9.186.756 8.43 1.68 8.43h1.682v1.68zm.846 0c0-.924.756-1.68 1.681-1.68s1.681.756 1.681 1.68v4.21c0 .924-.756 1.68-1.68 1.68a1.685 1.685 0 0 1-1.682-1.68v-4.21zM5.89 3.362c-.926 0-1.682-.756-1.682-1.681S4.964 0 5.89 0s1.68.756 1.68 1.68v1.682H5.89zm0 .846c.924 0 1.68.756 1.68 1.681S6.814 7.57 5.89 7.57H1.68C.757 7.57 0 6.814 0 5.89c0-.926.756-1.682 1.68-1.682h4.21zm6.749 1.682c0-.926.755-1.682 1.68-1.682.925 0 1.681.756 1.681 1.681s-.756 1.681-1.68 1.681h-1.681V5.89zm-.848 0c0 .924-.755 1.68-1.68 1.68A1.685 1.685 0 0 1 8.43 5.89V1.68C8.43.757 9.186 0 10.11 0c.926 0 1.681.756 1.681 1.68v4.21zm-1.681 6.748c.926 0 1.682.756 1.682 1.681S11.036 16 10.11 16s-1.681-.756-1.681-1.68v-1.682h1.68zm0-.847c-.924 0-1.68-.755-1.68-1.68 0-.925.756-1.681 1.68-1.681h4.21c.924 0 1.68.756 1.68 1.68 0 .926-.756 1.681-1.68 1.681h-4.21z"/>
               </svg>
-            </button>
-            <button class="closebtn flex-row-center text-white" name="close" aria-label="Close the sidenav">
+              ANAF
+            </div>
+            <button class="closebtn flex-row-center text-primary" name="close" aria-label="Close the sidenav">
               <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
                 <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
               </svg>
             </button>
           </div>
+          <div class="mobilesearchbar width-100 flex-row-center">
+            <input class="flex-row-center" id="mobilesearchQueryInput" type="text" name="searchQueryInput" placeholder="Cautare..." aria-label="Search" input="">
+            <button class="flex-row-center color-white text-contrast-medium pointer" id="mobilesearchQuerySubmit" type="submit" name="submit" aria-label="Submit the search request">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-search text-contrast-high" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg>
+            </button>
+          </div>
           <div class="mobile-menu width-100">
-            <div class="mobile-logo flex-row-center">
-              <div class="mobile-logo-img flex-row-center text-white">
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-slack" viewBox="0 0 16 16">
-                  <path d="M3.362 10.11c0 .926-.756 1.681-1.681 1.681S0 11.036 0 10.111C0 9.186.756 8.43 1.68 8.43h1.682v1.68zm.846 0c0-.924.756-1.68 1.681-1.68s1.681.756 1.681 1.68v4.21c0 .924-.756 1.68-1.68 1.68a1.685 1.685 0 0 1-1.682-1.68v-4.21zM5.89 3.362c-.926 0-1.682-.756-1.682-1.681S4.964 0 5.89 0s1.68.756 1.68 1.68v1.682H5.89zm0 .846c.924 0 1.68.756 1.68 1.681S6.814 7.57 5.89 7.57H1.68C.757 7.57 0 6.814 0 5.89c0-.926.756-1.682 1.68-1.682h4.21zm6.749 1.682c0-.926.755-1.682 1.68-1.682.925 0 1.681.756 1.681 1.681s-.756 1.681-1.68 1.681h-1.681V5.89zm-.848 0c0 .924-.755 1.68-1.68 1.68A1.685 1.685 0 0 1 8.43 5.89V1.68C8.43.757 9.186 0 10.11 0c.926 0 1.681.756 1.681 1.68v4.21zm-1.681 6.748c.926 0 1.682.756 1.682 1.681S11.036 16 10.11 16s-1.681-.756-1.681-1.68v-1.682h1.68zm0-.847c-.924 0-1.68-.755-1.68-1.68 0-.925.756-1.681 1.68-1.681h4.21c.924 0 1.68.756 1.68 1.68 0 .926-.756 1.681-1.68 1.681h-4.21z"/>
-                </svg>
-              </div>
-              <div class="mobile-logo-brand flex-row-center text-white">ANAF</div>
-            </div>
             <ul class="mobile-menu-list">
-              <li class="mobile-menu-item"><a class="mobile-menu-link text-white" href="#">Prima pagina</a></li>
-              <li class="mobile-menu-item"><a class="mobile-menu-link text-white" href="#">Despre ANAF</a></li>
-              <li class="mobile-menu-item"><a class="mobile-menu-link text-white" href="#">Asistenta contribuabili</a></li>
-              <li class="mobile-menu-item"><a class="mobile-menu-link text-white" href="#">Servicii online</a></li>
-              <li class="mobile-menu-item"><a class="mobile-menu-link text-white" href="#">Info publice</a></li>
-              <li class="mobile-menu-item"><a class="mobile-menu-link text-white" href="#">Info UE</a></li>
-              <li class="mobile-menu-item"><a class="mobile-menu-link text-white" href="#">Comunicate de presa</a></li>
-              <li class="mobile-menu-item"><a class="mobile-menu-link text-white" href="#">Transparenta decizionala</a></li>
-              <li class="mobile-menu-item"><a class="mobile-menu-link text-white" href="#">Contact</a></li>
+              <li class="mobile-menu-item"><a class="mobile-menu-link text-contrast-high" href="#">Prima pagina</a></li>
+              <li class="mobile-menu-item"><a class="mobile-menu-link text-contrast-high" href="#">Despre ANAF</a></li>
+              <li class="mobile-menu-item"><a class="mobile-menu-link text-contrast-high" href="#">Asistenta contribuabili</a></li>
+              <li class="mobile-menu-item"><a class="mobile-menu-link text-contrast-high" href="#">Servicii online</a></li>
+              <li class="mobile-menu-item"><a class="mobile-menu-link text-contrast-high" href="#">Info publice</a></li>
+              <li class="mobile-menu-item"><a class="mobile-menu-link text-contrast-high" href="#">Info UE</a></li>
+              <li class="mobile-menu-item"><a class="mobile-menu-link text-contrast-high" href="#">Comunicate de presa</a></li>
+              <li class="mobile-menu-item"><a class="mobile-menu-link text-contrast-high" href="#">Transparenta decizionala</a></li>
+              <li class="mobile-menu-item"><a class="mobile-menu-link text-contrast-high" href="#">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -222,7 +222,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-shield-fill-check" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm2.146 5.146a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647z"/>
                 </svg>
-                <div>Directia Generala Anti Frauda Fiscala</div>
+                <div class="text-contrast-medium text-bold">Directia Generala Anti Frauda Fiscala</div>
               </div>
               <div class="flip-card-back width-100 flex-column-center">
                 <div class="flip-card-back-detail width-100 flex-row-center">
@@ -248,7 +248,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-compass-fill" viewBox="0 0 16 16">
                   <path d="M15.5 8.516a7.5 7.5 0 1 1-9.462-7.24A1 1 0 0 1 7 0h2a1 1 0 0 1 .962 1.276 7.503 7.503 0 0 1 5.538 7.24zm-3.61-3.905L6.94 7.439 4.11 12.39l4.95-2.828 2.828-4.95z"/>
                 </svg>
-                <div>Directia Generala a Vamilor</div>
+                <div class="text-contrast-medium text-bold">Directia Generala a Vamilor</div>
               </div>
               <div class="flip-card-back width-100 flex-column-center">
                 <div class="flip-card-back-detail width-100 flex-row-center">
@@ -274,7 +274,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-bank2" viewBox="0 0 16 16">
                   <path d="M8.277.084a.5.5 0 0 0-.554 0l-7.5 5A.5.5 0 0 0 .5 6h1.875v7H1.5a.5.5 0 0 0 0 1h13a.5.5 0 1 0 0-1h-.875V6H15.5a.5.5 0 0 0 .277-.916l-7.5-5zM12.375 6v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zM8 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2zM.5 15a.5.5 0 0 0 0 1h15a.5.5 0 1 0 0-1H.5z"/>
                 </svg>
-                <div>Directia Generala de Integritate</div>
+                <div class="text-contrast-medium text-bold">Directia Generala de Integritate</div>
               </div>
               <div class="flip-card-back width-100 flex-column-center">
                 <div class="flip-card-back-detail width-100 flex-row-center">
@@ -300,7 +300,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
                   <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
                 </svg>
-                <div>Directia Generala Coordonare Control Fiscal</div>
+                <div class="text-contrast-medium text-bold">Directia Generala Coordonare Control Fiscal</div>
               </div>
               <div class="flip-card-back width-100 flex-column-center">
                 <div class="flip-card-back-detail width-100 flex-row-center">
@@ -326,7 +326,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-shield-lock-fill" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm0 5a1.5 1.5 0 0 1 .5 2.915l.385 1.99a.5.5 0 0 1-.491.595h-.788a.5.5 0 0 1-.49-.595l.384-1.99A1.5 1.5 0 0 1 8 5z"/>
                 </svg>
-                <div>Directia Generala de Management al Riscului</div>
+                <div class="text-contrast-medium text-bold">Directia Generala de Management al Riscului</div>
               </div>
               <div class="flip-card-back width-100 flex-column-center">
                 <div class="flip-card-back-detail width-100 flex-row-center">
