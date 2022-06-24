@@ -4,6 +4,8 @@
 
 * {
   box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 
 html {
@@ -25,7 +27,15 @@ nav {
 }
 
 footer > * {
-  width: 20%;
+  width: 30%;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+  padding: 1em;
 }
 
 /* Defined classes */
@@ -66,8 +76,7 @@ footer > * {
 }
 
 .font-size-md {
-  font-size: 1.2rem;
-  margin: 0;
+  font-size: 1rem;
 }
 
 .btn-primary {
@@ -157,6 +166,10 @@ footer > * {
 .pointer {
   cursor: pointer;
 }
+
+.active {
+  color: hsl(250, 84%, 54%);
+}
 /* Defined classes */
 
 /* Box2 expandable mai multe button */
@@ -169,7 +182,6 @@ footer > * {
   outline: none;
   border: 0;
   vertical-align: middle;
-  text-decoration: none;
   background: transparent;
   padding: 0;
   font-size: inherit;
@@ -244,7 +256,7 @@ footer > * {
   padding: 0 2rem;
 }
 
-.logo-p {
+.logo-brand {
   padding-right: 0.6em;
   font-size: 1.6em;
   font-weight: 600;
@@ -262,14 +274,12 @@ footer > * {
 }
 
 .menu-link {
-  text-decoration: none;
   padding: 0.6em 0;
 }
 
 .menu-link {
   position: relative;
   color: hsl(204, 28%, 7%);
-  text-decoration: none;
 }
 
 .menu-link:hover {
@@ -290,10 +300,6 @@ footer > * {
 
 .menu-link:hover::before {
   transform: scaleX(1);
-}
-
-.active {
-  color: hsl(250, 84%, 54%);
 }
 
 #searchQueryInput {
@@ -335,14 +341,13 @@ footer > * {
   top: 0;
   right: 0;
   overflow: hidden; /* Disable horizontal scroll */
-  padding-top: 1em;
+  padding-top: 0.2em;
   transition: 0.2s ease;
 }
 
 /* The navigation menu links */
 .sidenav a {
   padding: 8px;
-  text-decoration: none;
   font-size: 1.5em;
   display: flex;
   transition: 0.3s;
@@ -358,11 +363,9 @@ footer > * {
 .closebtn {
   height: 3em;
   width: 3.5em;
-  margin-left: -2em;
-  margin-right: 0.5em;
+  margin: 0;
   padding: 0;
   background-color: transparent;
-  color: white;
   border: none;
   outline: none;
 }
@@ -371,7 +374,11 @@ footer > * {
   display: none;
 }
 
-.mobile-logo-p {
+.mobile-logo {
+  margin: 1em;
+}
+
+.mobile-logo-brand {
   font-size: 3em;
   font-weight: 600;
 }
@@ -384,40 +391,34 @@ footer > * {
   padding: 0;
 }
 
-.mobile-menu-item {
-  list-style: none;
-}
-
 .mobilesearchbar {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  gap: 0.2em;
+  padding: 0 0.3em;
+
 }
 
 #mobilesearchQueryInput {
-  width: 93%;
-  height: 3em;
+  width: 85%;
+  height: 2.5em;
   font-size: 1em;
-  background-color: white;
   padding: 0 3.5em 0 1.5em;
-  margin-left: 0.5em;
+  margin: 0;
   border-radius: 1.9em;
   outline: none;
   border: none;
 }
 
 #mobilesearchQuerySubmit {
-  height: 3em;
+  height: 2.5em;
   width: 3.5em;
-  margin-left: -3.5em;
-  margin-right: 3.5em;
+  margin-left: -5em;
+  padding: 0;
   background: none;
   border: none;
   outline: none;
-}
-
-#mobilesearchQuerySubmit:hover {
-  cursor: pointer;
 }
 
 .spv-text {
@@ -450,6 +451,10 @@ footer > * {
   gap: 1em;
 }
 
+.row > * {
+  width: 30%;
+}
+
 .title {
   text-align: center;
   margin: 4em 0;
@@ -457,8 +462,6 @@ footer > * {
 }
 
 .box {
-  width: 23vw;
-  background-color: #fff;
   border-radius: 5px;
   border-radius: 5px;
   -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -488,12 +491,8 @@ footer > * {
   object-fit: cover;
 }
 
-.box-title, .box-title h3, .box-text {
+.box-title, .box-text {
   text-align: center;
-}
-
-.box-title a {
-  text-decoration: none;
 }
 
 .box-title h3:hover {
@@ -501,8 +500,6 @@ footer > * {
 }
 
 .box2 {
-  height: auto;
-  width: 30%;
   padding: 1em;
   border-radius: 5px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -536,19 +533,11 @@ footer > * {
 }
 .box2title {
   justify-content: flex-start;
-  height: 5em;
+  padding: 1em 0;
 }
 
-.box2title h2 {
-  margin: 0;
-  text-align: left;
-}
-
-.box2content h4, .box2content p {
+.box2text {
   margin: 0.5em 0;
-}
-
-.box2content p {
   line-height: 1.5em;
   max-height: 25em;
   display: -webkit-box;
@@ -643,7 +632,6 @@ footer > * {
   font-size: 1.2em;
   font-weight: 600;
   margin: 0;
-  text-decoration: none;
   color: white;
 }
 
@@ -660,22 +648,11 @@ footer > * {
   outline: none;
   padding: 0;
   margin: 1em;
-  color: hsl(250, 84%, 54%);
   transition: all 0.1s linear;
 }
 
 #closeicon, #openicon {
   transition: all 0.1s linear;
-}
-
-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1em;
-  padding: 1em;
-  background-color: hsl(250, 84%, 54%);
-  color: white;
 }
 
 .footer-social {
@@ -688,35 +665,40 @@ footer {
   justify-content: center;
   align-items: flex-start;
   gap: 0.5em;
+  padding: 0;
+  margin: 0;
 }
 
 .footer-social-icon {
-  color: white;
-  transform: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 
-.footer-social-icon-icon:hover, .footer-social-icon:focus {
+.footer-social-icon:hover {
   transform: scale(1.1);
 }
 
 .footer-link {
-  color: white;
   font-size: 1em;
   font-weight: 600;
-  text-decoration: none;
 }
 
 @media only screen and (max-width: 600px) {
+  header {
+    padding: 0.2em 0.3em;
+  }
+
+  main {
+    padding: 0;
+  }
+
+  footer {
+    background-color: hsl(250, 84%, 54%);
+    justify-content: center;
+    padding: 0.5em;
+  }
+
   .width-80 {
     width: 100%;
-  }
-
-  .nav-container {
-    padding: 0 1em;
-  }
-
-  .logo h1 {
-    font-size: 2em;
   }
 
   .menu {
@@ -754,14 +736,6 @@ footer {
     text-align: center;
   }
 
-  header {
-    padding: 1em;
-  }
-
-  main {
-    padding: 0;
-  }
-
   .spv, .first, .second {
     padding: 0;
   }
@@ -772,8 +746,6 @@ footer {
 
   .title {
     width: 100%;
-    padding-left: 0;
-    padding-right: 0;
     margin: 0;
     border-radius: 0;
   }
@@ -798,17 +770,13 @@ footer {
   }
 
   .box-title {
+    text-align: left;
     width: 60%;
+    padding: 0.5em;
   }
 
-  .box-title h3 {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+  .box-title p {
     margin: 0;
-    font-weight: 600;
-    text-align: left;
-    padding: 0 0.5em;
   }
 
   .box-img {
@@ -864,12 +832,6 @@ footer {
 
   .second {
     margin: 0;
-  }
-
-  footer {
-    background-color: hsl(250, 84%, 54%);
-    justify-content: center;
-    padding: 0.5em;
   }
 
   .footer-menu, .footer-logo {
