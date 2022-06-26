@@ -35,7 +35,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   gap: 1em;
-  padding: 1em;
+  padding: 1em 2em;
 }
 
 /* Defined classes */
@@ -44,7 +44,7 @@ footer {
 }
 
 .color-secondary {
-  background-color: hsl(250, 84%, 60%)
+  background-color: hsl(250, 84%, 60%);
 }
 
 .color-white {
@@ -368,13 +368,13 @@ footer {
   display: none;
 }
 
-.mobile-logo {
+.sidenav-logo {
   padding: 0 1em;
 }
 
-.mobile-brand {
+.sidenav-brand {
   font-size: 2em;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .mobile-menu {
@@ -389,8 +389,10 @@ footer {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  row-gap: 0.7em;
+  column-gap: 1.2em;
   padding: 0;
+  margin: 0;
 }
 
 .mobile-menu-item {
@@ -400,19 +402,23 @@ footer {
 }
 
 .mobile-menu-link {
-  height: 4rem;
-  width: 10rem;
+  height: 6em;
+  width: 10em;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   gap: 0.5em;
+  color: white;
+  background-color: #623AA2;
+  border-radius: 1em;
   padding: 0.5em 1em;
-  box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
-              0 2px 2px rgba(0,0,0,0.11), 
-              0 4px 4px rgba(0,0,0,0.11), 
-              0 6px 8px rgba(0,0,0,0.11),
-              0 8px 16px rgba(0,0,0,0.11);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.mobile-menu-link:hover {
+  background-color: hsl(204, 28%, 7%);
 }
 
 .mobilesearchbar {
@@ -436,9 +442,10 @@ footer {
 }
 
 #mobilesearchQuerySubmit {
+  position: absolute;
+  right: 2em;
   height: 2.5em;
   width: 3.5em;
-  margin-left: -5em;
   padding: 0;
   background: none;
   border: none;
@@ -682,7 +689,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: flex-end;
   gap: 0.5em;
   padding: 0;
   margin: 0;
@@ -711,7 +718,6 @@ footer {
   }
 
   footer {
-    background-color: hsl(250, 84%, 54%);
     justify-content: center;
     padding: 0.5em;
   }
