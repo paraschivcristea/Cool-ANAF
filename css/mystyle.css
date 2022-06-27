@@ -1033,4 +1033,17 @@ footer {
     height: 1.5em;
     width: 1.5em;
   }
+
+  .page-container {
+    flex-direction: column;
+  }
+
+  .article, .sidebar {
+    width: 100%;
+    padding: 1em;
+  }
+
+  .article-category, .article-date {
+    font-size: 0.8em;
+  }
 }
