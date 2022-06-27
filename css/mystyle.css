@@ -713,7 +713,13 @@ footer {
   font-weight: 600;
 }
 
+.page-container {
+  display: flex;
+  justify-content: center;
+}
+
 .article {
+  width: 70%;
   padding: 1em 2rem;
 }
 
@@ -731,6 +737,11 @@ footer {
   padding: 0.2em 1em;
   border-radius: 0.5em;
   text-transform: uppercase;
+  font-weight: 600;
+}
+
+.article-date {
+  font-weight: 600;
 }
 
 .article-img {
@@ -755,6 +766,111 @@ footer {
   font-weight: 600;
   padding: 0.5em 1em;
   margin-left: auto; 
+}
+
+.sidebar {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  padding: 1em 2rem;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5em;
+  color: hsl(250, 84%, 60%);
+  font-size: 1.5em;
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  font-weight: 900;
+  border-bottom: 0.3em solid hsl(250, 84%, 60%);
+}
+
+.sidebar-post {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.2em;
+  margin-bottom: 1.5em;
+}
+
+.sidebar-post-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.sidebar-post-date {
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+.sidebar-post-category {
+  font-size: 0.8em;
+  padding: 0.1em 1em;
+  border-radius: 0.8em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/*Sidebars post date and category colors*/
+#date1 {
+  color: #ff9800;
+}
+
+#category1 {
+  color: #ff9800;
+  border: 1px solid #ff9800;
+}
+
+#date2 {
+  color: #673ab7;
+}
+
+#category2 {
+  color: #673ab7;
+  border: 1px solid #673ab7;
+}
+
+#date3 {
+  color: #2c387e;
+}
+
+#category3 {
+  color: #2c387e;
+  border: 1px solid #2c387e;
+}
+
+#date4 {
+  color: #357a38;
+}
+
+#category4 {
+  color: #357a38;
+  border: 1px solid #357a38;
+}
+
+#date5 {
+  color: #f44336;
+}
+
+#category5 {
+  color: #f44336;
+  border: 1px solid #f44336;
+}
+
+#date6 {
+  color: #f44336;
+}
+
+#category6 {
+  color: #f44336;
+  border: 1px solid #f44336;
 }
 
 @media only screen and (max-width: 600px) {
