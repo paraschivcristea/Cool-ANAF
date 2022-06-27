@@ -36,6 +36,7 @@ footer {
   align-items: center;
   gap: 1em;
   padding: 1em 2em;
+  background-color: #323639;
 }
 
 /* Defined classes */
@@ -707,7 +708,6 @@ footer {
   font-size: 1em;
   font-weight: 600;
 }
-
 @media only screen and (max-width: 600px) {
   header {
     padding: 1em 1em;
