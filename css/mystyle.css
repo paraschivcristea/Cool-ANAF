@@ -126,6 +126,10 @@ footer {
   width: 80%;
 }
 
+.width-60 {
+  width: 60%;
+}
+
 .flex-row-start {
   display:flex;
   justify-content: flex-start;
@@ -708,6 +712,51 @@ footer {
   font-size: 1em;
   font-weight: 600;
 }
+
+.article {
+  padding: 1em 2rem;
+}
+
+.article-header {
+  gap: 0.5em;
+}
+
+.article-details {
+  gap: 0.5em;
+}
+
+.article-category {
+  background-color: hsl(250, 84%, 54%);
+  color: white;
+  padding: 0.2em 1em;
+  border-radius: 0.5em;
+  text-transform: uppercase;
+}
+
+.article-img {
+  overflow: hidden;
+  padding: 1em 0;
+}
+
+.article-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.article-text {
+  line-height: 2em;
+}
+
+.share {
+  border: none;
+  outline: none;
+  gap: 1em;
+  font-weight: 600;
+  padding: 0.5em 1em;
+  margin-left: auto; 
+}
+
 @media only screen and (max-width: 600px) {
   header {
     padding: 1em 1em;
