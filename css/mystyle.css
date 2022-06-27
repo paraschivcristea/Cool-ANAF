@@ -403,7 +403,7 @@ footer {
 
 .mobile-menu-link {
   height: 6em;
-  width: 10em;
+  width: 9em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -411,7 +411,7 @@ footer {
   text-align: center;
   gap: 0.5em;
   color: white;
-  background-color: #623AA2;
+  background-color: hsl(250, 84%, 54%);
   border-radius: 1em;
   padding: 0.5em 1em;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
