@@ -1,20 +1,19 @@
-function preventScroll(e){
-    e.preventDefault();
-    e.stopPropagation();
-
-    return false;
-}
-
 const openButton = document.querySelector(".openbtn");
 openButton.addEventListener("click", () => {
 document.getElementById("sidenav").style.width = "100vw";
-document.querySelector(".sidenav").addEventListener("wheel", preventScroll);
+document.getElementById("sidenav").addEventListener("touchmove", function(event) {
+  event.preventDefault();
+  event.stopPropagation();
+}, false);
 })
 
 const closeButton = document.querySelector(".closebtn");
 closeButton.addEventListener("click", () => {
 document.getElementById("sidenav").style.width = "0";
-document.querySelector(".sidenav").removeEventListener("wheel", preventScroll);
+document.getElementById("sidenav").removeEventListener("touchmove", function(event) {
+  event.preventDefault();
+  event.stopPropagation();
+}, false);
 })
 
 const collapse = document.getElementById("collapse");
