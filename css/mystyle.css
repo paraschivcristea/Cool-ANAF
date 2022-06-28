@@ -821,11 +821,14 @@ footer {
 }
 
 .sidebar-date {
+  color: hsl(250, 84%, 60%);
   font-size: 0.8em;
   font-weight: 600;
 }
 
 .sidebar-category {
+  color: white;
+  background-color: hsl(250, 84%, 60%);
   font-size: 0.8em;
   padding: 0.4em 1em;
   border-radius: 0.8em;
@@ -836,7 +839,7 @@ footer {
 
 .sidebar-content {
   color: #323639;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 @media only screen and (max-width: 600px) {
