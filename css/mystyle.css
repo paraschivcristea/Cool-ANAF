@@ -364,6 +364,7 @@ footer {
   height: 3em;
   margin: 0;
   padding: 0;
+  color: #4776E6;
   background-color: transparent;
   border: none;
   outline: none;
@@ -380,6 +381,11 @@ footer {
 .sidenav-brand {
   font-size: 2em;
   font-weight: 700;
+  background: #4776E6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #8E54E9, #4776E6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #8E54E9, #4776E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .mobile-menu {
@@ -414,9 +420,7 @@ footer {
   align-items: center;
   gap: 0.5em;
   color: white;
-  background: #6a3093;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #a044ff, #6a3093);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #a044ff, #6a3093); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */     
+  background-color: hsl(250, 84%, 60%);
   border-radius: 1em;
   padding: 0.5em 0.5em;
   text-align: center;
@@ -440,9 +444,7 @@ footer {
 }
 
 .gradient2 {
-  background: #fe8c00;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #f83600, #fe8c00);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #f83600, #fe8c00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);  
 }
 /*Mobile menu-link colors*/
 
@@ -455,7 +457,7 @@ footer {
 }
 
 #mobilesearchQueryInput {
-  width: 98%;
+  width: 99%;
   height: 3em;
   font-size: 1em;
   padding: 0 3.5em 0 1.5em;
