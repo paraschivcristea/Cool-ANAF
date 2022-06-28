@@ -1,6 +1,7 @@
 const openButton = document.querySelector(".openbtn");
 openButton.addEventListener("click", () => {
 document.getElementById("sidenav").style.width = "100vw";
+window.scrollTo(0, 1);
 document.getElementById("sidenav").addEventListener("touchmove", function(event) {
   event.preventDefault();
   event.stopPropagation();
