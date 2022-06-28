@@ -364,7 +364,7 @@ footer {
   height: 3em;
   margin: 0;
   padding: 0;
-  color: #8E54E9;
+  color: rgba(147,15,255,1);
   background-color: transparent;
   border: none;
   outline: none;
@@ -381,9 +381,7 @@ footer {
 .sidenav-brand {
   font-size: 2em;
   font-weight: 700;
-  background: #4776E6;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #8E54E9, #4776E6);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #8E54E9, #4776E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-image: radial-gradient( circle 523px at 7.1% 19.3%,  rgba(147,15,255,1) 2%, rgba(5,49,255,1) 100.7% );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -421,7 +419,7 @@ footer {
   align-items: center;
   gap: 0.5em;
   color: white;
-  background-image: linear-gradient(-225deg, #3D4E81 0%, #5753C9 48%, #6E7FF3 100%);
+  background-image: radial-gradient( circle 523px at 7.1% 19.3%,  rgba(147,15,255,1) 2%, rgba(5,49,255,1) 100.7% );
   border-radius: 1em;
   padding: 0.5em 0.5em;
   text-align: center;
@@ -445,7 +443,7 @@ footer {
 }
 
 .gradient2 {
-  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);  
+  background-image: radial-gradient( circle 523px at 7.1% 19.3%,  rgba(147,15,255,1) 2%, rgba(5,49,255,1) 100.7% );
 }
 /*Mobile menu-link colors*/
 
