@@ -344,57 +344,8 @@ footer {
   color: hsl(250, 84%, 54%);
 }
 
-/* The side navigation menu */
-.sidenav {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-end;
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0;
-  right: 0;
-  overflow: hidden; /* Disable horizontal scroll */
-  padding-top: 0.8em;
-  transition: 0.2s ease;
-}
-
-.openbtn {
-  height: 3em;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-}
-
-.closebtn {
-  height: 3em;
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  border: none;
-  outline: none;
-  padding: 0 0.8em;
-}
-
 .mobile {
   display: none;
-}
-
-.mobile-menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 0 1em;
-}
-
-.mobile-item {
-  font-size: 1.6em;
-  line-height: 2.5em;
-  color: #323639;
-  font-weight: 600;
 }
 
 .mobilesearchbar {
