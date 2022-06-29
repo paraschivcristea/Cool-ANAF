@@ -37,17 +37,13 @@
         </button>
       </div>
       <div class="mobile">
-        <div id="sidenav" class="sidenav flex-column-start color-white">
-          <div class="sidenav-logo width-100 flex-row-between">
-            <div class="sidenav-brand flex-row-center">
-              Navigare
-            </div>
-            <button class="closebtn flex-row-center" name="close" aria-label="Close the sidenav">
-              <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
-                <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
-              </svg>
-            </button>
-          </div>
+        <div id="sidenav" class="sidenav color-white">
+          <button class="closebtn flex-row-center text-contrast-medium" name="close" aria-label="Close the sidenav">
+            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+              <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+            </svg>
+          </button>
           <div class="mobilesearchbar width-100 flex-row-center">
             <input class="flex-row-center" id="mobilesearchQueryInput" type="text" name="searchQueryInput" placeholder="Cautare..." aria-label="Search" input="">
             <button class="flex-row-center color-white text-contrast-medium pointer" id="mobilesearchQuerySubmit" type="submit" name="submit" aria-label="Submit the search request">
@@ -57,65 +53,16 @@
             </button>
           </div>
           <div class="mobile-menu width-100">
-            <ul class="mobile-menu-list width-100">
-              <li class="mobile-menu-item" id="home">
-                <a class="mobile-menu-link gradient2"href="./index.html">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
-                    <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
-                  </svg>
-                  Prima pagina
-                </a>
-              </li>
-              <li class="mobile-menu-item">
-                <a class="mobile-menu-link" href="./post.html">
-                  Despre ANAF
-                </a>
-              </li>
-              <li class="mobile-menu-item">
-                <a class="mobile-menu-link" href="./post.html">
-                Asistenta contribuabili
-              </a>
-            </li>
-            <li class="mobile-menu-item">
-                <a class="mobile-menu-link" href="./post.html">
-                Servicii online
-              </a>
-            </li>
-            <li class="mobile-menu-item">
-                <a class="mobile-menu-link" href="./post.html">
-                Info publice
-              </a>
-            </li>
-            <li class="mobile-menu-item">
-                <a class="mobile-menu-link" href="./post.html">
-                Info ANAF
-              </a>
-            </li>
-            <li class="mobile-menu-item">
-                <a class="mobile-menu-link" href="./post.html">
-                Info UE
-              </a>
-            </li>
-            <li class="mobile-menu-item">
-                <a class="mobile-menu-link" href="./post.html">
-                Comunicate de presa
-              </a>
-            </li>
-            <li class="mobile-menu-item">
-                <a class="mobile-menu-link" href="./post.html">
-                Transparenta decizionala
-              </a>
-            </li>
-            <li class="mobile-menu-item" id="contact" >
-                <a class="mobile-menu-link gradient1"href="./post.html">
-                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-                </svg>
-                Contact
-              </a>
-            </li>
-            </ul>
+            <a class="mobile-item flex-row-center"href="./index.html">Prima pagina</a>
+            <a class="mobile-item flex-row-center" href="./post.html">Despre ANAF</a>
+            <a class="mobile-item flex-row-center" href="./post.html">Asistenta contribuabili</a>
+            <a class="mobile-item flex-row-center" href="./post.html">Servicii online</a>
+            <a class="mobile-item flex-row-center" href="./post.html">Info publice</a>
+            <a class="mobile-item flex-row-center" href="./post.html">Info ANAF</a>
+            <a class="mobile-item flex-row-center" href="./post.html">Info UE</a>
+            <a class="mobile-item flex-row-center" href="./post.html">Comunicate de presa</a>
+            <a class="mobile-item flex-row-center" href="./post.html">Transparenta decizionala</a>
+            <a class="mobile-item flex-row-center" href="./post.html">Contact</a>
           </div>
         </div>
         <button class="openbtn flex-row-center text-primary" name="open" aria-label="Open the sidenav">

@@ -1,7 +1,11 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
 :root {
-  font-family: system-ui,sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
+/*=============== BASE ===============*/
 * {
   box-sizing: border-box;
   text-decoration: none;
@@ -342,6 +346,10 @@ footer {
 
 /* The side navigation menu */
 .sidenav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
@@ -349,7 +357,7 @@ footer {
   top: 0;
   right: 0;
   overflow: hidden; /* Disable horizontal scroll */
-  padding-top: 1em;
+  padding-top: 0.8em;
   transition: 0.2s ease;
 }
 
@@ -364,88 +372,30 @@ footer {
   height: 3em;
   margin: 0;
   padding: 0;
-  color: rgba(147,15,255,1);
   background-color: transparent;
   border: none;
   outline: none;
+  padding: 0 0.8em;
 }
 
 .mobile {
   display: none;
 }
 
-.sidenav-logo {
-  padding: 0 1em;
-}
-
-.sidenav-brand {
-  font-size: 2em;
-  font-weight: 700;
-  background-image: radial-gradient( circle 523px at 7.1% 19.3%,  rgba(147,15,255,1) 2%, rgba(5,49,255,1) 100.7% );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .mobile-menu {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding: 0;
-}
-
-.mobile-menu-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 0.5em;
+  align-items: flex-start;
   padding: 0 1em;
-  margin: 0;
 }
 
-.mobile-menu-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 48%;
-}
-
-.mobile-menu-link {
-  height: 5em;
-  width: 99%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5em;
-  color: white;
-  background-image: radial-gradient( circle 523px at 7.1% 19.3%,  rgba(147,15,255,1) 2%, rgba(5,49,255,1) 100.7% );
-  border-radius: 1em;
-  padding: 0.5em 0.5em;
-  text-align: center;
+.mobile-item {
+  font-size: 1.6em;
+  line-height: 2.5em;
+  color: #323639;
   font-weight: 600;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
-
-.mobile-menu-link:hover {
-  background-color: hsl(204, 28%, 7%);
-}
-
-#home, #contact {
-  width: 100%;
-}
-
-/*Mobile menu-link colors*/
-.gradient1 {
-  background: #cb2d3e;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #ef473a, #cb2d3e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
-}
-
-.gradient2 {
-  background-image: radial-gradient( circle 523px at 7.1% 19.3%,  rgba(147,15,255,1) 2%, rgba(5,49,255,1) 100.7% );
-}
-/*Mobile menu-link colors*/
 
 .mobilesearchbar {
   display: flex;
@@ -851,7 +801,7 @@ footer {
 
 @media only screen and (max-width: 600px) {
   header {
-    padding: 1em 1em;
+    padding: 0.8em;
   }
 
   main {
