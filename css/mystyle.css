@@ -260,7 +260,7 @@ footer {
 }
 /*Box2 mai multe expandable button*/
 
-.spv, .first, .second {
+.spv {
   padding: 0 2em;
 }
 
@@ -435,11 +435,8 @@ nav ul.slide {
 }
 
 .spv-text h1, h2 {
+  margin: 0 0 0.5em 0;
   text-align: right;
-}
-
-.spv-text h1, .spv-text h2 {
-  margin: 0;
 }
 
 .spv-img {
