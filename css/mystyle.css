@@ -277,7 +277,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1em;
+  padding: 1em 1em 0 1em;
 }
 
 nav ul {
@@ -340,7 +340,7 @@ nav ul.slide {
 .menu-bars span {
   display:block;
   width:28px;
-  height:3px;
+  height:4px;
   background-color: hsl(250, 84%, 54%);
   border-radius: 4px;
   transition: all 0.3s;
