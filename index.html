@@ -12,8 +12,8 @@
 <body class="flex-column-center">
   <div id="fullpage">
     <div class="section active">
-      <header class="flex-column-center width-80 color-white">
-        <nav class="flex-row-between width-100">
+      <header class="width-80">
+        <nav class="width-100">
           <div class="logo flex-row-center">
             <div class="logo-img flex-row-center text-primary">
               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-slack" viewBox="0 0 16 16">
@@ -22,15 +22,13 @@
             </div>
             <div class="logo-brand flex-row-center text-primary">ANAF</div>
           </div>
-          <div class="navbar flex-row-center">
-            <ul class="menu flex-row-center">
-              <li class="menu-item"><a class="menu-link active" href="./index.html">Prima pagina</a></li>
-              <li class="menu-item"><a class="menu-link text-contrast-high" href="./post.html">Despre ANAF</a></li>
-              <li class="menu-item"><a class="menu-link text-contrast-high" href="./post.html">Asistenta contribuabili</a></li>
-              <li class="menu-item"><a class="menu-link text-contrast-high" href="./post.html">Servicii online</a></li>
-              <li class="menu-item"><a class="menu-link text-contrast-high" href="./post.html">Info publice</a></li>
-            </ul>
-          </div>
+          <ul>
+            <li><a class="active" href="./index.html">Prima pagina</a></li>
+            <li><a href="./post.html">Despre ANAF</a></li>
+            <li><a href="./post.html">Asistenta contribuabili</a></li>
+            <li><a href="./post.html">Servicii online</a></li>
+            <li><a href="./post.html">Info publice</a></li>
+          </ul>
           <div class="searchbar flex-row-center">
             <input class="flex-row-center" id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Cautare..." aria-label="Search" input="">
             <button class="flex-row-center" id="searchQuerySubmit" type="submit" name="submit" aria-label="Submit the search request">
@@ -39,29 +37,11 @@
               </svg>
             </button>
           </div>
-          <div class="mobile-nav">
-            <ul class="nav__menu" id="menu" tabindex="-1" aria-label="main navigation" hidden>
-              <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-              <li class="nav__item"><a href="#" class="nav__link">Shop</a></li>
-              <li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
-              <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-              <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
-            </ul>
-            <!-- MENU TOGGLE BUTTON -->
-            <a href="#nav" class="nav__toggle" role="button" aria-expanded="false" aria-controls="menu">
-              <svg class="menuicon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
-                <title>Toggle Menu</title>
-                <g>
-                  <line class="menuicon__bar" x1="13" y1="16.5" x2="37" y2="16.5"/>
-                  <line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5"/>
-                  <line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5"/>
-                  <line class="menuicon__bar" x1="13" y1="32.5" x2="37" y2="32.5"/>
-                  <circle class="menuicon__circle" r="23" cx="25" cy="25" />
-                </g>
-              </svg>
-            </a>
-            <!-- ANIMATED BACKGROUND ELEMENT -->
-            <div class="splash"></div>
+          <div class="menu-bars">
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
         </nav>
       </header>
@@ -360,6 +340,5 @@
     });
   </script>
   <script type="text/javascript" src="./js/myscripts.js"></script>
-  https://codepen.io/mxbck/pen/xdaGNL
 </body>
 </html>
