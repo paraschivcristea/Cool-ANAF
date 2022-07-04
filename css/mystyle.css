@@ -196,7 +196,10 @@ footer {
 }
 
 #section1 {
-  height: 100vh;
+  justify-content: flex-start;
+}
+
+#section2, #section3, #section4 {
   justify-content: flex-start;
 }
 
@@ -1094,6 +1097,8 @@ nav ul.slide {
 
   .spv-text h1, .spv-text h2 {
     text-align: center;
+    font-size: 1.2em;
+    margin: 0.1em;
   }
 
   .spv-buttons-container {
