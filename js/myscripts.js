@@ -1,4 +1,4 @@
-const menuToggle= document.querySelector(".menu-bars");
+const menuToggle = document.querySelector(".menu-bars");
 const nav = document.querySelector("nav ul");
 
 menuToggle.addEventListener("click", () => {
