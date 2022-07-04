@@ -9,40 +9,43 @@
     <link href="./css/mystyle.css" rel="stylesheet">
 </head>
 <body class="flex-column-center width-100">
-  <header class="flex-column-start width-80 color-white">
-    <nav class="width-100">
-      <div class="logo flex-row-center">
-        <div class="logo-img flex-row-center text-primary">
-          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-slack" viewBox="0 0 16 16">
-            <path d="M3.362 10.11c0 .926-.756 1.681-1.681 1.681S0 11.036 0 10.111C0 9.186.756 8.43 1.68 8.43h1.682v1.68zm.846 0c0-.924.756-1.68 1.681-1.68s1.681.756 1.681 1.68v4.21c0 .924-.756 1.68-1.68 1.68a1.685 1.685 0 0 1-1.682-1.68v-4.21zM5.89 3.362c-.926 0-1.682-.756-1.682-1.681S4.964 0 5.89 0s1.68.756 1.68 1.68v1.682H5.89zm0 .846c.924 0 1.68.756 1.68 1.681S6.814 7.57 5.89 7.57H1.68C.757 7.57 0 6.814 0 5.89c0-.926.756-1.682 1.68-1.682h4.21zm6.749 1.682c0-.926.755-1.682 1.68-1.682.925 0 1.681.756 1.681 1.681s-.756 1.681-1.68 1.681h-1.681V5.89zm-.848 0c0 .924-.755 1.68-1.68 1.68A1.685 1.685 0 0 1 8.43 5.89V1.68C8.43.757 9.186 0 10.11 0c.926 0 1.681.756 1.681 1.68v4.21zm-1.681 6.748c.926 0 1.682.756 1.682 1.681S11.036 16 10.11 16s-1.681-.756-1.681-1.68v-1.682h1.68zm0-.847c-.924 0-1.68-.755-1.68-1.68 0-.925.756-1.681 1.68-1.681h4.21c.924 0 1.68.756 1.68 1.68 0 .926-.756 1.681-1.68 1.681h-4.21z"/>
-          </svg>
-        </div>
-        <div class="logo-brand flex-row-center text-primary">ANAF</div>
+  <main class="width-80 flex-column-center">
+    <div class="section width-100" id="section1">
+      <header class="width-100">
+        <nav>
+          <div class="logo flex-row-center">
+            <div class="logo-img flex-row-center text-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-slack" viewBox="0 0 16 16">
+                <path d="M3.362 10.11c0 .926-.756 1.681-1.681 1.681S0 11.036 0 10.111C0 9.186.756 8.43 1.68 8.43h1.682v1.68zm.846 0c0-.924.756-1.68 1.681-1.68s1.681.756 1.681 1.68v4.21c0 .924-.756 1.68-1.68 1.68a1.685 1.685 0 0 1-1.682-1.68v-4.21zM5.89 3.362c-.926 0-1.682-.756-1.682-1.681S4.964 0 5.89 0s1.68.756 1.68 1.68v1.682H5.89zm0 .846c.924 0 1.68.756 1.68 1.681S6.814 7.57 5.89 7.57H1.68C.757 7.57 0 6.814 0 5.89c0-.926.756-1.682 1.68-1.682h4.21zm6.749 1.682c0-.926.755-1.682 1.68-1.682.925 0 1.681.756 1.681 1.681s-.756 1.681-1.68 1.681h-1.681V5.89zm-.848 0c0 .924-.755 1.68-1.68 1.68A1.685 1.685 0 0 1 8.43 5.89V1.68C8.43.757 9.186 0 10.11 0c.926 0 1.681.756 1.681 1.68v4.21zm-1.681 6.748c.926 0 1.682.756 1.682 1.681S11.036 16 10.11 16s-1.681-.756-1.681-1.68v-1.682h1.68zm0-.847c-.924 0-1.68-.755-1.68-1.68 0-.925.756-1.681 1.68-1.681h4.21c.924 0 1.68.756 1.68 1.68 0 .926-.756 1.681-1.68 1.681h-4.21z"/>
+              </svg>
+            </div>
+            <div class="logo-brand flex-row-center text-primary">ANAF</div>
+          </div>
+          <ul>
+            <li><a class="active" href="./index.html">Prima pagina</a></li>
+            <li><a href="./post.html">Despre ANAF</a></li>
+            <li><a href="./post.html">Asistenta contribuabili</a></li>
+            <li><a href="./post.html">Servicii online</a></li>
+            <li><a href="./post.html">Info publice</a></li>
+          </ul>
+          <div class="searchbar flex-row-center">
+            <input class="flex-row-center" id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Cautare..." aria-label="Search" input="">
+            <button class="flex-row-center" id="searchQuerySubmit" type="submit" name="submit" aria-label="Submit the search request">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search submit-icon" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg>
+            </button>
+          </div>
+          <div class="menu-bars">
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </header>
       </div>
-      <ul>
-        <li><a class="active" href="./index.html">Prima pagina</a></li>
-        <li><a href="./post.html">Despre ANAF</a></li>
-        <li><a href="./post.html">Asistenta contribuabili</a></li>
-        <li><a href="./post.html">Servicii online</a></li>
-        <li><a href="./post.html">Info publice</a></li>
-      </ul>
-      <div class="searchbar flex-row-center">
-        <input class="flex-row-center" id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Cautare..." aria-label="Search" input="">
-        <button class="flex-row-center" id="searchQuerySubmit" type="submit" name="submit" aria-label="Submit the search request">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search submit-icon" viewBox="0 0 16 16">
-            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-          </svg>
-        </button>
-      </div>
-      <div class="menu-bars">
-        <input type="checkbox">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </nav>
-  </header>
-  <main class="flex-column-center width-80 color-white">
+  <div class="section width-100 color-white">
     <div class="page-container">
       <div class="article">
         <div class="article-header flex-column-start">
@@ -147,7 +150,7 @@
         </div>
       </div>
     </div>
-    <footer class="width-80 text-white">
+    <footer class="width-100 text-white">
       <div class="footer-logo logo flex-row-start">
         <div class="logo-img flex-row-center text-white">
           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-slack" viewBox="0 0 16 16">
