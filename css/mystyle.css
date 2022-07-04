@@ -210,7 +210,7 @@ nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 55%;
+  width: 65%;
 }
 
 nav ul li a {
@@ -724,6 +724,7 @@ nav ul.slide {
 
   .spv {
     flex-direction: column;
+    padding: 0;
   }
 
   .spv-img, .spv-img-container {
@@ -739,8 +740,14 @@ nav ul.slide {
     text-align: center;
   }
 
-  .spv {
-    padding: 0;
+  .spv-buttons-container {
+    width: 100%;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .btn-primary {
+    width: 100%;
   }
 
   .title {
@@ -768,7 +775,6 @@ nav ul.slide {
   }
 
   .box-title {
-    width: 60%;
     padding: 0.5em;
   }
 
@@ -817,7 +823,7 @@ nav ul.slide {
 
   .article, .sidebar {
     width: 100%;
-    padding: 1em;
+    padding: 0;
   }
 
   .article-category, .article-date {
