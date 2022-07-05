@@ -231,20 +231,6 @@ nav:not(.mm-menu) {
   position: relative;
 }
 
-.mm-navbar {
-  --mm-color-background: hsl(250, 84%, 60%);
-  --mm-color-text-dimmed: #fff;
-  --mm-color-icon: #fff;
-}
-.mm-panel {
-  --mm-color-background: #fff;
-  --mm-color-text: hsl(250, 84%, 60%);
-  --mm-color-icon: hsl(250, 84%, 60%);
-}
-.mm-listitem:after {
-  content: none;
-}
-
 .section {
   background-color: white;
   padding: 1em;
@@ -338,6 +324,7 @@ nav:not(.mm-menu) {
   overflow: hidden;
   box-shadow: 0 2em 4em rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  text-align: left;
   transition: 0.2s;
 }
 
@@ -350,6 +337,7 @@ nav:not(.mm-menu) {
   justify-content: flex-start;
   font-size: 2em;
   font-weight: 500;
+  line-height: 1.5em;
   margin-bottom: 1em;
 }
 
