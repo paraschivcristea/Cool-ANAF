@@ -348,6 +348,10 @@ a {
   height: 100vh;
 }
 
+#section2 {
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+}
+
 .spv-text {
   display: flex;
   flex-direction: column;
