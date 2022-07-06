@@ -10,228 +10,290 @@
     <link href="./css/all.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
 </head>
-<body>
-  <div id="header">
-    <nav>
-      <ul class="menu">
-        <li class="logo">
-          <a href="#">
-            <i class="fa-solid fa-user-shield"></i>
-            ANAF
-          </a>
-        </li>
-        <li class="item"><a href="#">Home</a></li>
-        <li class="item"><a href="#">About</a></li>
-        <li class="item has-submenu">
-          <a tabindex="0">Services</a>
-          <ul class="submenu">
-            <li class="subitem"><a href="#">Design</a></li>
-            <li class="subitem"><a href="#">Development</a></li>
-            <li class="subitem"><a href="#">SEO</a></li>
-            <li class="subitem"><a href="#">Copywriting</a></li>
-          </ul>
-        </li>
-        <li class="item has-submenu">
-          <a tabindex="0">Plans</a>
-          <ul class="submenu">
-            <li class="subitem"><a href="#">Freelancer</a></li>
-            <li class="subitem"><a href="#">Startup</a></li>
-            <li class="subitem"><a href="#">Enterprise</a></li>
-          </ul>
-        </li>
-        <li class="item"><a href="#">Blog</a></li>
-        <li class="item"><a href="#">Contact</a>
-        </li>
-        <li class="item button"><a href="#">Log In</a></li>
-        <li class="item button secondary"><a href="#">Sign Up</a></li>
-        <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
-      </ul>
-    </nav>
-  </div>
-  </div>
-  <div id="fullpage">
-    <div class="section active" id="section1">
+<body class="flex-column-center">
+  <main class="width-80 flex-column-center color-white">
+    <header class="width-100">
+      <nav>
+        <div class="menu-icon">
+           <span class="fas fa-bars"></span>
+        </div>
+        <div class="logo">
+          <i class="fa-brands fa-slack"></i>
+           ANAF
+        </div>
+        <div class="nav-items">
+           <li><a href="#">Home</a></li>
+           <li><a href="#">About</a></li>
+           <li><a href="#">Blogs</a></li>
+           <li><a href="#">Contact</a></li>
+           <li><a href="#">Feedback</a></li>
+        </div>
+        <div class="search-icon">
+           <span class="fas fa-search"></span>
+        </div>
+        <div class="cancel-icon">
+           <span class="fas fa-times"></span>
+        </div>
+        <form action="#">
+           <input type="search" class="search-data" placeholder="Incepeti o cautare noua" required>
+           <button type="submit" class="fas fa-search"></button>
+        </form>
+     </nav>
+    </header>
+    <div class="section width-100" id="section1">
       <div class="spv flex-row-center">
-        <div class="spv-img-container">
-          <div class="spv-img">
-            <img src="./img/spv.webp" alt="Poza Spatiul Privat Virtual">
-          </div>
+        <div class="spv-img">
+          <img class="width-100" src="./img/spv.webp" alt="Poza Spatiul Privat Virtual">
         </div>
         <div class="spv-text">
           <h1 class="text-contrast-high width-80">Spatiul Privat Virtual</h2>
           <h2 class="text-contrast-low width-80">Este un serviciu gratuit, accesibil permanent, care va ofera acces la beneficiile online disponibile pe platforma ANAF</h2>
-          <div class="spv-buttons-container flex-row-between">
-            <button class="spv-btn" name="login" aria-label="Login to your account">
+          <div class="spv-btn flex-row-between">
+            <button class="btn-primary" name="login" aria-label="Login to your account">
               Logare
             </button>
-            <button class="spv-btn" name="tutorial" aria-label="Tutorial for how to use SPV">
+            <button class="btn-primary" name="tutorial" aria-label="Tutorial for how to use SPV">
               Ghid
             </button>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="section" id="section2">
-      <div class="title">Comunicate de presa</div>
-      <div class="cards">
-
+    <div class="section2 width-100">
+      <div class="grid">
         <div class="card">
-          <div class="card__image-holder">
-            <img class="card__image" src="https://source.unsplash.com/300x225/?wave" alt="wave" />
-          </div>
-          <div class="card-title">
-            <a href="#" class="toggle-info btn">
-              <span class="left"></span>
-              <span class="right"></span>
-            </a>
-            <h2>
-                Card title
-                <small>Image from unsplash.com</small>
-            </h2>
-          </div>
-          <div class="card-flap flap1">
-            <div class="card-description">
-              This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
-            </div>
-            <div class="card-flap flap2">
-              <div class="card-actions">
-                <a href="#" class="btn">Read more</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      
-        <div class="card">
-          <div class="card__image-holder">
-            <img class="card__image" src="https://source.unsplash.com/300x225/?beach" alt="beach" />
-          </div>
-          <div class="card-title">
-            <a href="#" class="toggle-info btn">
-              <span class="left"></span>
-              <span class="right"></span>
-            </a>
-            <h2>
-                Card title
-                <small>Image from unsplash.com</small>
-            </h2>
-          </div>
-          <div class="card-flap flap1">
-            <div class="card-description">
-              This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
-            </div>
-            <div class="card-flap flap2">
-              <div class="card-actions">
-                <a href="#" class="btn">Read more</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      
-        <div class="card">
-          <div class="card__image-holder">
-            <img class="card__image" src="https://source.unsplash.com/300x225/?mountain" alt="mountain" />
-          </div>
-          <div class="card-title">
-            <a href="#" class="toggle-info btn">
-              <span class="left"></span>
-              <span class="right"></span>
-            </a>
-            <h2>
-                Card title
-                <small>Image from unsplash.com</small>
-            </h2>
-          </div>
-          <div class="card-flap flap1">
-            <div class="card-description">
-              This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
-            </div>
-            <div class="card-flap flap2">
-              <div class="card-actions">
-                <a href="#" class="btn">Read more</a>
-              </div>
-            </div>
-          </div>
-        </div>
+           <div class="card__image">
+             <img src="https://unsplash.it/400/608?image=123" alt="">
 
-        <div class="card">
-          <div class="card__image-holder">
-            <img class="card__image" src="https://source.unsplash.com/300x225/?mountain" alt="mountain" />
-          </div>
-          <div class="card-title">
-            <a href="#" class="toggle-info btn">
-              <span class="left"></span>
-              <span class="right"></span>
-            </a>
-            <h2>
-                Card title
-                <small>Image from unsplash.com</small>
-            </h2>
-          </div>
-          <div class="card-flap flap1">
-            <div class="card-description">
-              This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
-            </div>
-            <div class="card-flap flap2">
-              <div class="card-actions">
-                <a href="#" class="btn">Read more</a>
-              </div>
-            </div>
-          </div>
-        </div>
+             <div class="card__overlay card__overlay--indigo">
+               <div class="card__overlay-content">
+                 <ul class="card__meta">
+                   <li><a href="#0"><i class="fa fa-tag"></i> Html5/Css3</a></li>
+                   <li><a href="#0"><i class="fa fa-clock-o"></i> 2 min ago</a></li>
+                 </ul>
 
-      </div>
+                 <a href="#0" class="card__title">How to create a card based article with HTML5 &amp; CSS3</a>
+
+                 <ul class="card__meta card__meta--last">
+                   <li><a href="#0"><i class="fa fa-user"></i> Mithicher</a></li>
+                   <li><a href="#0"><i class="fa fa-facebook-square"></i> Share</a></li>
+                 </ul>
+               </div>
+             </div>
+           </div>
+         </div>
+     </div>
+
+     <div class="grid">
+         <div class="card">
+           <div class="card__image">
+             <img src="https://unsplash.it/400/300?image=100" alt="">
+
+             <div class="card__overlay card__overlay--blue">
+               <div class="card__overlay-content">
+                 <ul class="card__meta">
+                   <li><a href="#0"><i class="fa fa-tag"></i> UI/UX</a></li>
+                   <li><a href="#0"><i class="fa fa-clock-o"></i> 2 days ago</a></li>
+                 </ul>
+
+                 <a href="#0" class="card__title">How to create a card based article with HTML5 &amp; CSS3</a>
+
+                 <ul class="card__meta card__meta--last">
+                   <li><a href="#0"><i class="fa fa-user"></i> Mithicher</a></li>
+                   <li><a href="#0"><i class="fa fa-facebook-square"></i> Share</a></li>
+                 </ul>
+               </div>
+             </div>
+           </div>
+         </div>
+     </div>
+
+     <div class="grid">
+         <div class="card">
+           <div class="card__image">
+             <img src="https://unsplash.it/400/300?image=200" alt="">
+
+             <div class="card__overlay card__overlay--indigo">
+               <div class="card__overlay-content">
+               <ul class="card__meta">
+                   <li><a href="#0"><i class="fa fa-tag"></i> UI/UX</a></li>
+                   <li><a href="#0"><i class="fa fa-clock-o"></i> 2 days ago</a></li>
+                 </ul>
+
+                 <a href="#0" class="card__title">How to create a card based article with HTML5 &amp; CSS3</a>
+
+                 <ul class="card__meta card__meta--last">
+                   <li><a href="#0"><i class="fa fa-user"></i> Mithicher</a></li>
+                   <li><a href="#0"><i class="fa fa-facebook-square"></i> Share</a></li>
+                 </ul>    
+               </div>
+             </div>
+           </div>
+         </div>
+     </div>
+
+     <div class="grid">
+         <div class="card">
+           <div class="card__image">
+             <img src="https://unsplash.it/400/300?image=300" alt="">
+
+             <div class="card__overlay card__overlay--indigo">
+               <div class="card__overlay-content">
+                 <ul class="card__meta">
+                   <li><a href="#0"><i class="fa fa-tag"></i> Tutorials</a></li>
+                   <li><a href="#0"><i class="fa fa-clock-o"></i> 2 days ago</a></li>
+                 </ul>
+
+                 <a href="#0" class="card__title">How to create a card based article with HTML5 &amp; CSS3</a>
+
+                 <ul class="card__meta card__meta--last">
+                   <li><a href="#0"><i class="fa fa-user"></i> Mithicher</a></li>
+                   <li><a href="#0"><i class="fa fa-facebook-square"></i> Share</a></li>
+                 </ul>   
+               </div>
+             </div>
+           </div>
+         </div>
+     </div>
+
+     <div class="grid">
+         <div class="card">
+           <div class="card__image">
+             <img src="https://unsplash.it/400/300?image=400" alt="">
+
+             <div class="card__overlay card__overlay--blue">
+               <div class="card__overlay-content">
+                 <ul class="card__meta">
+                   <li><a href="#0"><i class="fa fa-tag"></i> Tutorials</a></li>
+                   <li><a href="#0"><i class="fa fa-clock-o"></i> 2 days ago</a></li>
+                 </ul>
+
+                 <a href="#0" class="card__title">How to create a card based article with HTML5 &amp; CSS3</a>
+
+                 <ul class="card__meta card__meta--last">
+                   <li><a href="#0"><i class="fa fa-user"></i> Mithicher</a></li>
+                   <li><a href="#0"><i class="fa fa-facebook-square"></i> Share</a></li>
+                 </ul>   
+               </div>
+             </div>
+           </div>
+         </div>
+     </div>	
     </div>
-
-    <div class="section" id="section3">
-      <div class="title">Transparenta decizionala</div>
-      <div id="section3-cards">
-        <div class="box2 flex-column-start color-white">
-          <div class="box2title flex-row-start width-100 text-contrast-high text-bold">
-            Proiect mijloace electronice
-          </div>
-          <div class="box2text flex-column-start width-80">
-            <div class="text-contrast-high text-bold">20 Mai 2022 11:53</div>
-            <div class="text-contrast-medium">Proiect de ordin privind aprobarea Procedurii de comunicare prin mijloace electronice de 
-              transmitere la distanţă între organul fiscal central şi persoanele fizice, persoanele juridice şi alte entităţi 
-              fără personalitate juridică.
-            </div>
-          </div>
-          <button class="box2-btn flex-row-center" name="more" aria-label="Read the complete article">Afla mai multe</button>
-        </div>
+    <div class="section3 width-100">
+      <h1>Mostly CSS Responsive Carousel</h1>
   
-        <div class="box2 flex-column-start color-white">
-          <div class="box2title flex-row-start width-100 text-contrast-high text-bold">
-            Proiect mijloace electronice
+      <section class="Carousel" id="carousel" tabindex="-1">
+        <h2 class="Hidden">Carousel</h2>
+        <article class="Card Card--overlay Card--square" id="card-1">
+          <div class="Card__media">
+            <img class="Card__image" alt="Card image description" width="480" height="480" loading="lazy" src="./img/fabrica.webp">
           </div>
-          <div class="box2text flex-column-start width-80">
-            <div class="text-contrast-high text-bold">20 Mai 2022 11:53</div>
-            <div class="text-contrast-medium">Proiect de ordin privind aprobarea Procedurii de comunicare prin mijloace electronice de 
-              transmitere la distanţă între organul fiscal central şi persoanele fizice, persoanele juridice şi alte entităţi 
-              fără personalitate juridică.
-            </div>
+          <div class="Card__main">
+            <h2 class="Card__heading"><a class="Card__link" href="#">Prefer 1/1 aspect ratio</a></h2>
+            <p>This is a generic card pattern.</p>
           </div>
-          <button class="box2-btn flex-row-center" name="more" aria-label="Read the complete article">Afla mai multe</button>
+        </article>
+        <!--/Card-->
+        <article class="Card Card--overlay Card--wide" id="card-2">
+          <div class="Card__media">
+            <img class="Card__image" alt="Card image description" width="720" height="480" loading="lazy" src="./img/fabrica.webp">
+          </div>
+          <div class="Card__main">
+            <h2 class="Card__heading"><a class="Card__link" href="#">Prefer 16/9 aspect ratio</a></h2>
+            <p>This is a generic card pattern.</p>
+          </div>
+        </article>
+        <!--/Card-->
+        <article class="Card Card--overlay Card--portrait" id="card-3">
+          <div class="Card__media">
+            <img class="Card__image" alt="Card image description" width="360" height="480" loading="lazy" src="https://images.unsplash.com/photo-1621131179929-426cfb7ce409?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMzMxMTAzNw&ixlib=rb-1.2.1&q=85&height=480">
+          </div>
+          <div class="Card__main">
+            <h2 class="Card__heading"><a class="Card__link" href="#">Prefer 3/4 aspect ratio</a></h2>
+            <p>This is a generic card pattern.</p>
+          </div>
+        </article>
+        <!--/Card-->
+        <article class="Card Card--overlay Card--photo" id="card-4">
+          <div class="Card__media">
+            <img class="Card__image" alt="Card image description" width="708" height="480" loading="lazy" src="https://images.unsplash.com/photo-1622176835604-e644073b0eab?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMzMxMTA3OQ&ixlib=rb-1.2.1&q=85&height=480">
+          </div>
+          <div class="Card__main">
+            <h2 class="Card__heading"><a class="Card__link" href="#">Prefer 4/3 aspect ratio</a></h2>
+            <p>This is a generic card pattern.</p>
+          </div>
+        </article>
+        <!--/Card-->
+        <article class="Card Card--overlay Card--square" id="card-5">
+          <div class="Card__media">
+            <img class="Card__image" alt="Card image description" width="480" height="480" loading="lazy" src="https://images.unsplash.com/photo-1622987437805-5c6f7c2609d7?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMzMxOTA3NA&ixlib=rb-1.2.1&q=85&height=480">
+          </div>
+          <div class="Card__main">
+            <h2 class="Card__heading"><a class="Card__link" href="#">Prefer 1/1 aspect ratio</a></h2>
+            <p>This is a generic card pattern.</p>
+          </div>
+        </article>
+        <!--/Card-->
+        <article class="Card Card--overlay Card--wide" id="card-6">
+          <div class="Card__media">
+            <img class="Card__image" alt="Card image description" width="720" height="480" loading="lazy" src="https://images.unsplash.com/photo-1607935911096-f31f85819be7?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMzMyNTI1NA&ixlib=rb-1.2.1&q=85&height=480">
+          </div>
+          <div class="Card__main">
+            <h2 class="Card__heading"><a class="Card__link" href="#">Prefer 16/9 aspect ratio</a></h2>
+            <p>This is a generic card pattern.</p>
+          </div>
+        </article>
+        <!--/Card-->
+        <article class="Card Card--overlay Card--portrait" id="card-7">
+          <div class="Card__media">
+            <img class="Card__image" alt="Card image description" width="360" height="480" loading="lazy" src="https://images.unsplash.com/photo-1622595522218-f318265a40f4?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMzMxOTE1Ng&ixlib=rb-1.2.1&q=85&height=480">
+          </div>
+          <div class="Card__main">
+            <h2><a class="Card__link" href="#">Prefer 3/4 aspect ratio</a></h2>
+            <p>This is a generic card pattern.</p>
+          </div>
+        </article>
+        <!--/Card-->
+        <article class="Card Card--overlay Card--photo" id="card-8">
+          <div class="Card__media">
+            <img class="Card__image" alt="Card image description" width="708" height="480" loading="lazy" src="https://images.unsplash.com/photo-1621045246196-4c7ce9092d3a?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMzMxOTIyOQ&ixlib=rb-1.2.1&q=85&height=480">
+          </div>
+          <div class="Card__main">
+            <h2><a class="Card__link" href="#">Prefer 4/3 aspect ratio</a></h2>
+            <p>This is a generic card pattern.</p>
+          </div>
+        </article>
+        <!--/Card-->
+      </section>
+      <!--/Carousel-->
+      
+      <nav class="Pagination">
+        <h2 class="Hidden">Carousel Navigation</h2>
+        <button class="Arrow" type="button" aria-controls="carousel" disabled>
+          <svg width="16" height="16" viewBox="0 0 16 16" role="presentation">
+            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+          </svg>
+          <span class="Hidden">Previous slide</span>
+        </button>
+        <button class="Arrow" type="button" aria-controls="carousel" disabled>
+          <svg width="16" height="16" viewBox="0 0 16 16" role="presentation">
+            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+          </svg>
+          <span class="Hidden">Next slide</span>
+        </button>
+        <div class="Dots">
+          <a href="#card-1" class="Dot" tabindex="-1"><span class="Hidden">Slide 1</span></a>
+          <a href="#card-2" class="Dot" tabindex="-1"><span class="Hidden">Slide 2</span></a>
+          <a href="#card-3" class="Dot" tabindex="-1"><span class="Hidden">Slide 3</span></a>
+          <a href="#card-4" class="Dot" tabindex="-1"><span class="Hidden">Slide 4</span></a>
+          <a href="#card-5" class="Dot" tabindex="-1"><span class="Hidden">Slide 5</span></a>
+          <a href="#card-6" class="Dot" tabindex="-1"><span class="Hidden">Slide 6</span></a>
+          <a href="#card-7" class="Dot" tabindex="-1"><span class="Hidden">Slide 7</span></a>
+          <a href="#card-8" class="Dot" tabindex="-1"><span class="Hidden">Slide 8</span></a>
         </div>
-  
-        <div class="box2 flex-column-start color-white">
-          <div class="box2title flex-row-start width-100 text-contrast-high text-bold">
-            Proiect mijloace electronice
-          </div>
-          <div class="box2text flex-column-start width-80">
-            <div class="text-contrast-high text-bold">20 Mai 2022 11:53</div>
-            <div class="text-contrast-medium">Proiect de ordin privind aprobarea Procedurii de comunicare prin mijloace electronice de 
-              transmitere la distanţă între organul fiscal central şi persoanele fizice, persoanele juridice şi alte entităţi 
-              fără personalitate juridică.
-            </div>
-          </div>
-          <button class="box2-btn flex-row-center" name="more" aria-label="Read the complete article">Afla mai multe</button>
-        </div>
-  
-      </div>
-      </div>
-  </div>
-
+      </nav>
+  </main>
   <script src="./js/myscripts.js"></script>
 </body>
 </html>
