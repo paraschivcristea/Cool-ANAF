@@ -163,7 +163,7 @@ html {
   width: 100%;
   z-index:9;
 }
-
+ 
 #header{
   top:0px;
 }
@@ -186,6 +186,7 @@ a {
 
 .menu {
   margin: 0;
+  padding: 0;
 }
 
 .logo {
@@ -348,11 +349,16 @@ a {
   height: 100vh;
 }
 
+.spv {
+  gap: 2vh;
+}
+
 .spv-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  gap: 2vh;
   width: 50%;
 }
 
@@ -630,6 +636,7 @@ div.card.show div.flap2 {
 #section3 {
   justify-content: center;
   align-items: center;
+  padding: 0 10em;
   background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(90,92,106,1) 0%, rgba(32,45,58,1) 81.3% );
 }
 
@@ -637,7 +644,6 @@ div.card.show div.flap2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10em;
 }
 
 .box2 {
@@ -808,25 +814,16 @@ div.card.show div.flap2 {
 }
 
 @media only screen and (max-width: 600px) {
-  .btn-primary{
-    display: block;
-    margin: 0.4em auto;
-  }
-
-  .width-80 {
-    width: 100%;
-  }
-
-  .desktop {
-    display: none;
-  }
-
   .spv {
     flex-direction: column;
     padding: 0;
   }
 
   .spv-img, .spv-img-container {
+    width: 100%;
+  }
+
+  .spv-img img {
     width: 100%;
   }
 
@@ -844,44 +841,24 @@ div.card.show div.flap2 {
   .spv-buttons-container {
     width: 100%;
     flex-direction: column;
-    gap: 0;
+    gap: 2vh;
   }
 
-  .btn-primary {
-    width: 100%;
+  .btn-spv {
+    height: 6vh;
+    width: 80vw;
   }
 
-  .title {
-    width: 100%;
-    margin: 0;
-    border-radius: 0;
+  #section2, #section3 {
+    padding: 0;
   }
 
-  .row {
+  #section3-cards {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    gap: 1em;
   }
 
-  .box {
-    flex-direction: column;
-    height: auto;
-    width: 100%;
-    background-color: white;
-    box-shadow: inset 0 0 0.5px 1px rgba(255, 255, 255, 0.075), 0 0.3px 0.4px rgba(0, 0, 0, 0.025), 0 0.9px 1.5px rgba(0, 0, 0, 0.05), 0 3.5px 6px rgba(0, 0, 0, 0.1);
-  }
-
-  .box:hover {
-    transform: scale(1);
-  }
-
-  .box-title {
-    padding: 0.5em;
-  }
-
-  .box-img {
-    height: 100%;
-    width: 100%;
+  .box2 {
     border-radius: 0;
   }
 
@@ -904,14 +881,6 @@ div.card.show div.flap2 {
 
   .box2btn {
     border-radius: 0;
-  }
-
-  .box3 {
-    width: 100%;
-  }
-
-  .footer-menu, .footer-logo {
-    display: none;
   }
 
   .page-container {
