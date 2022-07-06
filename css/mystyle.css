@@ -372,6 +372,10 @@ a {
   font-size: 4em;
 }
 
+.spv-buttons-container {
+  gap: 2em;
+}
+
 /* CSS */
 .spv-btn {
   background-color: initial;
@@ -417,10 +421,6 @@ a {
 
 .spv-img img {
   max-height: 99vh;
-}
-
-.spv-buttons-container {
-  gap: 2em;
 }
 
 .title {
@@ -840,7 +840,7 @@ div.card.show div.flap2 {
   .spv-buttons-container {
     width: 100%;
     flex-direction: column;
-    gap: 2vh;
+    gap: 5vh;
   }
 
   div.card {
