@@ -8,9 +8,48 @@
     <title>Agentia Nationala de Anti Frauda</title>
     <link href="./css/mystyle.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./css/fullpage.css"/>
+    <link href="./css/all.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
 </head>
 <body>
+  <div id="header">
+    <nav>
+      <ul class="menu">
+        <li class="logo">
+          <a href="#">
+            <i class="fa-solid fa-user-shield"></i>
+            ANAF
+          </a>
+        </li>
+        <li class="item"><a href="#">Home</a></li>
+        <li class="item"><a href="#">About</a></li>
+        <li class="item has-submenu">
+          <a tabindex="0">Services</a>
+          <ul class="submenu">
+            <li class="subitem"><a href="#">Design</a></li>
+            <li class="subitem"><a href="#">Development</a></li>
+            <li class="subitem"><a href="#">SEO</a></li>
+            <li class="subitem"><a href="#">Copywriting</a></li>
+          </ul>
+        </li>
+        <li class="item has-submenu">
+          <a tabindex="0">Plans</a>
+          <ul class="submenu">
+            <li class="subitem"><a href="#">Freelancer</a></li>
+            <li class="subitem"><a href="#">Startup</a></li>
+            <li class="subitem"><a href="#">Enterprise</a></li>
+          </ul>
+        </li>
+        <li class="item"><a href="#">Blog</a></li>
+        <li class="item"><a href="#">Contact</a>
+        </li>
+        <li class="item button"><a href="#">Log In</a></li>
+        <li class="item button secondary"><a href="#">Sign Up</a></li>
+        <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+      </ul>
+    </nav>
+  </div>
+
   <div id="fullpage">
     <div class="section active" id="section1">
       <div class="spv flex-row-center">
@@ -33,6 +72,7 @@
         </div>
       </div>
     </div>
+
     <div class="section" id="section2">
       <div class="title title-primary font-size-md color-secondary text-white text-bold">Comunicate de presa</div>
       <div class="row flex-row-between width-100">
@@ -81,7 +121,8 @@
           </a>
         </div>
       </div>
-  </div>
+    </div>
+
   <div class="section" id="section3">
     <div class="title title-primary font-size-md color-secondary text-white text-bold">Transparenta decizionala</div>
     <div class="row width-100">
@@ -127,10 +168,12 @@
     </div>
   </div>
   </div>
+
   <script type="text/javascript" src="./js/fullpage.js"></script>
   <script type="text/javascript">
 	  var myFullpage = new fullpage('#fullpage', {
-		  sectionsColor: ['#ffffff', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
+		  sectionsColor: ['#ffffff', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+      css3: true
 	  });
   </script>
   <script src="./js/myscripts.js"></script>
