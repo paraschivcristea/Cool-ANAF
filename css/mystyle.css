@@ -351,6 +351,7 @@ a {
 }
 
 .spv {
+  height: 100vh;
   gap: 2vh;
 }
 
