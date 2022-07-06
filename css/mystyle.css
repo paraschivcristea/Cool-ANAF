@@ -360,7 +360,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 2vh;
+  gap: 5vh;
   width: 50%;
 }
 
