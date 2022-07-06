@@ -340,7 +340,7 @@ a {
   }
 }
 
-.section {
+#section1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -349,6 +349,7 @@ a {
 }
 
 #section2 {
+  text-align: center;
   background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
 }
 
