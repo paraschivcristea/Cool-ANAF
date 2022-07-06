@@ -815,7 +815,10 @@ div.card.show div.flap2 {
   }
 
   .spv-img, .spv-img-container {
-    width: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .spv-img img {
