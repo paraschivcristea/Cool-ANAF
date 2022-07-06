@@ -1,81 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
-
-* {
-  box-sizing: border-box;
-  text-decoration: none;
-}
-
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: "Nunito", sans-serif;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  background-color: #fff;
-  font-family: Arial, Helvetica, Verdana;
-  font-size: 16px;
-  line-height: 22px;
-  position: relative;
-  -webkit-text-size-adjust: none;
-}
-
-a,
-a:link,
-a:active,
-a:visited,
-a:hover {
-    color: inherit;
-}
-
-nav:not(.mm-menu) {
-    display: none;
-}
-
-#header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: sticky;
-  z-index: 4;
-  height: 50px;
-  padding: 0 80px;
-  top: 0;
-  font-size: 16px;
-  font-weight: bold;
-  color: #fff;
-  line-height: 44px;
-  text-align: center;
-  background: hsl(250, 84%, 60%);
-}
-#header a {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 80px;
-    height: 50px;
-    padding: 15px 25px;
-}
-#header a:before,
-#header a:after {
-    content: "";
-    display: block;
-    background: #fff;
-    height: 2px;
-}
-#header a span {
-    background: #fff;
-    display: block;
-    height: 2px;
-    margin: 7px 0;
-}
-
 /* Defined classes */
 .color-primary {
   background-color: hsl(250, 84%, 54%);
@@ -217,6 +139,25 @@ nav:not(.mm-menu) {
   cursor: pointer;
 }
 /* Defined classes */
+
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 #mobile {
   display: none;
 }
@@ -509,11 +450,6 @@ nav:not(.mm-menu) {
 }
 
 @media only screen and (max-width: 600px) {
-  #footer {
-    justify-content: center;
-    padding: 0.5em;
-  }
-
   .btn-primary{
     display: block;
     margin: 0.4em auto;
@@ -521,10 +457,6 @@ nav:not(.mm-menu) {
 
   .width-80 {
     width: 100%;
-  }
-
-  .searchbar {
-    display: none;
   }
 
   .desktop {
