@@ -145,10 +145,10 @@
 
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
 
-* {
+*, *::after, *::before {
   box-sizing: border-box;
   text-decoration: none;
-}
+ }
 
 html,
 body {
@@ -163,7 +163,7 @@ body {
 
 /*Navigation bar start here*/
 nav{
-  background: white;
+  background: #6200EE;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -172,7 +172,7 @@ nav{
   padding: 0 2em;
 }
 nav .logo{
-  color: #6200EE;
+  color: white;
   font-size: 30px;
   font-weight: 600;
   letter-spacing: -1px;
@@ -189,7 +189,7 @@ nav .nav-items li{
   padding: 0 15px;
 }
 nav .nav-items li a{
-  color: #6200EE;
+  color: white;
   font-size: 18px;
   font-weight: 500;
   text-decoration: none;
@@ -199,12 +199,12 @@ nav .nav-items li a:hover{
 }
 nav form{
   display: flex;
-  height: 40px;
+  height: 34px;
   padding: 2px;
-  background: #E8E8E8;
+  background: white;
   min-width: 18%!important;
   border-radius: 20px;
-  border: 1px solid rgba(155,155,155,0.2);
+  border: 1px solid #6200EE;
 }
 nav form .search-data{
   width: 100%;
@@ -217,7 +217,9 @@ nav form .search-data{
   outline: none;
   font-weight: 500;
   background: none;
+  z-index: 1;
 }
+
 nav form button{
   padding: 0 15px;
   color: #6200EE;
@@ -237,7 +239,7 @@ nav .search-icon{
   text-align: center;
   margin: 0 50px;
   font-size: 18px;
-  color: #6200EE;
+  color: white;
   cursor: pointer;
   display: none;
 }
@@ -268,7 +270,7 @@ nav .search-icon{
     height: 100%;
     padding: 10px 50px 0 50px;
     text-align: center;
-    background: white;
+    background: #6200EE;
     display: inline-block;
     transition: left 0.3s ease;
   }
@@ -282,6 +284,15 @@ nav .search-icon{
   nav .nav-items li a{
     font-size: 20px;
   }
+
+  nav form .search-data {
+    color: white;
+  }
+
+  nav form .search-data::placeholder {
+    color: white;
+  }
+
   nav form{
     position: absolute;
     top: 80px;
@@ -302,9 +313,9 @@ nav .search-icon{
     right: 0px;
     width: 0;
     height: 0;
-    z-index: -1;
+    z-index: 0;
     border: 10px solid transparent;
-    border-bottom-color: #1e232b;
+    border-bottom-color: #6200EE;
     margin: -20px 0 0;
   }
   nav form:after{
@@ -312,14 +323,20 @@ nav .search-icon{
     content: '';
     height: 60px;
     padding: 2px;
-    background: #1e232b;
+    background: #6200EE;
     border-radius: 2px;
     min-width: calc(100% + 20px);
-    z-index: -2;
+    z-index: 0;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
   }
+
+  nav form button {
+    color: white;
+    z-index: 1;
+  }
+
   nav .menu-icon{
     display: block;
   }
@@ -337,7 +354,7 @@ nav .search-icon{
 }
 
 nav .logo.space{
-  color: red;
+  color: white;
   padding: 0 5px 0 0;
 }
 @media (max-width: 980px){
@@ -365,7 +382,7 @@ nav .logo.space{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 92vh;
   padding: 0 2em;
 }
 
