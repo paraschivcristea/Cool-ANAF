@@ -270,7 +270,7 @@ nav .search-icon{
     height: 100%;
     padding: 10px 50px 0 50px;
     text-align: center;
-    background: #6200EE;
+    background: white;
     display: inline-block;
     transition: left 0.3s ease;
   }
@@ -282,6 +282,7 @@ nav .search-icon{
     margin: 30px 0;
   }
   nav .nav-items li a{
+    color: #6200EE;
     font-size: 20px;
   }
 
@@ -382,7 +383,7 @@ nav .logo.space{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 92vh;
+  height: 92.33vh;
   padding: 0 2em;
 }
 
