@@ -151,6 +151,10 @@ body {
   background-color: #f6f5f7;
 }
 
+main {
+  gap: 1em;
+}
+
 header {
   position: sticky;
   top: 0;
@@ -408,7 +412,7 @@ nav .logo.space{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .section2 h1 {
@@ -416,6 +420,7 @@ nav .logo.space{
   font-weight: 400;
   text-align: center;
   padding: 1em;
+  margin: 2em;
   background-color: #FF4B2B;
   color: white;
 }
@@ -426,6 +431,10 @@ nav .logo.space{
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  background-color: white;
+  padding: 0 0 1em 0;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+  0 10px 10px rgba(0,0,0,0.22);
 }
 
 .card-img {
@@ -440,38 +449,23 @@ nav .logo.space{
 }
 
 .card-title {
-  font-size: 2em;
-  padding: 0.5em 0;
+  font-size: 1.5em;
+  padding: 0.5em 1rem;
+  font-weight: 700;
 }
 
 .card-text {
   display: -webkit-box;
   width: 100%;
-  font-size: 1.2em;
+  font-size: 1rem;
+  padding: 0 1rem;
   line-height: 1.5em;
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;  
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
-
 /*Section no. 2 design end here*/
-
-/*Section 3 design start here*/
-.section3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.section3 h1 {
-  font-size: 24px;
-  font-weight: 400;
-  text-align: center;
-}
-/*Section 3 design end here*/
 
 /*CSS for post.html*/
 .page-container {
@@ -618,7 +612,8 @@ nav .logo.space{
     gap: 5vh;
   }
 
-  .section2, .section3 {
+  .section2 {
+    background-color: #eee;
     padding: 0;
   }
 
@@ -631,10 +626,12 @@ nav .logo.space{
   .cards-container {
     flex-direction: column;
     justify-content: center;
+    gap: 1em;
   }
 
   .card {
     width: 100%;
+    box-shadow: none;
   }
 
   .page-container {
