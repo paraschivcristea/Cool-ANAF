@@ -1,4 +1,29 @@
 
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+*, *::after, *::before {
+  box-sizing: border-box;
+  text-decoration: none;
+ }
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: #f6f5f7;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  transition: all 0.5s ease-out;
+}
+
 /* Defined classes */
 .color-white {
   background-color: hsl(0, 0%, 100%);
@@ -13,7 +38,7 @@
 }
 
 .text-contrast-low {
-  color: hsl(204, 2%, 46%)
+  color: hsl(204, 2%, 46%);
 }
 
 .text-contrast-medium {
@@ -133,35 +158,6 @@
 }
 /* Defined classes */
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
-
-*, *::after, *::before {
-  box-sizing: border-box;
-  text-decoration: none;
- }
-
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: 'Montserrat', sans-serif;
-}
-
-body {
-  background-color: #f6f5f7;
-}
-
-main {
-  gap: 1em;
-}
-
-header {
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  transition: all 0.5s ease-out;
-}
-
 /*Navigation bar start here*/
 nav {
   background: #fff;
@@ -189,7 +185,7 @@ nav .nav-items li{
   padding: 0 40px 0 0;
 }
 nav .nav-items li a{
-  color: #16181a;
+  color: hsl(204, 28%, 7%);
   font-size: 18px;
   font-weight: 300;
   text-decoration: none;
@@ -241,7 +237,7 @@ nav .search-icon{
   text-align: center;
   margin: 0 50px;
   font-size: 18px;
-  color: #FF4B2B;
+  color: hsl(204, 28%, 7%);
   cursor: pointer;
   display: none;
 }
@@ -282,18 +278,18 @@ nav .search-icon{
     padding: 0;
   }
   nav .nav-items li a{
-    color: #16181a;
+    color: hsl(204, 28%, 7%);
     font-size: 20px;
   }
 
   nav form .search-data {
     background: #fff;
-    color: #16181a;
+    color: hsl(204, 28%, 7%);
     border-radius: 0;
   }
 
   nav form .search-data::placeholder {
-    color: #16181a;
+    color: hsl(204, 2%, 46%);
   }
 
   nav form {
@@ -421,20 +417,25 @@ nav .logo.space{
   text-align: center;
   padding: 1em;
   margin: 2em;
-  background-color: #FF4B2B;
-  color: white;
+	background: #FF416C;
+	background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
+	background: linear-gradient(to right, #FF4B2B, #FF416C);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 0;
+	color: #FFFFFF;
 }
 
-.card {
+.card, .card2 {
   width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   background-color: white;
-  padding: 0 0 1em 0;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
   0 10px 10px rgba(0,0,0,0.22);
+  transition: all 0.3s 0s ease-in;
 }
 
 .card-img {
@@ -448,22 +449,75 @@ nav .logo.space{
   object-fit: cover;
 }
 
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
 .card-title {
-  font-size: 1.5em;
-  padding: 0.5em 1rem;
+  font-size: 1.1em;
+  padding: 0.5em 0;
   font-weight: 700;
 }
 
 .card-text {
   display: -webkit-box;
   width: 100%;
-  font-size: 1rem;
-  padding: 0 1rem;
+  font-size: 1em;
+  padding: 1em 0 0 0;
   line-height: 1.5em;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;  
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.card-btn {
+  align-items: center;
+  background-color: #3B527F;
+	color: #FFFFFF;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 16px;
+  font-weight: 600;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  min-width: 100%;
+  outline: 0;
+  padding: 0 17px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 1em 0 0 0;
+}
+
+.card-btn:hover, .card-btn:active, .card-btn:focus {
+  opacity: 0.8;
+}
+
+@media (min-width: 768px) {
+  .card-btn {
+    min-width: 100%;
+  }
+}
+
+.show {
+  opacity: 1 !important;
+  transform: scale(1) !important;
+}
+
+.showing {
+  cursor: pointer;
+  opacity: 0.6;
+  transform: scale(0.88);
 }
 /*Section no. 2 design end here*/
 
@@ -574,18 +628,24 @@ nav .logo.space{
   font-weight: 500;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1120px) {
   .width-80 {
     width: 100%;
   }
 
+  .section {
+    justify-content: flex-start;
+  }
+
   .spv {
+    height: 90%;
     flex-direction: column;
+    justify-content: space-between;
     padding: 0;
   }
 
   .spv-img, .spv-img-container {
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -598,6 +658,7 @@ nav .logo.space{
   .spv-text {
     width: 100%;
     align-items: center;
+    gap: 3em;
   }
 
   .spv-text h1, .spv-text h2 {
@@ -629,10 +690,11 @@ nav .logo.space{
     gap: 1em;
   }
 
-  .card {
+  .card, .card2 {
     width: 100%;
     box-shadow: none;
   }
+  
 
   .page-container {
     flex-direction: column;
