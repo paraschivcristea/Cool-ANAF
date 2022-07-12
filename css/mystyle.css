@@ -374,7 +374,7 @@ nav .logo.space{
   padding: 0 2em;
 }
 
-.section2, .section3 {
+.section2 {
   padding: 0 2em;
 }
 
@@ -522,6 +522,27 @@ nav .logo.space{
   transform: scale(0.88);
 }
 /*Section no. 2 design end here*/
+
+/*Section no. 3 design start here*/
+#section3 {
+  height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100);
+}
+
+.swiper {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*Section no. 3 design end here here*/
 
 /*CSS for post.html*/
 .page-container {
