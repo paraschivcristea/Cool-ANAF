@@ -369,7 +369,8 @@ nav .logo.space{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 92.33vh;
+  height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100);
   padding: 0 2em;
 }
 
@@ -636,12 +637,13 @@ nav .logo.space{
 
   .section {
     justify-content: flex-start;
+    padding: 0 1em;
   }
 
   .spv {
     height: 90%;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0;
   }
 
@@ -659,7 +661,7 @@ nav .logo.space{
   .spv-text {
     width: 100%;
     align-items: center;
-    gap: 3em;
+    gap: 2em;
   }
 
   .spv-text h1, .spv-text h2 {
