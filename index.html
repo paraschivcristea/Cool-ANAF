@@ -9,8 +9,6 @@
     <title>Agentia Nationala de Anti Frauda</title>
     <link href="./css/mystyle.css" rel="stylesheet">
     <link href="./css/all.css" rel="stylesheet">
-    <link rel="stylesheet"href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
 </head>
 <body class="flex-column-center">
@@ -45,17 +43,17 @@
     </header>
     <div class="section width-100">
       <div class="spv flex-row-center">
-        <div class="spv-img">
+        <div class="spv-img flex-row-center">
           <img class="width-100" src="./img/spv.webp" alt="Poza Spatiul Privat Virtual">
         </div>
         <div class="spv-text">
-          <h1 class="text-contrast-high width-80">Spatiul Privat Virtual</h2>
-          <h2 class="text-contrast-low width-80">Este un serviciu gratuit, accesibil permanent, care va ofera acces la beneficiile online disponibile pe platforma ANAF</h2>
-          <div class="spv-btn flex-row-between">
-            <button class="btn-primary" name="login" aria-label="Login to your account">
+          <h1 class="width-80">Spatiul Privat Virtual</h2>
+          <p class="width-80">Este un serviciu gratuit, accesibil permanent, care va ofera acces la beneficiile online disponibile pe platforma ANAF</p>
+          <div class="spv-buttons flex-row-between">
+            <button class="spv-btn" name="login" aria-label="Login to your account">
               Logare
             </button>
-            <button class="btn-primary btn-secondary" name="tutorial" aria-label="Tutorial for how to use SPV">
+            <button class="spv-btn spv-btn-secondary" name="tutorial" aria-label="Tutorial for how to use SPV">
               Ghid
             </button>
           </div>
@@ -65,74 +63,25 @@
 
     <div class="section2 width-100">
       <h1>Comunicate de presa</h1>
-      <div class="cards-container width-100 flex-row-between">
-        <div class="card">
-          <div class="card-img"><img src="./img/fabrica.webp"></div>
-          <div class="card-content">
-            <div class="card-title">Fabrică clandestină de țigări identificată în Buzău</div>
-            <div class="card-text">În urma analizei de risc fiscal și a monitorizării permanente a pieței efectuate de inspectorii Direcției Generale Antifraudă Fiscală, din cadrul ANAF, în localitatea Sudiți din județul Buzău a fost identificată o linie completă de fabricare clandestină a țigaretelor</div>
-            <a class="card-btn" href="#">Citeste mai multe</a>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-img"><img src="./img/fiscal.webp"></div>
-          <div class="card-content">
-            <div class="card-title">Rezultatele acțiunilor de control fiscal din primele 5 luni ale anului</div>
-            <div class="card-text">În vederea asigurării resurselor necesare pentru buna funcționare a statului, ANAF urmărește creșterea gradului de conformare voluntară, atât la declarare, cât și la plată, mizând pe spiritul de responsabilitate civică al contribuabililor, dar și pe campanii de informare cu privire la procedurile de declarare a veniturilor și de plată a taxelor și impozitelor</div>
-            <a class="card-btn" href="#">Citeste mai multe</a>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-img"><img src="./img/frauda.webp"></div>
-          <div class="card-content">
-            <div class="card-title">Rezultatele acțiunilor de control antifraudă în primele 5 luni ale anului</div>
-            <div class="card-text">Unul dintre obiectivele majore ale ANAF este combaterea evaziunii fiscale, un flagel al economiei care păgubește bugetul general consolidat de resursele necesare bunei desfășurări a statului. În acest sens, Agenția desfășoară acțiuni de control menite să îndrepte sau să sancționeze neregulile comise de contribuabili, îmbunătățind astfel gradul de colectare</div>
-            <a class="card-btn" href="#">Citeste mai multe</a>
-          </div>
-        </div>
+      <div class="article1">
+        ANAF a depistat o fabrica de tigari ilegala
+      </div>
+      <div class="article2">
+        <img src="./img/fabrica.webp">
+        <div class="article-title">AICI ESTE LOCUL UNUI ARTICOL</div>
+      </div>
+      <div class="article3">
+        <img src="./img/fabrica.webp">
+        <div class="article-title">AICI ESTE LOCUL UNUI ARTICOL</div>
+      </div>
+      <div class="article4">
+        <img src="./img/fabrica.webp">
+        <div class="article-title">AICI ESTE LOCUL UNUI ARTICOL</div>
       </div>
     </div>
 
     <div class="section2 width-100" id="section3">
       <h1>Transparenta decizionala</h1>
-      <div class="cards-container width-100 flex-row-between">
-        <div class="card2">
-          <div class="card-content">
-            <div class="card-title">Fabrică clandestină de țigări identificată în Buzău</div>
-            <div class="card-text">În urma analizei de risc fiscal și a monitorizării permanente a pieței efectuate de inspectorii Direcției Generale Antifraudă Fiscală, din cadrul ANAF, în localitatea Sudiți din județul Buzău a fost identificată o linie completă de fabricare clandestină a țigaretelor</div>
-            <a class="card-btn" href="#">Citeste mai multe</a>
-          </div>
-        </div>
-        <div class="card2">
-          <div class="card-content">
-            <div class="card-title">Fabrică clandestină de țigări identificată în Buzău</div>
-            <div class="card-text">În urma analizei de risc fiscal și a monitorizării permanente a pieței efectuate de inspectorii Direcției Generale Antifraudă Fiscală, din cadrul ANAF, în localitatea Sudiți din județul Buzău a fost identificată o linie completă de fabricare clandestină a țigaretelor</div>
-            <a class="card-btn" href="#">Citeste mai multe</a>
-          </div>
-        </div>
-        <div class="card2">
-          <div class="card-content">
-            <div class="card-title">Fabrică clandestină de țigări identificată în Buzău</div>
-            <div class="card-text">În urma analizei de risc fiscal și a monitorizării permanente a pieței efectuate de inspectorii Direcției Generale Antifraudă Fiscală, din cadrul ANAF, în localitatea Sudiți din județul Buzău a fost identificată o linie completă de fabricare clandestină a țigaretelor</div>
-            <a class="card-btn" href="#">Citeste mai multe</a>
-          </div>
-        </div>
-      </div>
-      <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide">Slide 1</div>
-          <div class="swiper-slide">Slide 2</div>
-          <div class="swiper-slide">Slide 3</div>
-          ...
-        </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-      
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
     </div>
 
   </main>
