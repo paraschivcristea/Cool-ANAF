@@ -365,7 +365,6 @@ nav .logo.space{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
   padding: 0 2em;
 }
 
@@ -379,6 +378,14 @@ nav .logo.space{
 	color: #FFFFFF;
 }
 
+.cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2px;
+}
+
 .article1 {
   height: 40vh;
   width: 100%;
@@ -390,8 +397,22 @@ nav .logo.space{
   transition: background-image 0.3s ease;
 }
 
-.article1:hover {
-  background-image: #121212;
+.article1
+
+.article2, .article3, .article4 {
+  height: 30vh;
+  width: 33.2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/fabrica.webp");
+  background-size: cover;
+  transition: background-image 0.3s ease;
+}
+
+.article1, .article2, .article3, .article4:hover {
+  background-color: #e5e4e4;
+  fill-opacity: 5;
 }
 
 /*Section no. 2 design end here*/
@@ -512,12 +533,13 @@ nav .logo.space{
   }
 
   .section {
+    height: 100vh;
     justify-content: flex-start;
-    padding: 0 1em;
+    padding: 0;
   }
 
   .spv {
-    height: 90%;
+    height: 100%;
     flex-direction: column;
     justify-content: space-around;
     padding: 0;
