@@ -391,28 +391,40 @@ nav .logo.space{
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  transition: .4s ease-in-out;
+  align-items: flex-end;
+  transition: all 0.5s ease-in;
 }
 
-.card2 {
+.card2, .card3, .card4 {
   height: 30vh;
   width: 33.2%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  transition: .4s ease-in-out;
+  align-items: flex-end;
+  transition: all 0.5s ease-in;
 }
 
-.card-background {
+.card-background, .card-background2, .card-background3, .card-background4 {
   height: 100%;
   width: 100%;
+  display: inline-block;
+  position: relative;
   overflow: hidden;
   background: #121212;
   transition: all 0.5s ease-in;
 }
 
-.card-background-img {
+.card-background::after, .card-background2::after, .card-background3::after, .card-background4::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+}
+
+.card-background-img, .card-background-img2, .card-background-img3, .card-background-img4 {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -421,9 +433,20 @@ nav .logo.space{
 	transition: .3s ease-in-out;
 }
 
-.card-title {
+.card-title, .card-title2, .card-title3, .card-title4 {
   position: absolute;
-  font-size: 2em;
+  font-size: 1em;
+  font-weight: 600;
+  color: #FFFFFF;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+  margin: 1em;
+  text-align: center;
+  transition: all 0.5s ease-in;
+}
+
+.card-title2, .card-title3, .card-title4 {
+  font-size: 0.9em;
+  width: 15%;
 }
 
 .card-background-hover {
@@ -611,12 +634,18 @@ nav .logo.space{
     gap: 1em;
   }
 
-  .card, .card2 {
+  .card {
+    height: 30vh;
+  }
+
+  .card2, .card3, .card4 {
     width: 100%;
-    box-shadow: none;
+  }
+
+  .card-title, .card-title2, .card-title3, .card-title4 {
+    text-align: center;
   }
   
-
   .page-container {
     flex-direction: column;
   }
