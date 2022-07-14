@@ -378,7 +378,7 @@ nav .logo.space{
 	color: #FFFFFF;
 }
 
-.cards {
+.cards-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -386,34 +386,54 @@ nav .logo.space{
   gap: 2px;
 }
 
-.article1 {
+.card {
   height: 40vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../img/fabrica.webp");
-  background-size: cover;
-  transition: background-image 0.3s ease;
+  transition: .4s ease-in-out;
 }
 
-.article1
-
-.article2, .article3, .article4 {
+.card2 {
   height: 30vh;
   width: 33.2%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../img/fabrica.webp");
-  background-size: cover;
-  transition: background-image 0.3s ease;
+  transition: .4s ease-in-out;
 }
 
-.article1, .article2, .article3, .article4:hover {
-  background-color: #e5e4e4;
-  fill-opacity: 5;
+.card-background {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: #121212;
+  transition: all 0.5s ease-in;
 }
+
+.card-background-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.card-title {
+  position: absolute;
+  font-size: 2em;
+}
+
+.card-background-hover {
+  opacity: 0.2;
+}
+
+.card-title-hover {
+  color: #FFFFFF;
+}
+
 
 /*Section no. 2 design end here*/
 

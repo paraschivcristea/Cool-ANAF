@@ -31,3 +31,20 @@ window.addEventListener('scroll',(e)=>{
     nav.classList.remove("menushadow");
   }
 });
+
+const card = document.querySelector(".card");
+const card2 = document.querySelector(".card2");
+const cardBackground = document.querySelector(".card-background-img");
+const cardTitle = document.querySelector(".card-title");
+
+card.addEventListener("mouseover", (e) => {
+  cardBackground.classList.add("card-background-hover");
+  cardTitle.classList.add("card-title-hover");
+});
+
+card.addEventListener("mouseout", (e) => {
+  cardBackground.classList.remove("card-background-hover");
+  cardTitle.classList.remove("card-title-hover");
+});
+
+
