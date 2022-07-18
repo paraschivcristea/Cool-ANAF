@@ -1,9 +1,20 @@
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
+:root {
+  --primary-color: #015e9b;
+  --secondary-color: #c9356e;
+  --third-color: #373850;
+  --fourth-color: #d5e6f4;
+  --white-color: #fff;
+  --gray-color: #f6f5f7;
+  --dark-gray-color: #373850;
+}
+
 *, *::after, *::before {
   box-sizing: border-box;
   text-decoration: none;
+  list-style-type: none;
 }
 
 html {
@@ -18,7 +29,11 @@ body {
 }
 
 body {
-  background-color: #f6f5f7;
+  background-color: var(--gray-color);
+}
+
+main {
+  background-color: var(--white-color);
 }
 
 header {
@@ -29,20 +44,6 @@ header {
 }
 
 /* Defined classes */
-.color-white {
-  background-color: hsl(0, 0%, 100%);
-}
-
-.menushadow {
-  -webkit-box-shadow:0 20px 30px 0 rgba(28,9,80,.05);
-  -moz-box-shadow:0 20px 30px 0 rgba(28,9,80,.05);
-  box-shadow:0 20px 30px 0 rgba(28,9,80,.05)
-}
-
-.text-bold {
-  font-weight: 600;
-}
-
 .width-100 {
   width: 100%;
 }
@@ -55,21 +56,9 @@ header {
   width: 60%;
 }
 
-.flex-row-start {
-  display:flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
 .flex-row-between {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-}
-
-.flex-row-around {
-  display: flex;
-  justify-content: space-around;
   align-items: center;
 }
 
@@ -85,22 +74,17 @@ header {
   justify-content: center;
   align-items: center;
 }
-
-.flex-column-start {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-.pointer {
-  cursor: pointer;
-}
 /* Defined classes */
 
 /*Navigation bar start here*/
+.menushadow {
+  -webkit-box-shadow:0 20px 30px 0 rgba(28,9,80,.05);
+  -moz-box-shadow:0 20px 30px 0 rgba(28,9,80,.05);
+  box-shadow:0 20px 30px 0 rgba(28,9,80,.05)
+}
+
 nav {
-  background: #fff;
+  background: var(--white-color);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -109,29 +93,27 @@ nav {
 }
 
 nav .logo{
-  color: #242F9B;
+  color: var(--third-color);
   font-size: 30px;
   font-weight: 600;
   letter-spacing: -1px;
 }
-nav .nav-items{
+nav .nav-items {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 1em;
   flex: 1;
 }
-nav .nav-items li{
-  list-style: none;
-  padding: 0 40px 0 0;
-}
+
 nav .nav-items li a{
-  color: hsl(204, 28%, 7%);
-  font-size: 18px;
+  color: var(--third-color);
+  font-size: 1em;
   font-weight: 300;
   text-decoration: none;
 }
 nav .nav-items li a:hover{
-  color: #242F9B;
+  color: var(--primary-color);
 }
 nav form {
   display: flex;
@@ -139,28 +121,32 @@ nav form {
   align-items: center;
   height: 40px;
   padding: 2px;
-  background-color: #FFFFFF;
+  background-color: var(--white-color);
   min-width: 18%!important;
-  border-radius: 20px;
-  border: 1px solid #e5e4e4;
+  border-radius: 10px;
+  border: 1px solid var(--third-color);
 }
 nav form .search-data{
   width: 80%;
   height: 100%;
   padding: 0 10px;
-  color: #242F9B;
+  color: var(--third-color);
   font-size: 17px;
   border-radius: 10px;
   border: none;
   outline: none;
   font-weight: 500;
-  background-color: #FFFFFF;
+  background-color: var(--white-color);
   z-index: 1;
+}
+
+nav form .search-data::placeholder {
+  color: var(--third-color);
 }
 
 nav form button{
   padding: 0 15px;
-  color: #242F9B;
+  color: var(--primary-color);
   font-size: 17px;
   background: transparent;
   border: none;
@@ -168,7 +154,7 @@ nav form button{
   cursor: pointer;
 }
 nav form button:hover{
-  color: #242F9B;
+  color: var(--primary-color);
 }
 nav .menu-icon,
 nav .cancel-icon,
@@ -177,7 +163,7 @@ nav .search-icon{
   text-align: center;
   margin: 0 50px;
   font-size: 18px;
-  color: #242F9B;
+  color: var(--third-color);
   cursor: pointer;
   display: none;
 }
@@ -205,7 +191,7 @@ nav .search-icon{
     height: 100%;
     padding: 10px 50px 0 50px;
     text-align: center;
-    background: white;
+    background: var(--white-color);
     display: inline-block;
     transition: left 0.3s ease;
   }
@@ -218,15 +204,14 @@ nav .search-icon{
     padding: 0;
   }
   nav .nav-items li a{
-    color: #242F9B;
+    color: var(--third-color);
     font-size: 20px;
   }
 
   nav form .search-data {
-    background: #FFFFFF;
-    color: #242F9B;
-    text-align: center;
-    border-radius: 20px;
+    background: var(--white-color);
+    color: var(--third-color);
+    border-radius: 0;
   }
 
   nav form {
@@ -249,19 +234,19 @@ nav .search-icon{
     content: '';
     height: 60px;
     padding: 2px;
-    background-color: #242F9B;
+    background-color: var(--gray-color);
     min-width: 100vw;
     z-index: 0;
     transform: traslateY(-50%);
   }
 
   nav form button {
-    color: #FFFFFF;
+    color: var(--third-color);
     z-index: 1;
   }
 
   nav form button:hover {
-    color: #FFFFFF;
+    color: var(--third-color);
   }
 
   nav .menu-icon{
@@ -281,7 +266,7 @@ nav .search-icon{
 }
 
 nav .logo.space{
-  color: white;
+  color: var(--white-color);
   padding: 0 5px 0 0;
 }
 @media (max-width: 980px){
@@ -305,7 +290,7 @@ nav .logo.space{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  height: 100vh;
   min-height: -webkit-fill-available;
   padding: 0 2em;
 }
@@ -322,7 +307,7 @@ nav .logo.space{
   gap: 2em;
   height: 100%;
   width: 50%;
-  background-color:#FFFFFF;
+  background-color:var(--white-color);
   padding: 2em;
 }
 
@@ -332,20 +317,19 @@ nav .logo.space{
 
 .spv-text h1 {
   font-size: 3em;
-  color: #242F9B;
+  color: var(--primary-color);
   margin: 0;
 }
 
 .spv-text p {
   font-size: 1.5em;
   margin: 0;
-  color: #646FD4;
+  color: var(--dark-gray-color);
 }
 
 .spv-img {
-  height: 100%;
   width: 50%;
-  background-color: #FFFFFF;
+  background-color: var(--white-color);
   overflow: hidden;
 }
 
@@ -357,16 +341,16 @@ nav .logo.space{
   font-size: 1em;
   padding: 1em 3em;
   outline: none;
-  border: 1px solid #242F9B;
-  border-radius: 5em;
-  background-color: #242F9B;
-  color: #FFFFFF;
+  border: 1px solid var(--secondary-color);
+  border-radius: 10px;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
 }
 
 .spv-btn-secondary {
   background-color: transparent;
-  color: #242F9B;
-  border: 1px solid #242F9B;
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
 }
 
 /*Section no. 2 design start here*/
@@ -378,15 +362,15 @@ nav .logo.space{
   padding: 0 2em;
 }
 
-.section2 h1 {
-  font-size: 1em;
+.section-title {
+  font-size: 1.5em;
   font-weight: 300;
   text-align: center;
   padding: 0.5em 1em;
   margin: 2em;
-  background-color: #242F9B;
-	color: #FFFFFF;
-  border-radius: 20em;
+  background-color: var(--fourth-color);
+	color: var(--primary-color);
+  border-radius: 10px;
 }
 
 .cards-container {
@@ -403,6 +387,7 @@ nav .logo.space{
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  border-radius: 10px;
   transition: all 0.5s ease-in;
 }
 
@@ -421,7 +406,7 @@ nav .logo.space{
   display: inline-block;
   position: relative;
   overflow: hidden;
-  background: #FFFFFF;
+  background: var(--white-color);
   transition: all 0.5s ease-in;
 }
 
@@ -432,6 +417,7 @@ nav .logo.space{
   right: 0;
   bottom: 0;
   left: 0;
+  border-radius: 10px;
   background: rgb(0,0,0);
   background: linear-gradient(0deg, rgba(0,0,0,1) 9%, rgba(213,215,217,0) 100%);
 }
@@ -441,6 +427,7 @@ nav .logo.space{
   width: 100%;
   object-fit: cover;
   opacity: 1;
+  border-radius: 10px;
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 }
@@ -449,7 +436,7 @@ nav .logo.space{
   position: absolute;
   font-size: 1.5em;
   font-weight: 300;
-  color: #FFFFFF;
+  color: var(--white-color);
   text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
   margin: 1em;
   text-align: center;
@@ -465,7 +452,7 @@ nav .logo.space{
 }
 
 .card-title-hover {
-  color: #FFFFFF;
+  color: var(--white-color);
 }
 /*Section no. 2 design end here*/
 
@@ -582,7 +569,6 @@ nav .logo.space{
   }
 
   .section {
-    height: 100vh;
     justify-content: flex-start;
     padding: 0;
   }
@@ -613,12 +599,12 @@ nav .logo.space{
 
   .spv-text h1 {
     text-align: center;
-    font-size: 1.2em;
+    font-size: 2em;
     margin: 0.1em;
   }
 
   .spv-text p {
-    font-size: 1em;
+    font-size: 1.2em;
   }
 
   .spv-buttons-container {
@@ -628,24 +614,25 @@ nav .logo.space{
   }
 
   .section2 {
-    background-color: #eee;
     padding: 0;
   }
 
-  .section2 h1 {
-    width: 100%;
-    padding: 0.7em;
-    margin: 0;
+  .section-title {
+    width: 80%;
+    font-size: 1.2em;
+    margin: 1em 0;
   }
 
   .cards-container {
     flex-direction: column;
     justify-content: center;
     gap: 1em;
+    width: 100%;
   }
 
   .card {
     height: 30vh;
+    margin: 0;
   }
 
   .card2, .card3, .card4 {
@@ -653,12 +640,17 @@ nav .logo.space{
   }
 
   .card-title, .card-title2, .card-title3, .card-title4 {
+    width: 100%;
+    font-size: 1em;
     text-align: center;
   }
 
-  .card-title2, .card-title3, .card-title4 {
-    width: 100%;
-    font-size: 1em;
+  .card-background-img, .card-background-img2, .card-background-img3, .card-background-img4 {
+    border-radius: 0;
+  }
+
+  .card-background::after, .card-background2::after, .card-background3::after, .card-background4::after {
+    border-radius: 0;
   }
   
   .page-container {
