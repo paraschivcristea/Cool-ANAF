@@ -4,7 +4,11 @@
 *, *::after, *::before {
   box-sizing: border-box;
   text-decoration: none;
- }
+}
+
+html {
+  height: -webkit-fill-available;
+}
 
 html,
 body {
@@ -105,7 +109,7 @@ nav {
 }
 
 nav .logo{
-  color: #121212;
+  color: #242F9B;
   font-size: 30px;
   font-weight: 600;
   letter-spacing: -1px;
@@ -127,7 +131,7 @@ nav .nav-items li a{
   text-decoration: none;
 }
 nav .nav-items li a:hover{
-  color: #FF4B2B;
+  color: #242F9B;
 }
 nav form {
   display: flex;
@@ -144,7 +148,7 @@ nav form .search-data{
   width: 80%;
   height: 100%;
   padding: 0 10px;
-  color: #FF4B2B;
+  color: #242F9B;
   font-size: 17px;
   border-radius: 10px;
   border: none;
@@ -156,7 +160,7 @@ nav form .search-data{
 
 nav form button{
   padding: 0 15px;
-  color: #121212;
+  color: #242F9B;
   font-size: 17px;
   background: transparent;
   border: none;
@@ -164,7 +168,7 @@ nav form button{
   cursor: pointer;
 }
 nav form button:hover{
-  color: #121212;
+  color: #242F9B;
 }
 nav .menu-icon,
 nav .cancel-icon,
@@ -173,7 +177,7 @@ nav .search-icon{
   text-align: center;
   margin: 0 50px;
   font-size: 18px;
-  color: #121212;
+  color: #242F9B;
   cursor: pointer;
   display: none;
 }
@@ -214,13 +218,14 @@ nav .search-icon{
     padding: 0;
   }
   nav .nav-items li a{
-    color: #121212;
+    color: #242F9B;
     font-size: 20px;
   }
 
   nav form .search-data {
     background: #FFFFFF;
-    color: #121212;
+    color: #242F9B;
+    text-align: center;
     border-radius: 20px;
   }
 
@@ -244,7 +249,7 @@ nav .search-icon{
     content: '';
     height: 60px;
     padding: 2px;
-    background-color: #121212;
+    background-color: #242F9B;
     min-width: 100vw;
     z-index: 0;
     transform: traslateY(-50%);
@@ -253,6 +258,10 @@ nav .search-icon{
   nav form button {
     color: #FFFFFF;
     z-index: 1;
+  }
+
+  nav form button:hover {
+    color: #FFFFFF;
   }
 
   nav .menu-icon{
@@ -296,12 +305,13 @@ nav .logo.space{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 70vh;
+  min-height: -webkit-fill-available;
   padding: 0 2em;
 }
 
 .spv {
-  height: 70vh;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  height: 100%;
 }
 
 .spv-text {
@@ -312,7 +322,7 @@ nav .logo.space{
   gap: 2em;
   height: 100%;
   width: 50%;
-  background-color:#121212;
+  background-color:#FFFFFF;
   padding: 2em;
 }
 
@@ -322,21 +332,20 @@ nav .logo.space{
 
 .spv-text h1 {
   font-size: 3em;
-  color: #FFFFFF;
+  color: #242F9B;
   margin: 0;
 }
 
 .spv-text p {
   font-size: 1.5em;
   margin: 0;
-  color: #FFFFFF;
+  color: #646FD4;
 }
 
 .spv-img {
   height: 100%;
   width: 50%;
-  background: rgb(219,220,222);
-  background: linear-gradient(90deg, rgba(219,220,222,1) 0%, rgba(213,215,217,1) 25%);
+  background-color: #FFFFFF;
   overflow: hidden;
 }
 
@@ -348,16 +357,16 @@ nav .logo.space{
   font-size: 1em;
   padding: 1em 3em;
   outline: none;
-  border: 1px solid #121212;
+  border: 1px solid #242F9B;
   border-radius: 5em;
-  background-color: #FFFFFF;
-  color: #121212;
+  background-color: #242F9B;
+  color: #FFFFFF;
 }
 
 .spv-btn-secondary {
   background-color: transparent;
-  color: #FFFFFF;
-  border: 1px solid #FFFFFF;
+  color: #242F9B;
+  border: 1px solid #242F9B;
 }
 
 /*Section no. 2 design start here*/
@@ -365,17 +374,19 @@ nav .logo.space{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 0 2em;
 }
 
 .section2 h1 {
-  font-size: 24px;
-  font-weight: 400;
+  font-size: 1em;
+  font-weight: 300;
   text-align: center;
-  padding: 1em;
-  margin: 2em 0;
-  background-color: #121212;
+  padding: 0.5em 1em;
+  margin: 2em;
+  background-color: #242F9B;
 	color: #FFFFFF;
+  border-radius: 20em;
 }
 
 .cards-container {
@@ -383,7 +394,7 @@ nav .logo.space{
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 2px;
+  gap: 1em;
 }
 
 .card {
@@ -397,7 +408,7 @@ nav .logo.space{
 
 .card2, .card3, .card4 {
   height: 30vh;
-  width: 33.2%;
+  width: 32%;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -410,7 +421,7 @@ nav .logo.space{
   display: inline-block;
   position: relative;
   overflow: hidden;
-  background: #121212;
+  background: #FFFFFF;
   transition: all 0.5s ease-in;
 }
 
@@ -421,7 +432,8 @@ nav .logo.space{
   right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 9%, rgba(213,215,217,0) 100%);
 }
 
 .card-background-img, .card-background-img2, .card-background-img3, .card-background-img4 {
@@ -435,8 +447,8 @@ nav .logo.space{
 
 .card-title, .card-title2, .card-title3, .card-title4 {
   position: absolute;
-  font-size: 1em;
-  font-weight: 600;
+  font-size: 1.5em;
+  font-weight: 300;
   color: #FFFFFF;
   text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
   margin: 1em;
@@ -445,23 +457,17 @@ nav .logo.space{
 }
 
 .card-title2, .card-title3, .card-title4 {
-  font-size: 0.9em;
   width: 15%;
 }
 
 .card-background-hover {
-  opacity: 0.2;
+  opacity: 1;
 }
 
 .card-title-hover {
   color: #FFFFFF;
 }
-
-
 /*Section no. 2 design end here*/
-
-/*Section no. 3 design start here*/
-/*Section no. 3 design end here here*/
 
 /*CSS for post.html*/
 .page-container {
@@ -602,13 +608,17 @@ nav .logo.space{
   .spv-text {
     width: 100%;
     align-items: center;
-    gap: 2em;
+    padding: 0 1em;
   }
 
-  .spv-text h1, .spv-text h2 {
+  .spv-text h1 {
     text-align: center;
     font-size: 1.2em;
     margin: 0.1em;
+  }
+
+  .spv-text p {
+    font-size: 1em;
   }
 
   .spv-buttons-container {
@@ -644,6 +654,11 @@ nav .logo.space{
 
   .card-title, .card-title2, .card-title3, .card-title4 {
     text-align: center;
+  }
+
+  .card-title2, .card-title3, .card-title4 {
+    width: 100%;
+    font-size: 1em;
   }
   
   .page-container {
