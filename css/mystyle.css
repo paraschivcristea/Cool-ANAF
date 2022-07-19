@@ -1,14 +1,16 @@
-
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root {
-  --primary-color: #015e9b;
-  --secondary-color: #c9356e;
-  --third-color: #373850;
-  --fourth-color: #d5e6f4;
+  --primary-color: #5e35b1;
+  --secondary-color: #EA355E;
+  --third-color: #1C0A50;
+  --fourth-color: linear-gradient(-107deg,#82009f 0%,#f7345e 100%);
+  --fifth-color: #F2F3F6;
+  --sixth-color: #5CBDB6;
   --white-color: #fff;
-  --gray-color: #f6f5f7;
   --dark-gray-color: #373850;
+  --bg-primary: linear-gradient(to right,#82009f 0%,#5d34af 100%);
+  --box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.15);
 }
 
 *, *::after, *::before {
@@ -25,11 +27,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
-}
-
-body {
-  background-color: var(--gray-color);
+  font-family: 'Roboto', sans-serif;
 }
 
 main {
@@ -86,14 +84,14 @@ header {
 nav {
   background: var(--white-color);
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  padding: 20px 2em;
+  flex-wrap: wrap;
+  padding: 10px 4em;
 }
 
-nav .logo{
-  color: var(--third-color);
+nav .logo {
+  color: var(--primary-color);
   font-size: 30px;
   font-weight: 600;
   letter-spacing: -1px;
@@ -102,41 +100,43 @@ nav .nav-items {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1em;
+  gap: 2em;
   flex: 1;
 }
 
-nav .nav-items li a{
+nav .nav-items li a {
   color: var(--third-color);
   font-size: 1em;
-  font-weight: 300;
+  letter-spacing: 0.2px;
+  font-weight: 600;
   text-decoration: none;
 }
-nav .nav-items li a:hover{
+nav .nav-items li a:hover {
   color: var(--primary-color);
 }
+
 nav form {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   height: 40px;
-  padding: 2px;
-  background-color: var(--white-color);
   min-width: 18%!important;
-  border-radius: 10px;
-  border: 1px solid var(--third-color);
+  padding: 2px;
+  background-color: var(--fifth-color);
+  border-radius: 10em;
 }
-nav form .search-data{
+
+nav form .search-data {
   width: 80%;
-  height: 100%;
+  height: 80%;
   padding: 0 10px;
   color: var(--third-color);
-  font-size: 17px;
-  border-radius: 10px;
+  font-size: 14px;
   border: none;
+  border-radius: 10em;
   outline: none;
   font-weight: 500;
-  background-color: var(--white-color);
+  background-color: transparent;
   z-index: 1;
 }
 
@@ -144,18 +144,19 @@ nav form .search-data::placeholder {
   color: var(--third-color);
 }
 
-nav form button{
+nav form button {
   padding: 0 15px;
-  color: var(--primary-color);
+  color: var(--third-color);
   font-size: 17px;
   background: transparent;
   border: none;
   border-radius: 2px;
   cursor: pointer;
 }
-nav form button:hover{
+nav form button:hover {
   color: var(--primary-color);
 }
+
 nav .menu-icon,
 nav .cancel-icon,
 nav .search-icon{
@@ -167,25 +168,26 @@ nav .search-icon{
   cursor: pointer;
   display: none;
 }
+
 nav .menu-icon span,
 nav .cancel-icon,
-nav .search-icon{
+nav .search-icon {
   display: none;
 }
 
 @media (max-width: 1140px) {
   nav {
-    padding: 1em 0;
+    padding: 0.7em 0;
   }
 
-  nav .logo{
+  nav .logo {
     flex: 2;
     text-align: center;
   }
-  nav .nav-items{
+  nav .nav-items {
     position: fixed;
     z-index: 99;
-    top: 3.4em;
+    top: 3.2em;
     width: 100%;
     left: -100%;
     height: 100%;
@@ -195,15 +197,15 @@ nav .search-icon{
     display: inline-block;
     transition: left 0.3s ease;
   }
-  nav .nav-items.active{
+  nav .nav-items.active {
     left: 0px;
   }
-  nav .nav-items li{
+  nav .nav-items li {
     line-height: 40px;
     margin: 30px 0;
     padding: 0;
   }
-  nav .nav-items li a{
+  nav .nav-items li a {
     color: var(--third-color);
     font-size: 20px;
   }
@@ -229,54 +231,58 @@ nav .search-icon{
     width: 100%;
   }
 
-  nav form:after{
+  nav form:after {
     position: absolute;
     content: '';
-    height: 60px;
+    height: 67px;
     padding: 2px;
-    background-color: var(--gray-color);
+    background: var(--fourth-color);
     min-width: 100vw;
     z-index: 0;
     transform: traslateY(-50%);
   }
 
   nav form button {
-    color: var(--third-color);
+    color: var(--white-color);
     z-index: 1;
   }
 
   nav form button:hover {
-    color: var(--third-color);
+    color: var(--white-color);
   }
 
-  nav .menu-icon{
+  nav .menu-icon {
     display: block;
   }
+
   nav .search-icon,
-  nav .menu-icon span{
+  nav .menu-icon span {
     display: block;
   }
   nav .menu-icon span.hide,
-  nav .search-icon.hide{
+  nav .search-icon.hide {
     display: none;
   }
-  nav .cancel-icon.show{
+
+  nav .cancel-icon.show {
     display: block;
   }
 }
 
-nav .logo.space{
+nav .logo.space {
   color: var(--white-color);
   padding: 0 5px 0 0;
 }
-@media (max-width: 980px){
+
+@media (max-width: 980px) {
   nav .menu-icon,
   nav .cancel-icon,
   nav .search-icon{
     margin: 0 20px;
   }
 }
-@media (max-width: 350px){
+
+@media (max-width: 350px) {
   nav .menu-icon,
   nav .cancel-icon,
   nav .search-icon{
@@ -292,11 +298,12 @@ nav .logo.space{
   align-items: center;
   height: 100vh;
   min-height: -webkit-fill-available;
-  padding: 0 2em;
 }
 
 .spv {
   height: 100%;
+  padding: 0 4em;
+  background-image: linear-gradient( 110.1deg,  rgba(30,2,83,1) 44.2%, rgba(198,55,160,1) 138.2% );
 }
 
 .spv-text {
@@ -305,31 +312,25 @@ nav .logo.space{
   justify-content: center;
   align-items: center;
   gap: 2em;
-  height: 100%;
   width: 50%;
-  background-color:var(--white-color);
-  padding: 2em;
 }
 
 .spv-text h1, p {
+  margin: 0;
   text-align: center;
+  color: var(--white-color);
 }
 
 .spv-text h1 {
   font-size: 3em;
-  color: var(--primary-color);
-  margin: 0;
 }
 
 .spv-text p {
   font-size: 1.5em;
-  margin: 0;
-  color: var(--dark-gray-color);
 }
 
 .spv-img {
   width: 50%;
-  background-color: var(--white-color);
   overflow: hidden;
 }
 
@@ -342,24 +343,24 @@ nav .logo.space{
   padding: 1em 3em;
   outline: none;
   border: 1px solid var(--secondary-color);
-  border-radius: 10px;
+  border-radius: 2px 2px 2px 2px;
   background-color: var(--secondary-color);
   color: var(--white-color);
+  box-shadow: var(--box-shadow);
 }
 
 .spv-btn-secondary {
-  background-color: transparent;
-  color: var(--secondary-color);
-  border: 1px solid var(--secondary-color);
+  background-color: var(--sixth-color);
+  color: var(--white-color);
+  border: 1px solid var(--sixth-color);
 }
 
-/*Section no. 2 design start here*/
 .section2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 2em;
+  padding: 2em 4em 6em 4em;
 }
 
 .section-title {
@@ -368,9 +369,17 @@ nav .logo.space{
   text-align: center;
   padding: 0.5em 1em;
   margin: 2em;
-  background-color: var(--fourth-color);
-	color: var(--primary-color);
-  border-radius: 10px;
+  border-radius: 10em;
+}
+
+/*Section no. 2 design start here*/
+#section2 {
+  background-color: var(--fifth-color);
+}
+
+#section-title2 {
+  color: var(--white-color);
+  background: var(--fourth-color);
 }
 
 .cards-container {
@@ -378,7 +387,7 @@ nav .logo.space{
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 1em;
+  gap: 0.2em;
 }
 
 .card {
@@ -387,17 +396,18 @@ nav .logo.space{
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  border-radius: 10px;
-  transition: all 0.5s ease-in;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
 }
 
 .card2, .card3, .card4 {
   height: 30vh;
-  width: 32%;
+  width: 33.1%;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  transition: all 0.5s ease-in;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
 }
 
 .card-background, .card-background2, .card-background3, .card-background4 {
@@ -407,7 +417,7 @@ nav .logo.space{
   position: relative;
   overflow: hidden;
   background: var(--white-color);
-  transition: all 0.5s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .card-background::after, .card-background2::after, .card-background3::after, .card-background4::after {
@@ -417,7 +427,6 @@ nav .logo.space{
   right: 0;
   bottom: 0;
   left: 0;
-  border-radius: 10px;
   background: rgb(0,0,0);
   background: linear-gradient(0deg, rgba(0,0,0,1) 9%, rgba(213,215,217,0) 100%);
 }
@@ -427,20 +436,19 @@ nav .logo.space{
   width: 100%;
   object-fit: cover;
   opacity: 1;
-  border-radius: 10px;
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+	-webkit-transition: 0.2s ease-in-out;
+	transition: 0.2s ease-in-out;
 }
 
 .card-title, .card-title2, .card-title3, .card-title4 {
   position: absolute;
   font-size: 1.5em;
-  font-weight: 300;
+  font-weight: 600;
   color: var(--white-color);
   text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
   margin: 1em;
   text-align: center;
-  transition: all 0.5s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .card-title2, .card-title3, .card-title4 {
@@ -449,12 +457,24 @@ nav .logo.space{
 
 .card-background-hover {
   opacity: 1;
+  filter: brightness(130%);
 }
 
 .card-title-hover {
   color: var(--white-color);
 }
 /*Section no. 2 design end here*/
+
+/*Section 3 design start here*/
+#section3 {
+  background-color: var(--white-color);
+}
+
+#section-title3 {
+  color: var(--white-color);
+  background-color: var(--secondary-color);
+}
+/*Section 3 design end here*/
 
 /*CSS for post.html*/
 .page-container {
