@@ -596,7 +596,7 @@ nav .logo.space {
   .spv {
     height: 100%;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     padding: 0;
   }
 
