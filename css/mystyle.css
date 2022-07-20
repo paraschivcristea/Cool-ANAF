@@ -11,6 +11,7 @@
   --secondary-text: #757575;
   --divider-color: #BDBDBD;
   --box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.15);
+  --standard-transition: all 0.3s ease;
 }
 
 *, *::after, *::before {
@@ -38,7 +39,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 999;
-  transition: all 0.5s ease-out;
+  transition: var(--standard-transition);
   -webkit-box-shadow:0 20px 30px 0 rgba(28,9,80,.05);
   -moz-box-shadow:0 20px 30px 0 rgba(28,9,80,.05);
   box-shadow:0 20px 30px 0 rgba(28,9,80,.05);
@@ -346,12 +347,9 @@ nav .logo.space {
   background-color: var(--accent-color);
   color: var(--text-icons);
   box-shadow: var(--box-shadow);
-}
-
-.spv-btn-secondary {
-  background-color: var(--accent-color);
-  color: var(--text-icons);
-  border: 1px solid var(--accent-color);
+  transition: var(--standard-transition);
+  backface-visibility: hidden;
+  -webkit-perspective: 1000;
 }
 
 .section2 {
@@ -396,7 +394,7 @@ nav .logo.space {
   justify-content: center;
   align-items: flex-end;
   cursor: pointer;
-  transition: all 0.2s ease-in;
+  transition: var(--standard-transition);
 }
 
 .card2, .card3, .card4 {
@@ -406,7 +404,7 @@ nav .logo.space {
   justify-content: center;
   align-items: flex-end;
   cursor: pointer;
-  transition: all 0.2s ease-in;
+  transition: var(--standard-transition);
 }
 
 .card-background, .card-background2, .card-background3, .card-background4 {
@@ -416,7 +414,7 @@ nav .logo.space {
   position: relative;
   overflow: hidden;
   background: var(--text-icons);
-  transition: all 0.2s ease-in;
+  transition: var(--standard-transition);
 }
 
 .card-background::after, .card-background2::after, .card-background3::after, .card-background4::after {
@@ -435,8 +433,8 @@ nav .logo.space {
   width: 100%;
   object-fit: cover;
   opacity: 1;
-	-webkit-transition: 0.2s ease-in-out;
-	transition: 0.2s ease-in-out;
+	-webkit-transition: var(--standard-transition);
+	transition: var(--standard-transition);
 }
 
 .card-title, .card-title2, .card-title3, .card-title4 {
@@ -447,7 +445,7 @@ nav .logo.space {
   text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
   margin: 1em;
   text-align: center;
-  transition: all 0.2s ease-in;
+  transition: var(--standard-transition);
 }
 
 .card-title2, .card-title3, .card-title4 {
