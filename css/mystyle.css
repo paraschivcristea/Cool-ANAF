@@ -351,9 +351,6 @@ nav .logo.space {
   background-color: var(--accent-color);
   color: var(--text-icons);
   box-shadow: var(--box-shadow);
-  transition: var(--standard-transition);
-  backface-visibility: hidden;
-  -webkit-perspective: 1000;
 }
 
 .section2 {
@@ -467,6 +464,49 @@ nav .logo.space {
 /*Section no. 2 design end here*/
 
 /*Section 3 design start here*/
+.box-container {
+  gap: 2em;
+}
+
+.box {
+  height: 50vh;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: var(--text-icons);
+  padding: 2em;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: var(--standard-transition);
+}
+
+.box:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.box-title {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: var(--primary-text);
+}
+
+.box-p {
+  display: -webkit-box;
+  -webkit-line-clamp: 5s;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  line-height: 1.5em;
+  color: var(--primary-text);
+}
+
+.box-btn {
+  width: 100%;
+  color: var(--text-icons);
+  background-color: var(--accent-color);
+  padding: 1em;
+  text-align: center;
+}
 /*Section 3 design end here*/
 @media only screen and (max-width: 1120px) {
   .width-80 {
@@ -562,5 +602,19 @@ nav .logo.space {
 
   .card-background::after, .card-background2::after, .card-background3::after, .card-background4::after {
     border-radius: 0;
+  }
+
+  .box-container {
+    flex-direction: column;
+  }
+
+  .box {
+    height: auto;
+    width: 100%;
+    gap: 2em;
+  }
+
+  .box-title {
+    font-size: 1.2em;
   }
 }
