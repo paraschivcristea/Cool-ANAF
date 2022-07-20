@@ -181,6 +181,10 @@ nav .search-icon {
     padding: 0.7em 0;
   }
 
+  nav form {
+    height: 36px;
+  }
+
   nav .logo {
     flex: 2;
     text-align: center;
@@ -234,7 +238,7 @@ nav .search-icon {
   nav form:after {
     position: absolute;
     content: '';
-    height: 56px;
+    height: 60px;
     padding: 2px;
     background: var(--dark-primary-color);
     min-width: 100vw;
