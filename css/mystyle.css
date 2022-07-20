@@ -238,7 +238,7 @@ nav .search-icon {
   nav form:after {
     position: absolute;
     content: '';
-    height: 60px;
+    height: 61px;
     padding: 2px;
     background: var(--dark-primary-color);
     min-width: 100vw;
@@ -300,7 +300,7 @@ nav .logo.space {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: calc(100vh - 3.65em);
   min-height: -webkit-fill-available;
 }
 
@@ -481,20 +481,24 @@ nav .logo.space {
   .spv {
     height: 100%;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     gap: 2em;
     padding: 0;
   }
 
-  .spv-img, .spv-img-container {
+  .spv-img {
+    height: 40%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 1em;
   }
 
   .spv-img img {
+    height: 100%;
     width: 100%;
+    object-fit: cover;
   }
 
   .spv-text {
@@ -520,7 +524,7 @@ nav .logo.space {
   }
 
   .section2 {
-    padding: 0;
+    padding: 0 1em;
   }
 
   .section-title {
@@ -549,6 +553,7 @@ nav .logo.space {
     width: 100%;
     font-size: 1em;
     text-align: center;
+    padding: 0 1em;
   }
 
   .card-background-img, .card-background-img2, .card-background-img3, .card-background-img4 {
