@@ -84,6 +84,3 @@ card4.addEventListener("mouseout", (e) => {
   cardBackground4.classList.remove("card-background-hover");
   cardTitle4.classList.remove("card-title-hover");
 });
-
-
-

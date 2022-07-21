@@ -475,13 +475,12 @@ nav .logo.space {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  background-color: var(--text-icons);
   padding: 2em;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  transition: var(--standard-transition);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .box:hover {
+  transform: translateY(-5px) scale(1.005) translateZ(0);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -612,6 +611,10 @@ nav .logo.space {
     height: auto;
     width: 100%;
     gap: 2em;
+  }
+
+  .box:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   }
 
   .box-title {
