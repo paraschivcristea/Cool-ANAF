@@ -469,7 +469,7 @@ nav .logo.space {
 }
 
 .box {
-  height: 50vh;
+  height: 36vh;
   width: 30%;
   display: flex;
   flex-direction: column;
@@ -493,7 +493,7 @@ nav .logo.space {
 
 .box-p {
   display: -webkit-box;
-  -webkit-line-clamp: 5s;
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;  
   overflow: hidden;
   line-height: 1.5em;
@@ -630,5 +630,9 @@ nav .logo.space {
 
   .box-title {
     font-size: 1.2em;
+  }
+
+  .section4-card {
+    width: 100%;
   }
 }
