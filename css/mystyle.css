@@ -651,14 +651,15 @@ nav .logo.space {
 
 .tab {
   width: 100%;
-  color: var(--dark-primary-color);
+  color: var(--primary-text);
   overflow: hidden;
 }
 .tab-label {
   display: flex;
   justify-content: space-between;
   padding: 1em;
-  background: var(--light-primary-color);
+  background: var(--bg-primary-color);
+  border-bottom: 1px solid var(--divider-color);
   cursor: pointer;
   /* Icon */
 }
@@ -686,18 +687,18 @@ nav .logo.space {
   display: flex;
   justify-content: flex-end;
   padding: 1em;
-  font-size: 0.75em;
-  color: var(--text-icons);
-  background: var(--primary-color);
+  font-size: 1em;
+  color: var(--dark-primary-color);
+  background: var(--light-primary-color);
   cursor: pointer;
 }
 .tab-close:hover {
-  background: var(--dark-primary-color);
+  background: var(--light-primary-color);
 }
 
 input:checked + .tab-label {
-  background: var(--dark-primary-color);
-  color: var(--text-icons);
+  background: var(--light-primary-color);
+  color: var(--dark-primary-color);
 }
 input:checked + .tab-label::after {
   transform: rotate(90deg);
@@ -705,6 +706,7 @@ input:checked + .tab-label::after {
 input:checked ~ .tab-content {
   max-height: 100vh;
   padding: 1em;
+  border-bottom: 1px solid var(--divider-color);
 }
 
 .accordion-phone, .accordion-adress {
