@@ -295,7 +295,7 @@ nav .logo.space {
   }
 }
 /*Navigation bar end here*/
-.section {
+.section-primary {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -353,12 +353,13 @@ nav .logo.space {
   box-shadow: var(--box-shadow);
 }
 
-.section2 {
+.section-secondary {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2em 4em 6em 4em;
+  background-color: var(--bg-primary-color);
+  padding: 0 4em;
 }
 
 .section-title {
@@ -368,18 +369,11 @@ nav .logo.space {
   padding: 0.5em 1em;
   margin: 2em;
   border-radius: 10em;
+  color: var(--dark-primary-color);
+  background: var(--light-primary-color);
 }
 
 /*Section no. 2 design start here*/
-.section2 {
-  background-color: var(--bg-primary-color);
-}
-
-.section-title {
-  color: var(--text-icons);
-  background: var(--dark-primary-color);
-}
-
 .cards-container {
   display: flex;
   justify-content: space-between;
@@ -466,23 +460,20 @@ nav .logo.space {
 /*Section 3 design start here*/
 .box-container {
   gap: 2em;
+  margin: 0.5em 0;
 }
 
 .box {
-  height: 36vh;
+  height: 50vh;
   width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
   background-color: var(--text-icons);
-  padding: 2em;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-}
-
-.box:hover {
-  transform: translateY(-5px) scale(1.005) translateZ(0);
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 1.5em;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition: var(--standard-transition);
 }
 
 .box-title {
@@ -493,7 +484,7 @@ nav .logo.space {
 
 .box-p {
   display: -webkit-box;
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;  
   overflow: hidden;
   line-height: 1.5em;
@@ -510,15 +501,217 @@ nav .logo.space {
 /*Section 3 design end here*/
 
 /*Section 4 design start here*/
-.section4 {
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: var(--bg-primary-color);
+}
+
+.section4-card {
+  width: 420px;
+  height: 340px;
+  perspective: 1500px;
+}
+.section4-card .content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s cubic-bezier(0.75, 0, 0.85, 1);
+}
+
+.more {
+  display: none;
+}
+.more:checked ~ .content {
+  transform: rotateY(180deg);
+}
+
+.front,
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  border-radius: 6px;
+}
+
+.front .inner,
+.back .inner {
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--bg-primary-color);
-  padding: 2em 4em 6em 4em;
+  gap: 1em;
+  padding: 1.5em;
 }
-/*Section 4 design endh here*/
+
+.front {
+  background-color: var(--bg-primary-color);
+}
+
+.icon {
+  color: var(--dark-primary-color);
+  font-size: 5em;
+}
+
+.name {
+  text-align: center;
+  font-size: 2em;
+}
+
+.name, .phone a, .adress a {
+  color: var(--dark-primary-color);
+  font-weight: 600;
+}
+
+.back {
+  content: "";
+  position: absolute;
+  left: -0.9em;
+  transform: rotateY(180deg);
+  background-color: var(--bg-primary-color);
+}
+
+.phone, .adress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2em;
+  color: var(--dark-primary-color);
+  font-size: 1.4em;
+}
+
+.button {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: pointer;
+  display: block;
+  padding: 0 1.5em;
+  height: 3em;
+  line-height: 2.9em;
+  min-width: 3em;
+  background-color: transparent;
+  border: solid 2px var(--dark-primary-color);
+  color: var(--dark-primary-color);
+  border-radius: 4px;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: var(--dark-primary-color);
+  color: var(--text-icons);
+}
+
+.button.return {
+  line-height: 3em;
+  color: var(--dark-primary-color);
+  border-color: var(--dark-primary-color);
+  text-shadow: none;
+}
+
+.button.return:hover {
+  background-color: var(--dark-primary-color);
+  color: #fff;
+  box-shadow: none;
+}
+
+#rd1, #rd2, #rd3, #rd4, #rd5 {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.mobile-accordion {
+  display: flex;
+  width: 100%;
+}
+
+.mobile-accordion .col {
+  flex: 1;
+}
+
+/* Accordion styles */
+.tabs {
+  overflow: hidden;
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+}
+
+.tab {
+  width: 100%;
+  color: var(--bg-primary-color);
+  overflow: hidden;
+}
+.tab-label {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  background: var(--primary-color);
+  cursor: pointer;
+  /* Icon */
+}
+.tab-label:hover {
+  background: var(--dark-primary-color);
+}
+.tab-label::after {
+  content: "❯";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  transition: all 0.35s;
+}
+.tab-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  max-height: 0;
+  padding: 0 1em;
+  color: var(--primary-text);
+  background: var(--bg-primary-color);
+  transition: all 0.35s;
+}
+.tab-close {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em;
+  font-size: 0.75em;
+  background: var(--primary-color);
+  cursor: pointer;
+}
+.tab-close:hover {
+  background: var(--dark-primary-color);
+}
+
+input:checked + .tab-label {
+  background: var(--dark-primary-color);
+}
+input:checked + .tab-label::after {
+  transform: rotate(90deg);
+}
+input:checked ~ .tab-content {
+  max-height: 100vh;
+  padding: 1em;
+}
+
+.accordion-phone, .accordion-adress {
+  display: flex;
+  gap: 0.5em;
+}
+
+.accordion-phone a, .accordion-adress a {
+  font-size: 1em;
+  color: var(--primary-text);
+}
+
+/*Section 4 design end here*/
 @media only screen and (max-width: 1120px) {
   .width-80 {
     width: 100%;
@@ -573,7 +766,7 @@ nav .logo.space {
     gap: 5vh;
   }
 
-  .section2 {
+  .section-secondary {
     padding: 0 1em;
   }
 
@@ -634,5 +827,15 @@ nav .logo.space {
 
   .section4-card {
     width: 100%;
+  }
+
+  .wrapper {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1120px) {
+  .mobile-accordion {
+    display: none;
   }
 }
