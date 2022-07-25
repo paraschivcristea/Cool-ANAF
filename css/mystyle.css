@@ -94,7 +94,7 @@ nav {
   padding: 10px 4em;
 }
 
-nav .logo {
+.logo {
   color: var(--text-icons);
   font-size: 30px;
   font-weight: 600;
@@ -501,6 +501,10 @@ nav .logo.space {
 /*Section 3 design end here*/
 
 /*Section 4 design start here*/
+#section4 {
+  margin-bottom: 2em;
+}
+
 .wrapper {
   display: flex;
   justify-content: center;
@@ -710,8 +714,89 @@ input:checked ~ .tab-content {
   font-size: 1em;
   color: var(--primary-text);
 }
-
 /*Section 4 design end here*/
+
+/*Footer design start here*/
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 0 0 0;
+  background-color: var(--primary-color);
+}
+
+.footer-first {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 4em 2em 4em;
+}
+
+.footer-content {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2em;
+}
+
+.footer-content-title {
+  font-size: 1.5em;
+  color: var(--text-icons);
+}
+
+.footer-content-text {
+  font-size: 1em;
+  color: var(--text-icons);
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2em;
+}
+
+.footer-links a {
+  font-size: 1em;
+  color: var(--text-icons);
+}
+
+.footer-links-title {
+  font-size: 1em;
+  font-weight: 600;
+  color: var(--text-icons);
+}
+
+.footer-second {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--dark-primary-color);
+  padding: 1em 4em;
+}
+
+.footer-copyright {
+  font-size: 1em;
+  color: var(--text-icons);
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  font-size: 1.5em;
+  color: var(--text-icons);
+}
+/*Footer design end here*/
+
 @media only screen and (max-width: 1120px) {
   .width-80 {
     width: 100%;
@@ -809,6 +894,7 @@ input:checked ~ .tab-content {
 
   .box-container {
     flex-direction: column;
+    gap: 1em;
   }
 
   .box {
@@ -831,6 +917,23 @@ input:checked ~ .tab-content {
 
   .wrapper {
     display: none;
+  }
+
+  .footer-first {
+    flex-direction: column;
+    gap: 2em;
+    padding: 0 1em 2em 1em;
+  }
+
+  .footer-content {
+    width: 100%;
+    align-items: center;
+  }
+
+  .footer-links {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
   }
 }
 
