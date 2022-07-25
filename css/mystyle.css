@@ -936,6 +936,10 @@ footer {
     flex-direction: row;
     align-items: center;
   }
+
+  .footer-second {
+    padding: 1em;
+  }
 }
 
 @media only screen and (min-width: 1120px) {
