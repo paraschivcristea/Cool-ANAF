@@ -651,19 +651,19 @@ nav .logo.space {
 
 .tab {
   width: 100%;
-  color: var(--bg-primary-color);
+  color: var(--dark-primary-color);
   overflow: hidden;
 }
 .tab-label {
   display: flex;
   justify-content: space-between;
   padding: 1em;
-  background: var(--primary-color);
+  background: var(--light-primary-color);
   cursor: pointer;
   /* Icon */
 }
 .tab-label:hover {
-  background: var(--dark-primary-color);
+  background: var(--text-icons);
 }
 .tab-label::after {
   content: "❯";
@@ -687,6 +687,7 @@ nav .logo.space {
   justify-content: flex-end;
   padding: 1em;
   font-size: 0.75em;
+  color: var(--text-icons);
   background: var(--primary-color);
   cursor: pointer;
 }
@@ -696,6 +697,7 @@ nav .logo.space {
 
 input:checked + .tab-label {
   background: var(--dark-primary-color);
+  color: var(--text-icons);
 }
 input:checked + .tab-label::after {
   transform: rotate(90deg);
