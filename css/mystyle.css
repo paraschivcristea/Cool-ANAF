@@ -810,7 +810,7 @@ footer {
   .spv {
     height: 100%;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
     padding: 0;
   }
 
@@ -821,6 +821,7 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 0 1em;
+    margin: 1em 0;
   }
 
   .spv-img img {
