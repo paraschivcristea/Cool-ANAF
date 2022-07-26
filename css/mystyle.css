@@ -561,7 +561,7 @@ nav .logo.space {
 }
 
 .icon {
-  color: var(--primary-text);
+  color: var(--primary-color);
   font-size: 5em;
 }
 
@@ -571,7 +571,7 @@ nav .logo.space {
 }
 
 .name, .phone a, .adress a {
-  color: var(--dark-primary-color);
+  color: var(--primary-color);
   font-weight: 600;
 }
 
@@ -603,8 +603,8 @@ nav .logo.space {
   line-height: 2.9em;
   min-width: 3em;
   background-color: transparent;
-  border: solid 2px var(--dark-primary-color);
-  color: var(--dark-primary-color);
+  border: solid 2px var(--primary-color);
+  color: var(--primary-color);
   border-radius: 4px;
   text-align: center;
   transition: 0.3s ease-in-out;
