@@ -495,7 +495,7 @@ nav .logo.space {
   width: 100%;
   color: var(--text-icons);
   background-color: var(--accent-color);
-  padding: 1em;
+  padding: 0.8em;
   text-align: center;
 }
 /*Section 3 design end here*/
@@ -740,12 +740,11 @@ footer {
 }
 
 .footer-content {
-  width: 30%;
+  width: 40%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  gap: 2em;
+  align-items: center;
+  gap: 1em;
 }
 
 .footer-content-title {
@@ -764,7 +763,30 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  gap: 0.5em;
+  color: var(--text-icons);
+}
+
+#name, #email {
+  width: 100%;
+  background-color: var(--bg-primary-color);
+  border: none;
+  outline: none;
+  padding: 1em 1.5em;
+}
+
+#name::placeholder, #email::placeholder {
+  color: var(--primary-text);
+}
+
+#submit {
+  width: 100%;
+  padding: 1em 1.5em;
+  border: none;
+  color: var(--text-icons);
+  background-color: var(--accent-color);
+  box-shadow: var(--box-shadow);
 }
 
 .footer-links {
@@ -776,9 +798,8 @@ footer {
 }
 
 .footer-links a {
-  font-size: 1.3em;
+  font-size: 1em;
   color: var(--text-icons);
-  font-weight: 600;
 }
 
 .footer-links-title {
@@ -942,6 +963,7 @@ footer {
 
   .footer-content {
     width: 100%;
+    flex-direction: column;
     align-items: center;
   }
 
