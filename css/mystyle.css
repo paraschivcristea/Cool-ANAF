@@ -561,7 +561,7 @@ nav .logo.space {
 }
 
 .icon {
-  color: var(--dark-primary-color);
+  color: var(--primary-text);
   font-size: 5em;
 }
 
