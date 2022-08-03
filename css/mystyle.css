@@ -627,11 +627,11 @@ details summary::-webkit-details-marker {
   background-color: var(--accent-color);
   padding: 0.8em;
   text-align: center;
+  transition: all .2s cubic-bezier(.22, .61, .36, 1);
 }
 
 .box-btn:active {
-  border: 3px solid #86b0f8;
-  transform: scale(1.01);
+  background-color: var(--primary-text);
 }
 /*Section 3 design end here*/
 
@@ -849,6 +849,7 @@ input:checked + .tab-label::after {
 input:checked ~ .tab-content {
   max-height: 100vh;
   padding: 1em;
+  background-color: var(--text-icons);
   border-bottom: 1px solid var(--divider-color);
 }
 
