@@ -960,8 +960,8 @@ footer {
 #post-page {
   align-items: flex-start;
   gap: 2em;
-  margin-top: 2em;
-  margin-bottom: 2em;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 .post-title {
