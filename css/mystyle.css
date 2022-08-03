@@ -970,7 +970,7 @@ footer {
 }
 
 .post-details, .post-share {
-  display: flex
+  display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 1em;
