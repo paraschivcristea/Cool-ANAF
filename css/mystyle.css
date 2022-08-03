@@ -958,6 +958,7 @@ footer {
 
 /*Post page design start here*/
 #post-page {
+  align-items: flex-start;
   gap: 2em;
   margin-top: 2em;
   margin-bottom: 2em;
@@ -966,6 +967,48 @@ footer {
 .post-title {
   font-size: 1.6em;
   font-weight: 600;
+}
+
+.post-details, .post-share {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1em;
+}
+
+.post-date {
+  background-color: var(--light-primary-color);
+  color: var(--primary-text);
+  font-size: 0.9em;
+  font-weight: 600;
+  padding: 0.3em 1em;
+  border-radius: 10em;
+}
+
+.share-btn {
+  color: var(--text-icons);
+  background-color: var(--accent-color);
+  font-size: 0.9em;
+  padding: 0.5em 1em;
+  text-align: center;
+  border: none;
+  outline: none;
+}
+
+.share-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  font-size: 2em;
+}
+
+.share-social .fa-facebook {
+  color: #4267B2;
+}
+
+.share-social .fa-whatsapp {
+  color: #128C7E;
 }
 
 .post-img {
@@ -1129,6 +1172,10 @@ footer {
     padding: 1em;
     flex-direction: column-reverse;
     gap: 1em;
+  }
+
+  #post-page {
+    align-items: center;
   }
 
   .post-img {
