@@ -386,6 +386,7 @@ nav .logo.space {
   display: flex;
   flex-direction: column;
 }
+
 .details-modal .details-modal-close {
   align-items: center;
   color: var(--primary-text);
@@ -398,9 +399,11 @@ nav .logo.space {
   top: 0;
   width: 4.5em;
 }
+
 .details-modal .details-modal-close svg {
   display: block;
 }
+
 .details-modal .details-modal-title {
   display: flex;
   justify-content: flex-start;
@@ -411,11 +414,13 @@ nav .logo.space {
   position: relative;
   width: calc(100% - 4.5em);
 }
+
 .details-modal .details-modal-title h1 {
   font-size: 1.25rem;
   font-weight: 600;
   line-height: normal;
 }
+
 .details-modal .details-modal-content {
   border-top: 1px solid #e0e0e0;
   padding: 2em;
@@ -434,6 +439,7 @@ nav .logo.space {
   left: 0;
   top: 0;
 }
+
 details[open] .details-modal-overlay {
   pointer-events: all;
   opacity: 1;
@@ -442,9 +448,11 @@ details[open] .details-modal-overlay {
 details summary {
   list-style: none;
 }
+
 details summary:focus {
   outline: none;
 }
+
 details summary::-webkit-details-marker {
   display: none;
 }
@@ -468,7 +476,7 @@ details summary::-webkit-details-marker {
   color: var(--text-icons);
 }
 
-#modal-name, #modal-email {
+#modal-name, #modal-email, #modal-password {
   width: 100%;
   background-color: var(--light-primary-color);
   border: none;
@@ -476,7 +484,7 @@ details summary::-webkit-details-marker {
   padding: 1em 1.5em;
 }
 
-#modal-name::placeholder, #modal-email::placeholder {
+#modal-name::placeholder, #modal-email::placeholder, #modal-password::placeholder {
   color: var(--primary-text);
 }
 
