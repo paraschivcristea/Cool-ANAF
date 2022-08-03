@@ -976,6 +976,11 @@ footer {
   gap: 1em;
 }
 
+.post-details {
+  width: 100%;
+  justify-content: space-between;
+}
+
 .post-date {
   background-color: var(--light-primary-color);
   color: var(--primary-text);
@@ -985,22 +990,16 @@ footer {
   border-radius: 10em;
 }
 
-.share-btn {
-  color: var(--text-icons);
-  background-color: var(--accent-color);
-  font-size: 0.9em;
-  padding: 0.5em 1em;
-  text-align: center;
-  border: none;
-  outline: none;
-}
-
 .share-social {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.5em;
   font-size: 2em;
+}
+
+.share-social .fa-share-nodes {
+  color: var(--accent-color);
 }
 
 .share-social .fa-facebook {
@@ -1172,10 +1171,6 @@ footer {
     padding: 1em;
     flex-direction: column-reverse;
     gap: 1em;
-  }
-
-  #post-page {
-    align-items: center;
   }
 
   .post-img {
