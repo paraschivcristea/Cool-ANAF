@@ -956,6 +956,30 @@ footer {
 }
 /*Footer design end here*/
 
+/*Post page design start here*/
+#post-page {
+  gap: 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.post-title {
+  font-size: 1.6em;
+  font-weight: 600;
+}
+
+.post-img {
+  height: 50vh;
+  overflow: hidden;
+}
+
+.post-text {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+/*Post page design end here*/
+
 @media only screen and (max-width: 1120px) {
   .width-80 {
     width: 100%;
@@ -1105,6 +1129,10 @@ footer {
     padding: 1em;
     flex-direction: column-reverse;
     gap: 1em;
+  }
+
+  .post-img {
+    height: auto;
   }
 }
 
