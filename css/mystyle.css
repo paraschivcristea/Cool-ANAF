@@ -347,6 +347,12 @@ nav .logo.space {
   background-color: var(--accent-color);
   color: var(--text-icons);
   box-shadow: var(--box-shadow);
+  transition: all .2s cubic-bezier(.22, .61, .36, 1);
+}
+
+.spv-btn:active {
+  border: 4px solid #6da2ff;
+  transform: scale(1.05);
 }
 
 .section-secondary {
@@ -622,6 +628,11 @@ details summary::-webkit-details-marker {
   padding: 0.8em;
   text-align: center;
 }
+
+.box-btn:active {
+  border: 3px solid #86b0f8;
+  transform: scale(1.01);
+}
 /*Section 3 design end here*/
 
 /*Section 4 design start here*/
@@ -778,6 +789,7 @@ details summary::-webkit-details-marker {
   color: var(--primary-text);
   overflow: hidden;
 }
+
 .tab-label {
   display: flex;
   justify-content: space-between;
@@ -787,9 +799,11 @@ details summary::-webkit-details-marker {
   cursor: pointer;
   /* Icon */
 }
+
 .tab-label:hover {
   background: var(--text-icons);
 }
+
 .tab-label::after {
   content: "❯";
   width: 1em;
@@ -797,6 +811,7 @@ details summary::-webkit-details-marker {
   text-align: center;
   transition: all 0.35s;
 }
+
 .tab-content {
   display: flex;
   flex-direction: column;
@@ -807,6 +822,7 @@ details summary::-webkit-details-marker {
   background: var(--bg-primary-color);
   transition: all 0.35s;
 }
+
 .tab-close {
   display: flex;
   justify-content: flex-end;
@@ -816,6 +832,7 @@ details summary::-webkit-details-marker {
   background: var(--light-primary-color);
   cursor: pointer;
 }
+
 .tab-close:hover {
   background: var(--light-primary-color);
 }
@@ -824,9 +841,11 @@ input:checked + .tab-label {
   background: var(--light-primary-color);
   color: var(--dark-primary-color);
 }
+
 input:checked + .tab-label::after {
   transform: rotate(90deg);
 }
+
 input:checked ~ .tab-content {
   max-height: 100vh;
   padding: 1em;
