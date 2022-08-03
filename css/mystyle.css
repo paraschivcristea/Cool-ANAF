@@ -470,7 +470,7 @@ details summary::-webkit-details-marker {
 
 #modal-name, #modal-email {
   width: 100%;
-  background-color: var(--bg-primary-color);
+  background-color: var(--light-primary-color);
   border: none;
   outline: none;
   padding: 1em 1.5em;
