@@ -972,7 +972,7 @@ footer {
 .post-details, .post-share {
   display: flex;
   justify-content: flex-start;
-  align-items: center
+  align-items: center;
   gap: 1em;
 }
 
